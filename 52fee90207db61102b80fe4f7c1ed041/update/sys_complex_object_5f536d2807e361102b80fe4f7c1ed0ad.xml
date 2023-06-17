@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD9b536d2815e361100f09d2bf12a6eaad</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>52fee90207db61102b80fe4f7c1ed041</scope_name>
+        <serialized_content>{"FlowDesigner:FD9b536d2815e361100f09d2bf12a6eaad":{},"FlowDesigner:FD9b536d2815e361100f09d2bf12a6eaad.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1538d4ed-6f30-4088-b4f0-0aed5a7f658e\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9b536d2815e361100f09d2bf12a6eaad\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-17 08:16:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5f536d2807e361102b80fe4f7c1ed0ad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FD9b536d2815e361100f09d2bf12a6eaad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_complex_object_5f536d2807e361102b80fe4f7c1ed0ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-17 08:16:35</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

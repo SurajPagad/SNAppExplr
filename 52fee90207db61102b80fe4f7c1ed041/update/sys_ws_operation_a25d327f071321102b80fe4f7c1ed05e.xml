@@ -8,7 +8,7 @@
         <http_method>GET</http_method>
         <name>Get app artifacts</name>
         <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-    return request.queryParams.app_id ? new GetAppArtifacts().getAppArtifacts(request.queryParams.app_id) : {};
+    return request.queryParams.app_id ? new x_13258_applicat_0.GetAppArtifacts().getAppArtifacts(request.queryParams.app_id) : {};
 
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_13258_applicat_0/app_explorer/get_app_artifacts</operation_uri>
@@ -24,14 +24,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-15 07:00:08</sys_created_on>
         <sys_id>a25d327f071321102b80fe4f7c1ed05e</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Get app artifacts</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ws_operation_a25d327f071321102b80fe4f7c1ed05e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 07:16:07</sys_updated_on>
+        <sys_updated_on>2023-06-17 08:45:51</sys_updated_on>
         <web_service_definition display_value="App Explorer">1b3df67f071321102b80fe4f7c1ed00e</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
