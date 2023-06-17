@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Get app artifacts</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    return request.queryParams.app_id ? new GetAppArtifacts().getAppArtifacts(request.queryParams.app_id) : {};
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_13258_applicat_0/app_explorer/get_app_artifacts</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/get_app_artifacts</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-15 07:00:08</sys_created_on>
+        <sys_id>a25d327f071321102b80fe4f7c1ed05e</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Get app artifacts</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ws_operation_a25d327f071321102b80fe4f7c1ed05e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-17 07:16:07</sys_updated_on>
+        <web_service_definition display_value="App Explorer">1b3df67f071321102b80fe4f7c1ed00e</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

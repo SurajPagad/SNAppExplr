@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_scriptlet">
+    <sys_ux_data_broker_scriptlet action="DELETE">
+        <api_name>x_13258_applicat_0.Get app artifacts</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get app artifacts</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform() {
+    return new x_13258_applicat_0.GetAppArtifacts().getAppArtifacts();
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_scriptlet</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 12:47:23</sys_created_on>
+        <sys_id>dde2c72707d721102b80fe4f7c1ed0b9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Get app artifacts</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_data_broker_scriptlet_dde2c72707d721102b80fe4f7c1ed0b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 12:54:12</sys_updated_on>
+    </sys_ux_data_broker_scriptlet>
+    <sys_translated_text action="DELETE" query="documentkey=dde2c72707d721102b80fe4f7c1ed0b9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>37d96cd1db764c103050ac44d49619b4</instance_id>
+        <instance_name>dev99373</instance_name>
+        <name>sys_ux_data_broker_scriptlet_dde2c72707d721102b80fe4f7c1ed0b9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_scriptlet"&gt;&lt;sys_ux_data_broker_scriptlet action="INSERT_OR_UPDATE"&gt;&lt;api_name&gt;x_13258_applicat_0.Get app artifacts&lt;/api_name&gt;&lt;description/&gt;&lt;mutates_server_data&gt;false&lt;/mutates_server_data&gt;&lt;name&gt;Get app artifacts&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[function transform() {
+    return new x_13258_applicat_0.GetAppArtifacts().getAppArtifacts();
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_scriptlet&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-06-14 12:47:23&lt;/sys_created_on&gt;&lt;sys_id&gt;dde2c72707d721102b80fe4f7c1ed0b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get app artifacts&lt;/sys_name&gt;&lt;sys_package display_value="Application Explorer" source="x_13258_applicat_0"&gt;52fee90207db61102b80fe4f7c1ed041&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Application Explorer"&gt;52fee90207db61102b80fe4f7c1ed041&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_scriptlet_dde2c72707d721102b80fe4f7c1ed0b9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-06-14 12:54:12&lt;/sys_updated_on&gt;&lt;/sys_ux_data_broker_scriptlet&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=dde2c72707d721102b80fe4f7c1ed0b9"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-537095725</payload_hash>
+        <record_name>Get app artifacts</record_name>
+        <reverted_from/>
+        <source>96fee90207db61102b80fe4f7c1ed043</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 12:54:12</sys_created_on>
+        <sys_id>ce36432b07d721102b80fe4f7c1ed0a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188b9f888a70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 12:54:12</sys_updated_on>
+        <type>Data Broker Scriptlet</type>
+        <update_guid>c636432becd7211005c041352f70c6a4</update_guid>
+        <update_guid_history>c636432becd7211005c041352f70c6a4:-537095725,50f54fe7d8d72110c67570a93f038b22:-1222836637,f2050ba7e3d721106639ff95c495f0a3:431349850,c4d4cba7b4d72110f1883715122aa427:762136069,8ea4c7a71bd72110dcd3007445c591bf:1046651864</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 12:59:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_scriptlet">sys_ux_data_broker_scriptlet</sys_db_object>
+        <sys_id>42d7d7cc356b479e8ce502d85624f144</sys_id>
+        <sys_metadata>dde2c72707d721102b80fe4f7c1ed0b9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get app artifacts</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_scriptlet_dde2c72707d721102b80fe4f7c1ed0b9</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_scriptlet_dde2c72707d721102b80fe4f7c1ed0b9">ce36432b07d721102b80fe4f7c1ed0a4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 12:59:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="Task">a7fdba23079721102b80fe4f7c1ed0ea</ais_search_source>
+        <label>Task</label>
+        <name>Task</name>
+        <order>100</order>
+        <search_context_config display_value="Application Explorer AI Search Configuration">edfdf2233997211057131cb70bc1e29f</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 12:18:16</sys_created_on>
+        <sys_id>effdfa23079721102b80fe4f7c1ed029</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Task</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_search_filter_effdfa23079721102b80fe4f7c1ed029</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 12:18:16</sys_updated_on>
+    </sys_search_filter>
+</record_update>

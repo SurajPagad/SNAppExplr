@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability display_value="Public">2a9fa54295db6110ca2acc4a63a4efe7</applicability>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-06-09 14:44:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>229fa5421edb6110d723799c22c32fe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>m2m_app_config_theme_229fa5421edb6110d723799c22c32fe9</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-09 14:44:54</sys_updated_on>
+        <theme display_value="Light Theme">ae9fa542f0db611008dd43310bbdcde7</theme>
+        <ux_app_configuration display_value="Application Explorer Config">4a9fa54207db61102b80fe4f7c1ed084</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>GLIDE_FORM_1_SET_VALUE_RELAY_a29fa54220db6110f59cb046a1fa02bd</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Glide Form 1 SET_VALUE Relay (Tasks Default)</label>
+        <props>[{"name":"fieldName","fieldType":"string","label":"Field Name"},{"name":"value","fieldType":"string","label":"Value"},{"name":"displayValue","fieldType":"string","label":"Display Value"}]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-06-09 14:44:56</sys_created_on>
+        <sys_id>2e9fa54247db6110c41c25dd137906bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Glide Form 1 SET_VALUE Relay (Tasks Default)</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_event_2e9fa54247db6110c41c25dd137906bc</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-09 14:44:56</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=2e9fa54247db6110c41c25dd137906bc"/>
+</record_update>

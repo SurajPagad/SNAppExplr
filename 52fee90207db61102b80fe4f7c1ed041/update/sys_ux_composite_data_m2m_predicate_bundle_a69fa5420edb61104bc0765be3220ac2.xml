@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_predicate_bundle">
+    <sys_ux_composite_data_m2m_predicate_bundle action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Catalog Item page - Related Items dataset">669fa5428edb61103ed06648418f72c6</dataset>
+        <order/>
+        <predicate_bundle display_value="Custom portal - Related items">ea9fa542cedb6110c923962a69e47fc3</predicate_bundle>
+        <sys_class_name>sys_ux_composite_data_m2m_predicate_bundle</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-06-09 14:44:54</sys_created_on>
+        <sys_id>a69fa5420edb61104bc0765be3220ac2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_predicate_bundle_a69fa5420edb61104bc0765be3220ac2</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-09 14:44:54</sys_updated_on>
+    </sys_ux_composite_data_m2m_predicate_bundle>
+</record_update>

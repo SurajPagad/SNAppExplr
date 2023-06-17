@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Application Explorer Config">31fd362311972110eadb2af1562e5e3b</app_config>
+        <description/>
+        <extension_point/>
+        <fields>sysid</fields>
+        <icon/>
+        <name>Visualization Designer</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>visualization-designer</route_type>
+        <screen_type display_value="Visualization Designer">71fdf2232597211060756bc9f35d76fe</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 12:18:10</sys_created_on>
+        <sys_id>a1fdf223fa97211036b39cfa6098bfa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Visualization Designer</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_app_route_a1fdf223fa97211036b39cfa6098bfa0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 12:18:10</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>37d96cd1db764c103050ac44d49619b4</instance_id>
+        <instance_name>dev99373</instance_name>
+        <name>sys_ux_app_route_a1fdf223fa97211036b39cfa6098bfa0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Application Explorer Config">31fd362311972110eadb2af1562e5e3b</app_config><description/><extension_point/><fields>sysid</fields><icon/><name>Visualization Designer</name><optional_parameters/><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>visualization-designer</route_type><screen_type display_value="Visualization Designer">71fdf2232597211060756bc9f35d76fe</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-14 12:18:10</sys_created_on><sys_id>a1fdf223fa97211036b39cfa6098bfa0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Visualization Designer</sys_name><sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package><sys_policy/><sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope><sys_update_name>sys_ux_app_route_a1fdf223fa97211036b39cfa6098bfa0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-14 12:18:10</sys_updated_on></sys_ux_app_route></record_update>]]></payload>
+        <payload_hash>1345421288</payload_hash>
+        <record_name>Visualization Designer</record_name>
+        <reverted_from/>
+        <source>2ee40810070321102b80fe4f7c1ed00a</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-05-22 10:13:42</sys_created_on>
+        <sys_id>127003a307d721102b80fe4f7c1ed0f2</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18842f34ff00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX App Route</type>
+        <update_guid>de7003a32dd72110e37f9a786796a4f1</update_guid>
+        <update_guid_history>de7003a32dd72110e37f9a786796a4f1:1345421288</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 12:29:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>02e8e016666441728302980a9e9ccca4</sys_id>
+        <sys_metadata>a1fdf223fa97211036b39cfa6098bfa0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Visualization Designer</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_a1fdf223fa97211036b39cfa6098bfa0</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_a1fdf223fa97211036b39cfa6098bfa0">127003a307d721102b80fe4f7c1ed0f2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 12:29:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

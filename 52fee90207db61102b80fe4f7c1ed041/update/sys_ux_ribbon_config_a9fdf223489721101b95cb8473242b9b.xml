@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_ribbon_config">
+    <sys_ux_ribbon_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Application Explorer Ribbon Config</description>
+        <name>Application Explorer Ribbon Config</name>
+        <sys_class_name>sys_ux_ribbon_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-14 12:18:10</sys_created_on>
+        <sys_id>a9fdf223489721101b95cb8473242b9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Application Explorer Ribbon Config</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_ribbon_config_a9fdf223489721101b95cb8473242b9b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-14 12:18:10</sys_updated_on>
+    </sys_ux_ribbon_config>
+</record_update>

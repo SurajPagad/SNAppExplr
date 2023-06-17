@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
+    <sys_ux_data_broker_rest action="DELETE">
+        <api_name>x_13258_applicat_0.Get app artifacts</api_name>
+        <api_url>/api/x_13258_applicat_0/get_app_artifacts?app_id={{app_id}}</api_url>
+        <description/>
+        <http_method>GET</http_method>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get app artifacts</name>
+        <output_schema/>
+        <parameters>[{&#13;
+  "name":"app_id",&#13;
+  "value":{{app_id}}&#13;
+}]</parameters>
+        <private>false</private>
+        <props>[&#13;
+	{&#13;
+	  "name": "app_id",&#13;
+	  "label": "App Id",&#13;
+	  "description": "App sys_id",&#13;
+	  "readOnly": false,&#13;
+	  "fieldType": "string",&#13;
+	  "mandatory": true,&#13;
+	  "defaultValue": ""&#13;
+	}&#13;
+]</props>
+        <request_body/>
+        <required_translations>[ {
+  "message" : "App Id",
+  "comment" : ""
+}, {
+  "message" : "App sys_id",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-15 07:11:48</sys_created_on>
+        <sys_id>31610fb3075321102b80fe4f7c1ed0dd</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Get app artifacts</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_data_broker_rest_31610fb3075321102b80fe4f7c1ed0dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-16 09:35:38</sys_updated_on>
+    </sys_ux_data_broker_rest>
+    <sys_translated_text action="DELETE" query="documentkey=31610fb3075321102b80fe4f7c1ed0dd"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>37d96cd1db764c103050ac44d49619b4</instance_id>
+        <instance_name>dev99373</instance_name>
+        <name>sys_ux_data_broker_rest_31610fb3075321102b80fe4f7c1ed0dd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest"><sys_ux_data_broker_rest action="INSERT_OR_UPDATE"><api_name>x_13258_applicat_0.Get app artifacts</api_name><api_url>/api/x_13258_applicat_0/get_app_artifacts?app_id={{app_id}}</api_url><description/><http_method>GET</http_method><mutates_server_data>false</mutates_server_data><name>Get app artifacts</name><output_schema/><parameters>[{&#13;
+  "name":"app_id",&#13;
+  "value":{{app_id}}&#13;
+}]</parameters><private>false</private><props>[&#13;
+	{&#13;
+	  "name": "app_id",&#13;
+	  "label": "App Id",&#13;
+	  "description": "App sys_id",&#13;
+	  "readOnly": false,&#13;
+	  "fieldType": "string",&#13;
+	  "mandatory": true,&#13;
+	  "defaultValue": ""&#13;
+	}&#13;
+]</props><request_body/><required_translations>[ {
+  "message" : "App Id",
+  "comment" : ""
+}, {
+  "message" : "App sys_id",
+  "comment" : ""
+} ]</required_translations><schema_version>1.0.0</schema_version><sys_class_name>sys_ux_data_broker_rest</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-06-15 07:11:48</sys_created_on><sys_id>31610fb3075321102b80fe4f7c1ed0dd</sys_id><sys_mod_count>9</sys_mod_count><sys_name>Get app artifacts</sys_name><sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package><sys_policy/><sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope><sys_update_name>sys_ux_data_broker_rest_31610fb3075321102b80fe4f7c1ed0dd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-06-16 09:35:38</sys_updated_on></sys_ux_data_broker_rest><sys_translated_text action="delete_multiple" query="documentkey=31610fb3075321102b80fe4f7c1ed0dd"/></record_update>]]></payload>
+        <payload_hash>226826015</payload_hash>
+        <record_name>Get app artifacts</record_name>
+        <reverted_from/>
+        <source>96fee90207db61102b80fe4f7c1ed043</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-16 09:35:39</sys_created_on>
+        <sys_id>b4fbe094076321102b80fe4f7c1ed009</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>188c38f76e60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-16 09:35:39</sys_updated_on>
+        <type>REST Data Broker</type>
+        <update_guid>bcfbe094036321107502bb2989ed9908</update_guid>
+        <update_guid_history>bcfbe094036321107502bb2989ed9908:226826015,37cae094776321104ed8718bac7e1710:-530900003,2f29e01447632110b8c8236af0e8fde6:2078351439,6548e0d0836321100c4e87fa7ddc8553:13596201,1e73a09c6a23211064ae475ad7dd52ec:2002659000,9f03e85c6a23211079bfa69d0d67eea3:-891971616,6222e45ca1232110fdc78bdef0afd1fd:703624509,e71220d888232110bc80df693e1abf04:1524351382,d5814bb307532110343cb690006ea21d:1424306889,54714bb3cc532110b38f8a9812570543:873763078</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-16 09:39:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_rest">sys_ux_data_broker_rest</sys_db_object>
+        <sys_id>42e010828e2041c2ab3adc7e6d0fe664</sys_id>
+        <sys_metadata>31610fb3075321102b80fe4f7c1ed0dd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get app artifacts</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_rest_31610fb3075321102b80fe4f7c1ed0dd</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_rest_31610fb3075321102b80fe4f7c1ed0dd">b4fbe094076321102b80fe4f7c1ed009</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-16 09:39:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

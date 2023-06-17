@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
+    <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
+        <api_name>x_13258_applicat_0.Get app artifacts</api_name>
+        <api_url>/api/x_13258_applicat_0/app_explorer/get_app_artifacts?app_id={{search_app_id}}</api_url>
+        <description/>
+        <http_method>GET</http_method>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get app artifacts</name>
+        <output_schema/>
+        <parameters/>
+        <private>false</private>
+        <props>[&#13;
+	{&#13;
+	  "name": "search_app_id",&#13;
+	  "label": "App Id",&#13;
+	  "description": "Add guided setup id",&#13;
+	  "readOnly": false,&#13;
+	  "fieldType": "string",&#13;
+	  "mandatory": true,&#13;
+	  "defaultValue": ""&#13;
+	}&#13;
+]</props>
+        <request_body/>
+        <required_translations>[ {
+  "message" : "Add guided setup id",
+  "comment" : ""
+}, {
+  "message" : "App Id",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-16 09:41:10</sys_created_on>
+        <sys_id>4ffc6418076321102b80fe4f7c1ed023</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Get app artifacts</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_data_broker_rest_4ffc6418076321102b80fe4f7c1ed023</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-17 07:15:21</sys_updated_on>
+    </sys_ux_data_broker_rest>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ffc6418076321102b80fe4f7c1ed023"/>
+</record_update>

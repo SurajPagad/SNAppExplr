@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>chrome_header</name>
+        <page display_value="">129fa54286db6110add068098199b2af</page>
+        <required_translations>[]</required_translations>
+        <route display_value="Landing Page">2e9fa5424adb6110799b44d2a045a5d1</route>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-06-09 14:44:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>969fa54255db61109fb033e56811e7b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_page_property_969fa54255db61109fb033e56811e7b6</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-09 14:44:56</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_13258_applicat_0.129fa54286db6110add068098199b2af.route.chrome_header.2e9fa5424adb6110799b44d2a045a5d1</unique_name>
+        <value>{&#13;
+    "privatePage":{&#13;
+       "searchEnabled": false&#13;
+    }&#13;
+}</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>37d96cd1db764c103050ac44d49619b4</instance_id>
+        <instance_name>dev99373</instance_name>
+        <name>sys_ux_page_property_969fa54255db61109fb033e56811e7b6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>chrome_header</name><page display_value="">129fa54286db6110add068098199b2af</page><required_translations>[]</required_translations><route display_value="Landing Page">2e9fa5424adb6110799b44d2a045a5d1</route><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2023-06-09 14:44:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>969fa54255db61109fb033e56811e7b6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_header</sys_name><sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package><sys_policy/><sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope><sys_update_name>sys_ux_page_property_969fa54255db61109fb033e56811e7b6</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2023-06-09 14:44:56</sys_updated_on><type>json</type><unique_name>x_13258_applicat_0.129fa54286db6110add068098199b2af.route.chrome_header.2e9fa5424adb6110799b44d2a045a5d1</unique_name><value>{&#13;
+    "privatePage":{&#13;
+       "searchEnabled": false&#13;
+    }&#13;
+}</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>1567881899</payload_hash>
+        <record_name>chrome_header</record_name>
+        <reverted_from/>
+        <source>2ee40810070321102b80fe4f7c1ed00a</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-05-22 10:13:42</sys_created_on>
+        <sys_id>6696304b071b61102b80fe4f7c1ed0e0</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18842f34ff00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Page Property</type>
+        <update_guid>2696304b171b6110360e6eb628c4cee0</update_guid>
+        <update_guid_history>2696304b171b6110360e6eb628c4cee0:1567881899</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-12 13:09:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>1286c38f417948be8dc1d7ec8d9f9f49</sys_id>
+        <sys_metadata>969fa54255db61109fb033e56811e7b6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_969fa54255db61109fb033e56811e7b6</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_969fa54255db61109fb033e56811e7b6">6696304b071b61102b80fe4f7c1ed0e0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-12 13:09:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
