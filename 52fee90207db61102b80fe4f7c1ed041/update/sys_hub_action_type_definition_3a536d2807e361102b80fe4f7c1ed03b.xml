@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3a536d2807e361102b80fe4f7c1ed03b</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>73</sys_mod_count>
         <sys_name>Get Application Artifacts</sys_name>
         <sys_overrides/>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_3a536d2807e361102b80fe4f7c1ed03b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:42:07</sys_updated_on>
+        <sys_updated_on>2023-06-28 10:50:57</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -583,10 +583,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:13</sys_created_on>
         <sys_id>d7536d2807e361102b80fe4f7c1ed09a</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:39:26</sys_updated_on>
+        <sys_updated_on>2023-06-28 10:50:52</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d7536d2807e361102b80fe4f7c1ed09a"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -597,9 +597,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:14</sys_created_on>
         <sys_id>5b536d2807e361102b80fe4f7c1ed0aa</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:39:26</sys_updated_on>
+        <sys_updated_on>2023-06-28 10:50:52</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 	var response = JSON.parse(inputs.response);
     var filteredArtifacts = new x_13258_applicat_0.GetAppArtifacts().preprocess(response.artifacts);
@@ -609,7 +609,7 @@
          'metadata':response.metadata
        };
        outputs.status = 'Error';
-       outputs.error_message = 'No artifacts found for app '+ inputs.appid;
+       outputs.error_message = 'No artifacts found for the app '+ response.metadata.name;
        return;
     }else{
       outputs.response = {
@@ -688,7 +688,7 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d7536d2807e361102b80fe4f7c1ed09a^id=d7536d2807e361102b80fe4f7c1ed09a"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=d7536d2807e361102b80fe4f7c1ed09a"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=d7536d2807e361102b80fe4f7c1ed09a^sys_idNOT IN5f536d2807e361102b80fe4f7c1ed09d,ed1ace4807b321102b80fe4f7c1ed08b"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d7536d2807e361102b80fe4f7c1ed09a^sys_idNOT IN5f536d2807e361102b80fe4f7c1ed09d"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -760,89 +760,6 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-06-17 08:16:34</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_input>
-    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>appid</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label/>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Script step">d7536d2807e361102b80fe4f7c1ed09a</model>
-        <model_id>d7536d2807e361102b80fe4f7c1ed09a</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_d7536d2807e361102b80fe4f7c1ed09a</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-06-28 08:04:09</sys_created_on>
-        <sys_id>ed1ace4807b321102b80fe4f7c1ed08b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:04:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1501,14 +1418,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:14</sys_created_on>
         <sys_id>d7536d2807e361102b80fe4f7c1ed0b6</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:42:02</sys_updated_on>
+        <sys_updated_on>2023-06-28 10:50:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1675,14 +1592,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-28 08:04:10</sys_created_on>
         <sys_id>f91ace4807b321102b80fe4f7c1ed0b0</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:42:02</sys_updated_on>
+        <sys_updated_on>2023-06-28 10:50:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1897,17 +1814,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Get Application Artifacts">3a536d2807e361102b80fe4f7c1ed03b</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"4273a16807e361102b80fe4f7c1ed0bb","name":"plan","plan_signature":null}}</plan>
-        <snapshot>35c2da4407f321102b80fe4f7c1ed03a</snapshot>
+        <snapshot>c54072c0077721102b80fe4f7c1ed06e</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:42</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4273a16807e361102b80fe4f7c1ed0bb</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:42:12</sys_updated_on>
+        <sys_updated_on>2023-06-28 10:51:02</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2490,10 +2407,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:37</sys_created_on>
         <sys_id>4d73616807e361102b80fe4f7c1ed06e</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:42:06</sys_updated_on>
+        <sys_updated_on>2023-06-28 10:50:56</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4d73616807e361102b80fe4f7c1ed06e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2518,9 +2435,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:37</sys_created_on>
         <sys_id>cd73616807e361102b80fe4f7c1ed07d</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:42:06</sys_updated_on>
+        <sys_updated_on>2023-06-28 10:50:56</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 	var response = JSON.parse(inputs.response);
     var filteredArtifacts = new x_13258_applicat_0.GetAppArtifacts().preprocess(response.artifacts);
@@ -2530,7 +2447,7 @@
          'metadata':response.metadata
        };
        outputs.status = 'Error';
-       outputs.error_message = 'No artifacts found for app '+ inputs.appid;
+       outputs.error_message = 'No artifacts found for the app '+ response.metadata.name;
        return;
     }else{
       outputs.response = {
@@ -2595,90 +2512,7 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_4d73616807e361102b80fe4f7c1ed06e^id=4d73616807e361102b80fe4f7c1ed06e"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=4d73616807e361102b80fe4f7c1ed06e"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=4d73616807e361102b80fe4f7c1ed06e^sys_idNOT IN1fca4e8807b321102b80fe4f7c1ed061,8173616807e361102b80fe4f7c1ed072"/>
-    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>appid</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>appid</label>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Script step">4d73616807e361102b80fe4f7c1ed06e</model>
-        <model_id>4d73616807e361102b80fe4f7c1ed06e</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_4d73616807e361102b80fe4f7c1ed06e</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-06-28 08:07:17</sys_created_on>
-        <sys_id>1fca4e8807b321102b80fe4f7c1ed061</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:07:17</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=4d73616807e361102b80fe4f7c1ed06e^sys_idNOT IN8173616807e361102b80fe4f7c1ed072"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3321,14 +3155,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:37</sys_created_on>
         <sys_id>0573616807e361102b80fe4f7c1ed092</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:42:06</sys_updated_on>
+        <sys_updated_on>2023-06-28 10:50:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3582,14 +3416,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-28 08:07:17</sys_created_on>
         <sys_id>afca4e8807b321102b80fe4f7c1ed097</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:42:07</sys_updated_on>
+        <sys_updated_on>2023-06-28 10:50:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
