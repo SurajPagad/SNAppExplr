@@ -74,7 +74,7 @@
         },
         "disabled" : {
           "type" : "JSON_LITERAL",
-          "value" : false
+          "value" : true
         },
         "defaultDisplayedPane" : {
           "type" : "JSON_LITERAL",
@@ -856,7 +856,7 @@
                     "items" : [{"element_id":"repeater_1","styles":{}}],
                     "root" : null,
                     "rules" : null,
-                    "styles" : {"flex-direction":"column","display":"flex","padding-bottom":"10px","overflow":"scroll","height":"100vh","bottom":"0"},
+                    "styles" : {"flex-direction":"column","display":"flex","overflow":"scroll","position":"absolute","top":"48px","bottom":"0","resize":"horizontal"},
                     "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
                     "type" : "flex"
                   },
@@ -987,7 +987,7 @@
                 "items" : [{"element_id":"search_container","styles":{}},{"element_id":"container_4","styles":{}},{"element_id":"message_1","styles":{}}],
                 "root" : null,
                 "rules" : null,
-                "styles" : {"flex-direction":"column","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr","align-items":"stretch","height":"100%"},
+                "styles" : {"flex-direction":"column","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr","height":"100%","resize":"horizontal"},
                 "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
                 "type" : "flex"
               },
@@ -1065,7 +1065,7 @@
                 },
                 "height" : {
                   "type" : "JSON_LITERAL",
-                  "value" : "93vh"
+                  "value" : "100vh"
                 },
                 "disableSandbox" : {
                   "type" : "JSON_LITERAL",
@@ -1127,10 +1127,10 @@
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"element_id":"iframe_1","styles":{"flex":"1 0 auto","height":""}}],
+                "items" : [{"element_id":"iframe_1","styles":{"flex":"1 0 auto","height":"100%","bottom":"0"}}],
                 "root" : null,
                 "rules" : null,
-                "styles" : {"flex-direction":"column","display":"flex","align-items":"stretch"},
+                "styles" : {"flex-direction":"column","display":"flex","align-items":"stretch","bottom":"0","height":"100%"},
                 "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
                 "type" : "flex"
               },
@@ -1180,95 +1180,6 @@
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"row"},
-        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "flex"
-      },
-      "version" : "3.0.0"
-    }
-  },
-  "isHidden" : {
-    "type" : "JSON_LITERAL",
-    "value" : null
-  },
-  "isHero" : false,
-  "extensionPoints" : [ ],
-  "isNonDestructive" : false,
-  "items" : [ ],
-  "styles" : null
-}, {
-  "elementId" : "footer",
-  "elementLabel" : "Footer",
-  "propertyValues" : {
-    "ariaRegionHeadingLevel" : {
-      "type" : "JSON_LITERAL",
-      "value" : "1"
-    },
-    "ariaRegionName" : {
-      "type" : "TRANSLATION_LITERAL",
-      "value" : {
-        "code" : null,
-        "message" : "",
-        "comment" : ""
-      }
-    },
-    "includeAriaHeading" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
-    },
-    "type" : {
-      "type" : "JSON_LITERAL",
-      "value" : "section"
-    },
-    "ariaRole" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    }
-  },
-  "eventMappings" : [ ],
-  "slot" : null,
-  "definition" : {
-    "id" : "d356d14b6e293a3020a244b63d278d8f",
-    "type" : "MACROPONENT"
-  },
-  "overrides" : {
-    "composition" : [ {
-      "elementId" : "rich_text_1",
-      "elementLabel" : "Rich text 1",
-      "propertyValues" : {
-        "html" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "&lt;p&gt;The world works with ServiceNow&lt;/p&gt;",
-            "comment" : ""
-          }
-        }
-      },
-      "eventMappings" : [ ],
-      "slot" : null,
-      "definition" : {
-        "id" : "2d56f06d55f46bbd4e79b5e624beb940",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : null
-    } ],
-    "layout" : {
-      "default" : {
-        "children" : null,
-        "isInline" : null,
-        "items" : [{"element_id":"rich_text_1","styles":{}}],
-        "root" : null,
-        "rules" : null,
-        "styles" : {"flex-direction":"column","display":"flex","bottom":"0"},
         "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
         "type" : "flex"
       },
@@ -1534,7 +1445,7 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"main","styles":{}},{"element_id":"footer","styles":{}}],
+    "items" : [{"element_id":"main","styles":{}}],
     "root" : null,
     "rules" : null,
     "styles" : {"flex-direction":"column","gap":"","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","flex-wrap":"nowrap","align-items":"stretch"},
@@ -1668,9 +1579,6 @@
   "disabled" : false
 } ]</props>
         <required_translations>[ {
-  "message" : "&lt;p&gt;The world works with ServiceNow&lt;/p&gt;",
-  "comment" : ""
-}, {
   "message" : "Accessible Label",
   "comment" : ""
 }, {
@@ -1711,13 +1619,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-29 12:05:31</sys_created_on>
         <sys_id>03eacc2007bb61102b80fe4f7c1ed036</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>91</sys_mod_count>
         <sys_name>Default copy</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_03eacc2007bb61102b80fe4f7c1ed036</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-29 13:41:13</sys_updated_on>
+        <sys_updated_on>2023-07-05 10:48:02</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
