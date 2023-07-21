@@ -11,6 +11,10 @@
       "type" : "JSON_LITERAL",
       "value" : "1"
     },
+    "hideEmptyStateUi" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
     "ariaRegionName" : {
       "type" : "TRANSLATION_LITERAL",
       "value" : {
@@ -46,6 +50,10 @@
         "ariaRegionHeadingLevel" : {
           "type" : "JSON_LITERAL",
           "value" : "1"
+        },
+        "hideEmptyStateUi" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
         },
         "ariaRegionName" : {
           "type" : "TRANSLATION_LITERAL",
@@ -247,6 +255,10 @@
           "type" : "JSON_LITERAL",
           "value" : "1"
         },
+        "hideEmptyStateUi" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
         "ariaRegionName" : {
           "type" : "TRANSLATION_LITERAL",
           "value" : {
@@ -387,6 +399,10 @@
                         "ariaRegionHeadingLevel" : {
                           "type" : "JSON_LITERAL",
                           "value" : "1"
+                        },
+                        "hideEmptyStateUi" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : true
                         },
                         "ariaRegionName" : {
                           "type" : "TRANSLATION_LITERAL",
@@ -755,34 +771,13 @@
         }
       },
       "isHidden" : {
-        "type" : "CLIENT_TRANSFORM",
-        "transform" : {
-          "operands" : {
-            "type" : "LIST_CONTAINER",
-            "container" : [ {
-              "type" : "BINARY",
-              "operation" : {
-                "left" : {
-                  "type" : "DATA_OUTPUT_BINDING",
-                  "binding" : {
-                    "address" : [ "get_app_artifacts_1", "output", "result", "artifacts", "length" ]
-                  }
-                },
-                "operator" : "EQUAL",
-                "right" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : 0
-                }
-              }
-            }, {
-              "type" : "JSON_LITERAL",
-              "value" : true
-            }, {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            } ]
-          },
-          "operator" : "IF"
+        "type" : "CLIENT_TRANSFORM_SCRIPT",
+        "script" : {
+          "apiVersion" : "2.0.0",
+          "controllerElementId" : null,
+          "inlineScript" : null,
+          "scriptSysId" : "effc9caf074031102b80fe4f7c1ed0a8",
+          "target" : null
         }
       },
       "isHero" : false,
@@ -901,6 +896,10 @@
     "ariaRegionHeadingLevel" : {
       "type" : "JSON_LITERAL",
       "value" : "1"
+    },
+    "hideEmptyStateUi" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
     },
     "ariaRegionName" : {
       "type" : "TRANSLATION_LITERAL",
@@ -1045,9 +1044,7 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : {
-    "flex" : "1 0 auto"
-  }
+  "styles" : null
 } ]</composition>
         <da_relay_models/>
         <data>[ {
@@ -1201,7 +1198,7 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"container_1","styles":{}},{"element_id":"container_3","styles":{}}],
+    "items" : [{"element_id":"container_1","styles":{}},{"element_id":"container_3","styles":{"flex":"1 0 auto"}}],
     "root" : null,
     "rules" : null,
     "styles" : {"flex-direction":"row","gap":"","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","flex-wrap":"nowrap"},
@@ -1375,13 +1372,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-14 12:33:53</sys_created_on>
         <sys_id>5c9103a307d721102b80fe4f7c1ed0d7</sys_id>
-        <sys_mod_count>288</sys_mod_count>
+        <sys_mod_count>289</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_5c9103a307d721102b80fe4f7c1ed0d7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-05 11:22:16</sys_updated_on>
+        <sys_updated_on>2023-07-21 07:21:57</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
