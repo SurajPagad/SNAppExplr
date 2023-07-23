@@ -545,23 +545,54 @@
                             }, {
                               "broker" : null,
                               "clientScript" : null,
-                              "conditional" : null,
+                              "conditional" : {
+                                "type" : "CLIENT_TRANSFORM",
+                                "transform" : {
+                                  "operands" : {
+                                    "type" : "LIST_CONTAINER",
+                                    "container" : [ {
+                                      "type" : "BINARY",
+                                      "operation" : {
+                                        "left" : {
+                                          "type" : "STATE_BINDING",
+                                          "binding" : {
+                                            "address" : [ "artifactSysID" ]
+                                          }
+                                        },
+                                        "operator" : "NOT_EQUAL",
+                                        "right" : {
+                                          "type" : "REPEATER_ITEM_BINDING",
+                                          "binding" : {
+                                            "address" : [ "sysId" ],
+                                            "category" : "value"
+                                          }
+                                        }
+                                      }
+                                    }, {
+                                      "type" : "JSON_LITERAL",
+                                      "value" : true
+                                    }, {
+                                      "type" : "JSON_LITERAL",
+                                      "value" : false
+                                    } ]
+                                  },
+                                  "operator" : "IF"
+                                }
+                              },
                               "declarativeAction" : null,
                               "event" : {
-                                "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+                                "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
                                 "payload" : {
                                   "type" : "JSON_LITERAL",
                                   "value" : {
-                                    "loading" : true,
-                                    "label" : null,
-                                    "action" : null,
-                                    "nonBlocking" : false
+                                    "propName" : "iframeLoading",
+                                    "value" : true
                                   }
                                 },
-                                "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+                                "sysId" : "32408b42ff7a10109046e490703bf176"
                               },
                               "operation" : null,
-                              "targetId" : "cljffqugeegaajmkddnhhvarkccxccmw",
+                              "targetId" : "clkfddgeeoiaaahhyddnhhvxzojgcclx",
                               "type" : "EVENT"
                             } ]
                           } ],
@@ -780,7 +811,7 @@
             "items" : [{"element_id":"repeater_1","styles":{}}],
             "root" : null,
             "rules" : null,
-            "styles" : {"flex-direction":"column","display":"flex","overflow":"scroll","position":"absolute","top":"48px","bottom":"32px","width":"300px"},
+            "styles" : {"flex-direction":"column","display":"flex","overflow":"scroll","position":"absolute","top":"48px","bottom":"0px","width":"300px"},
             "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
             "type" : "flex"
           },
@@ -928,7 +959,7 @@
           "propertyValues" : {
             "size" : {
               "type" : "JSON_LITERAL",
-              "value" : "md"
+              "value" : "sm"
             },
             "highContrast" : {
               "type" : "JSON_LITERAL",
@@ -1008,8 +1039,25 @@
           },
           "overrides" : null,
           "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
+            "type" : "CLIENT_TRANSFORM",
+            "transform" : {
+              "operands" : {
+                "type" : "LIST_CONTAINER",
+                "container" : [ {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "artifactSysID" ]
+                  }
+                }, {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                }, {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                } ]
+              },
+              "operator" : "IF"
+            }
           },
           "isHero" : false,
           "extensionPoints" : [ ],
@@ -1021,7 +1069,7 @@
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"element_id":"button_iconic_1","styles":{"flex":"1 0 auto"}}],
+            "items" : [{"element_id":"button_iconic_1","styles":{"flex":"1 0 auto","width":""}}],
             "root" : null,
             "rules" : null,
             "styles" : {"flex-direction":"column"},
@@ -1032,29 +1080,20 @@
         }
       },
       "isHidden" : {
-        "type" : "CLIENT_TRANSFORM_SCRIPT",
-        "script" : {
-          "apiVersion" : "2.0.0",
-          "controllerElementId" : null,
-          "inlineScript" : null,
-          "scriptSysId" : "37e2156b074431102b80fe4f7c1ed0d1",
-          "target" : null
-        }
+        "type" : "JSON_LITERAL",
+        "value" : true
       },
       "isHero" : false,
       "extensionPoints" : [ ],
       "isNonDestructive" : false,
       "items" : [ ],
-      "styles" : {
-        "width" : "300px",
-        "border-width" : "var(--now-static-space--xxs)"
-      }
+      "styles" : null
     } ],
     "layout" : {
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"search_container","styles":{}},{"element_id":"container_4","styles":{}},{"element_id":"container_6","styles":{"border-width":"var(--now-static-space--sm)","width":"100%","flex":"1 0 auto","border-color":"RGB(var(--now-color--neutral-5))","border-style":"solid","position":"absolute","bottom":"0","left":"0"}},{"element_id":"message_1","styles":{}}],
+        "items" : [{"element_id":"search_container","styles":{}},{"element_id":"container_4","styles":{}},{"element_id":"container_6","styles":{"width":"100%","border-width":"var(--now-static-space--sm)","flex":"1 0 auto","border-color":"RGB(var(--now-color--neutral-5))","border-style":"solid","position":"absolute","bottom":"0","left":"0"}},{"element_id":"message_1","styles":{}}],
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"column","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr","align-items":"stretch","width":"300px"},
@@ -1185,7 +1224,7 @@
             }
           },
           "eventMappings" : [ {
-            "eventMappingId" : "cljffqunbbmaajmrddnhhvjjcyybbugf",
+            "eventMappingId" : "clkfddgujfaaaiiiiddnhhvqlpvkeeree",
             "isConfiguration" : false,
             "offRowStorageId" : null,
             "sourceEventApiName" : "sn_iframe.NOW_IFRAME#LOADED",
@@ -1202,20 +1241,18 @@
               "conditional" : null,
               "declarativeAction" : null,
               "event" : {
-                "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+                "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
                 "payload" : {
                   "type" : "JSON_LITERAL",
                   "value" : {
-                    "loading" : false,
-                    "label" : null,
-                    "action" : null,
-                    "nonBlocking" : false
+                    "propName" : "iframeLoading",
+                    "value" : false
                   }
                 },
-                "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+                "sysId" : "32408b42ff7a10109046e490703bf176"
               },
               "operation" : null,
-              "targetId" : "cljffqunbbmaajmsddnhhvbbggpgghheemjj",
+              "targetId" : "clkfddgujfaaaiijjddnhhvjjlvkvvlcc",
               "type" : "EVENT"
             } ]
           } ],
@@ -1257,13 +1294,67 @@
       "extensionPoints" : [ ],
       "isNonDestructive" : false,
       "items" : [ ],
-      "styles" : { }
+      "styles" : null
+    }, {
+      "elementId" : "loader_1",
+      "elementLabel" : "Loader 1",
+      "propertyValues" : {
+        "size" : {
+          "type" : "JSON_LITERAL",
+          "value" : "lg"
+        },
+        "action" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "label" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "Loading",
+            "comment" : ""
+          }
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "",
+      "definition" : {
+        "id" : "dc87bcee22259d229390a8da7fb7b0b3",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "CLIENT_TRANSFORM",
+        "transform" : {
+          "operands" : {
+            "type" : "LIST_CONTAINER",
+            "container" : [ {
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "iframeLoading" ]
+              }
+            }, {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            }, {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            } ]
+          },
+          "operator" : "IF"
+        }
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : null
     } ],
     "layout" : {
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"container_5","styles":{"flex":"1 0 auto","position":"absolute","width":"auto","height":"100%","right":"0","left":"300px"}}],
+        "items" : [{"element_id":"container_5","styles":{"flex":"1 0 auto","position":"absolute","width":"auto","height":"100%","right":"0","left":"300px"}},{"element_id":"loader_1","styles":{"position":"absolute","top":"40vh","right":"0px","left":"300px"}}],
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"column","display":"flex","height":"100%","align-items":"stretch","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr"},
@@ -1586,6 +1677,9 @@
   "message" : "Enter a label",
   "comment" : ""
 }, {
+  "message" : "Loading",
+  "comment" : ""
+}, {
   "message" : "Search",
   "comment" : ""
 }, {
@@ -1608,6 +1702,17 @@
     "value" : ""
   }
 }, {
+  "name" : "hideNav",
+  "label" : "hideNav",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}, {
   "name" : "artifactSysID",
   "label" : "artifactSysID",
   "fieldType" : "",
@@ -1619,8 +1724,8 @@
     "value" : null
   }
 }, {
-  "name" : "hideNav",
-  "label" : "hideNav",
+  "name" : "iframeLoading",
+  "label" : "iframeLoading",
   "fieldType" : "boolean",
   "valueType" : "boolean",
   "shape" : "",
@@ -1634,13 +1739,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-14 12:33:53</sys_created_on>
         <sys_id>5c9103a307d721102b80fe4f7c1ed0d7</sys_id>
-        <sys_mod_count>379</sys_mod_count>
+        <sys_mod_count>414</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_5c9103a307d721102b80fe4f7c1ed0d7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-21 12:34:05</sys_updated_on>
+        <sys_updated_on>2023-07-23 08:04:14</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
