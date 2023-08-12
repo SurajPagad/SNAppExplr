@@ -19,8 +19,8 @@ GetAppArtifacts.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
             var resultObj = {};
             resultObj.artifacts = response.artifacts;
             resultObj.meta_data = response.metadata;
-			resultObj.status = outputs.status;
-			resultObj.error_message = outputs.error_message;
+            resultObj.status = outputs.status;
+            resultObj.error_message = outputs.error_message;
             resultObj.instance_name = gs.getProperty('instance_name');
             return resultObj;
         } catch (ex) {
@@ -37,23 +37,9 @@ GetAppArtifacts.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
             item.types = item.types.filter(function(type) {
                 return type.artifacts && type.artifacts.length > 0 ? true : false;
             });
-			return item;
+            return item;
         });
         return filtered;
-        //         var processed = filtered.map(function(item) {
-        //             var res = item;
-        //             item.types.forEach(function(type, typeIdx) {
-        //                 type.artifacts.forEach(function(artifact, artIdx) {
-        //                     var isCustom = false;
-        //                     if (this._isCustomizedArtifact(type.id, artifact.sysId)) {
-        //                         isCustom = true;
-        //                     }
-        //                     res.types[typeIdx].artifacts[artIdx].isCustomized = isCustom;
-        //                 }, this);
-        //             }, this);
-        //             return res;
-        //         }, this);
-        //         return processed;
     },
 
     _isCustomizedArtifact: function(type, artifactID) {
@@ -80,13 +66,13 @@ GetAppArtifacts.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-14 12:51:32</sys_created_on>
         <sys_id>92854fa707d721102b80fe4f7c1ed01b</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>GetAppArtifacts</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_script_include_92854fa707d721102b80fe4f7c1ed01b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 08:44:39</sys_updated_on>
+        <sys_updated_on>2023-08-07 10:16:42</sys_updated_on>
     </sys_script_include>
 </record_update>

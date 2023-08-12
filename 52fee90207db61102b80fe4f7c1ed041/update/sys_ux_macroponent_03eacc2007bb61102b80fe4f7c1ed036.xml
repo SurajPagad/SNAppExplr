@@ -876,7 +876,7 @@
                     "items" : [{"element_id":"repeater_1","styles":{}}],
                     "root" : null,
                     "rules" : null,
-                    "styles" : {"flex-direction":"column","display":"flex","position":"relative","top":"48px","overflow":"scroll","bottom":"0"},
+                    "styles" : {"flex-direction":"column","display":"flex"},
                     "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
                     "type" : "flex"
                   },
@@ -919,95 +919,15 @@
               "isNonDestructive" : false,
               "items" : [ ],
               "styles" : null
-            }, {
-              "elementId" : "message_1",
-              "elementLabel" : "Message 1",
-              "propertyValues" : {
-                "alignment" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "adaptive"
-                }
-              },
-              "eventMappings" : [ ],
-              "slot" : null,
-              "definition" : {
-                "id" : "65d619a5a400c5a4d564a31dd96917d2",
-                "type" : "MACROPONENT"
-              },
-              "overrides" : {
-                "composition" : [ {
-                  "elementId" : "stylized_text_3",
-                  "elementLabel" : "Stylized text 3",
-                  "propertyValues" : {
-                    "css" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : "* { }"
-                    },
-                    "text" : {
-                      "type" : "DATA_OUTPUT_BINDING",
-                      "binding" : {
-                        "address" : [ "get_app_artifacts_1", "output", "result", "error_message" ]
-                      }
-                    },
-                    "tag" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : "h3"
-                    }
-                  },
-                  "eventMappings" : [ ],
-                  "slot" : "message",
-                  "definition" : {
-                    "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-                    "type" : "MACROPONENT"
-                  },
-                  "overrides" : null,
-                  "isHidden" : {
-                    "type" : "JSON_LITERAL",
-                    "value" : null
-                  },
-                  "isHero" : false,
-                  "extensionPoints" : [ ],
-                  "isNonDestructive" : false,
-                  "items" : [ ],
-                  "styles" : { }
-                } ],
-                "layout" : null
-              },
-              "isHidden" : {
-                "type" : "CLIENT_TRANSFORM",
-                "transform" : {
-                  "operands" : {
-                    "type" : "LIST_CONTAINER",
-                    "container" : [ {
-                      "type" : "DATA_OUTPUT_BINDING",
-                      "binding" : {
-                        "address" : [ "get_app_artifacts_1", "output", "status" ]
-                      }
-                    }, {
-                      "type" : "JSON_LITERAL",
-                      "value" : true
-                    }, {
-                      "type" : "JSON_LITERAL",
-                      "value" : false
-                    } ]
-                  },
-                  "operator" : "IF"
-                }
-              },
-              "isHero" : false,
-              "extensionPoints" : [ ],
-              "isNonDestructive" : false,
-              "items" : [ ],
-              "styles" : null
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"element_id":"search_container","styles":{}},{"element_id":"container_4","styles":{}},{"element_id":"message_1","styles":{}}],
+                "items" : [{"element_id":"search_container","styles":{}},{"element_id":"container_4","styles":{"flex":"1 0 auto","overflow":"scroll","height":"100vh","position":"relative"}}],
                 "root" : null,
                 "rules" : null,
-                "styles" : {"flex-direction":"column","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr","height":"100%"},
+                "styles" : {"flex-direction":"column","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr","height":"100%","align-items":"stretch","overflow":"hidden"},
                 "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
                 "type" : "flex"
               },
@@ -1200,7 +1120,7 @@
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"resizable_panes_1","styles":{"width":"100%","height":"100%","flex":"1 0 auto","overflow":"hidden","position":"absolute","top":"0","bottom":"0"}}],
+        "items" : [{"element_id":"resizable_panes_1","styles":{"width":"100%","height":"100%","flex":"1 0 auto","overflow":"hidden"}}],
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"row"},
@@ -1218,7 +1138,12 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : null
+  "styles" : {
+    "position" : "absolute",
+    "height" : "100%",
+    "width" : "100%",
+    "overflow" : "auto"
+  }
 } ]</composition>
         <da_relay_models/>
         <data>[ {
@@ -1469,7 +1394,7 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"main","styles":{}}],
+    "items" : [{"element_id":"main","styles":{"position":"absolute","height":"100%","width":"100%","overflow":"scroll"}}],
     "root" : null,
     "rules" : null,
     "styles" : {"flex-direction":"column","gap":"","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","flex-wrap":"nowrap","align-items":"stretch"},
@@ -1643,13 +1568,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-29 12:05:31</sys_created_on>
         <sys_id>03eacc2007bb61102b80fe4f7c1ed036</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>116</sys_mod_count>
         <sys_name>Default copy</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_03eacc2007bb61102b80fe4f7c1ed036</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-07-23 06:16:43</sys_updated_on>
+        <sys_updated_on>2023-07-25 07:58:27</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
