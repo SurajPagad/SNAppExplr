@@ -691,7 +691,7 @@
                     }
                   },
                   "eventMappings" : [ {
-                    "eventMappingId" : "cllmiiddtabbaaddccyddohhvhvddhmvfp",
+                    "eventMappingId" : "cllmcripzaaccjgddohhvpuyylflff",
                     "isConfiguration" : false,
                     "offRowStorageId" : null,
                     "sourceEventApiName" : "sn_toggle.NOW_TOGGLE#CHECKED_SET",
@@ -704,23 +704,15 @@
                     "sourceEventSysId" : null,
                     "targets" : [ {
                       "broker" : null,
-                      "clientScript" : null,
+                      "clientScript" : {
+                        "sysId" : "77a562b147b43110274adeae536d4386"
+                      },
                       "conditional" : null,
                       "declarativeAction" : null,
-                      "event" : {
-                        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                        "payload" : {
-                          "type" : "JSON_LITERAL",
-                          "value" : {
-                            "propName" : "hideAll",
-                            "value" : true
-                          }
-                        },
-                        "sysId" : "32408b42ff7a10109046e490703bf176"
-                      },
+                      "event" : null,
                       "operation" : null,
-                      "targetId" : "cllmiiddtaccaaddcczddohhvdfvwrlns",
-                      "type" : "EVENT"
+                      "targetId" : "cllmcriqaaaaccjhddohhvsoiisjdjr",
+                      "type" : "CLIENT_SCRIPT"
                     } ]
                   } ],
                   "slot" : null,
@@ -1102,103 +1094,6 @@
   "eventMappings" : [ ],
   "inputValues" : { },
   "readEvaluationMode" : "EXPLICIT"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "029f04e053610110ac9bddeeff7b1294",
-    "type" : "CONTROLLER"
-  },
-  "dependencies" : { },
-  "elementId" : "form_1",
-  "elementLabel" : "Form 1",
-  "eventMappings" : [ ],
-  "inputValues" : {
-    "inputTable" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "table" ],
-        "category" : "props"
-      }
-    },
-    "inputSysId" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "sysId" ],
-        "category" : "props"
-      }
-    },
-    "inputQuery" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "query" ],
-        "category" : "props"
-      }
-    },
-    "view" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "view" ],
-        "category" : "app"
-      }
-    },
-    "forcedViewName" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "views" ],
-        "category" : "props"
-      }
-    },
-    "detailsContext" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "activityLogs" ],
-        "category" : "props"
-      }
-    },
-    "activityLogs" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "activityLogs" ],
-        "category" : "props"
-      }
-    },
-    "inputExtraParams" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "extraParams" ],
-        "category" : "props"
-      }
-    },
-    "screen" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "screen" ],
-        "category" : "props"
-      }
-    },
-    "fields" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "fields" ],
-        "category" : "props"
-      }
-    },
-    "userPrefs" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "userPrefs" ],
-        "category" : "props"
-      }
-    },
-    "selectedTabIndex" : {
-      "type" : "CONTEXT_BINDING",
-      "binding" : {
-        "address" : [ "selectedTabIndex" ],
-        "category" : "props"
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
 } ]</data>
         <description/>
         <dispatched_events>8c793b89072321102b80fe4f7c1ed08e</dispatched_events>
@@ -1428,14 +1323,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-29 12:05:31</sys_created_on>
         <sys_id>03eacc2007bb61102b80fe4f7c1ed036</sys_id>
-        <sys_mod_count>162</sys_mod_count>
+        <sys_mod_count>165</sys_mod_count>
         <sys_name>Default copy</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_03eacc2007bb61102b80fe4f7c1ed036</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-22 11:29:18</sys_updated_on>
+        <sys_updated_on>2023-08-22 13:43:06</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=03eacc2007bb61102b80fe4f7c1ed036"/>
 </record_update>
