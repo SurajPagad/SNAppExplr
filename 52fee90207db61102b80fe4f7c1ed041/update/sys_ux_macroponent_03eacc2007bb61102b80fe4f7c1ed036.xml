@@ -319,6 +319,25 @@
                       "operation" : null,
                       "targetId" : "clizpbbuhhfaacctaddnhhvbcvddjjedhh",
                       "type" : "CLIENT_SCRIPT"
+                    }, {
+                      "broker" : null,
+                      "clientScript" : null,
+                      "conditional" : null,
+                      "declarativeAction" : null,
+                      "event" : {
+                        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                        "payload" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : {
+                            "propName" : "searchArtifactTerm",
+                            "value" : null
+                          }
+                        },
+                        "sysId" : "32408b42ff7a10109046e490703bf176"
+                      },
+                      "operation" : null,
+                      "targetId" : "cllmhhnyuxaacczbddohhvhhrjddgehp",
+                      "type" : "EVENT"
                     } ]
                   } ],
                   "slot" : "",
@@ -423,8 +442,10 @@
                       "container" : { }
                     },
                     "searchTerm" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : null
+                      "type" : "STATE_BINDING",
+                      "binding" : {
+                        "address" : [ "searchArtifactTerm" ]
+                      }
                     },
                     "overflow" : {
                       "type" : "JSON_LITERAL",
@@ -440,7 +461,7 @@
                     },
                     "triggerIcon" : {
                       "type" : "JSON_LITERAL",
-                      "value" : "chevron"
+                      "value" : "caret"
                     },
                     "loadingItems" : {
                       "type" : "LIST_CONTAINER",
@@ -545,12 +566,184 @@
                   "isNonDestructive" : false,
                   "items" : [ ],
                   "styles" : null
+                }, {
+                  "elementId" : "search_input_1",
+                  "elementLabel" : "Search input 1",
+                  "propertyValues" : {
+                    "disableAutocomplete" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : false
+                    },
+                    "searchTerm" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : ""
+                    },
+                    "size" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "lg"
+                    },
+                    "placeholder" : {
+                      "type" : "TRANSLATION_LITERAL",
+                      "value" : {
+                        "code" : null,
+                        "message" : "Search for app artifacts",
+                        "comment" : ""
+                      }
+                    },
+                    "placement" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "header"
+                    },
+                    "searchContextConfigId" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : ""
+                    }
+                  },
+                  "eventMappings" : [ {
+                    "eventMappingId" : "cllmggxkliaaccmjddohhvtgggozccgi",
+                    "isConfiguration" : false,
+                    "offRowStorageId" : null,
+                    "sourceEventApiName" : "sn_search_combobox.SN_SEARCH_COMBOBOX#SEARCH_EXECUTED",
+                    "sourceEventCorrelationId" : null,
+                    "sourceEventDefinition" : {
+                      "apiName" : "sn_search_combobox.SN_SEARCH_COMBOBOX#SEARCH_EXECUTED",
+                      "id" : null,
+                      "type" : "UXEVENT"
+                    },
+                    "sourceEventSysId" : null,
+                    "targets" : [ {
+                      "broker" : null,
+                      "clientScript" : {
+                        "sysId" : "98a1067147343110274adeae536d434b"
+                      },
+                      "conditional" : null,
+                      "declarativeAction" : null,
+                      "event" : null,
+                      "operation" : null,
+                      "targetId" : "cllmhhcciqmaaccpqddohhvhjicixsf",
+                      "type" : "CLIENT_SCRIPT"
+                    } ]
+                  } ],
+                  "slot" : "",
+                  "definition" : {
+                    "id" : "ce26d6793802478648556dc1f88fe020",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "CLIENT_TRANSFORM",
+                    "transform" : {
+                      "operands" : {
+                        "type" : "LIST_CONTAINER",
+                        "container" : [ {
+                          "type" : "DATA_OUTPUT_BINDING",
+                          "binding" : {
+                            "address" : [ "get_app_artifacts_1", "output" ]
+                          }
+                        } ]
+                      },
+                      "operator" : "EMPTY"
+                    }
+                  },
+                  "isHero" : false,
+                  "extensionPoints" : [ ],
+                  "isNonDestructive" : false,
+                  "items" : [ ],
+                  "styles" : null
+                }, {
+                  "elementId" : "toggle_1",
+                  "elementLabel" : "Toggle 1",
+                  "propertyValues" : {
+                    "size" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "sm"
+                    },
+                    "labelPosition" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "start"
+                    },
+                    "checked" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : false
+                    },
+                    "disabled" : {
+                      "type" : "CLIENT_TRANSFORM",
+                      "transform" : {
+                        "operands" : {
+                          "type" : "LIST_CONTAINER",
+                          "container" : [ {
+                            "type" : "DATA_OUTPUT_BINDING",
+                            "binding" : {
+                              "address" : [ "get_app_artifacts_1", "output" ]
+                            }
+                          } ]
+                        },
+                        "operator" : "EMPTY"
+                      }
+                    },
+                    "label" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "Hide all"
+                    },
+                    "configAria" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    }
+                  },
+                  "eventMappings" : [ {
+                    "eventMappingId" : "cllmiiddtabbaaddccyddohhvhvddhmvfp",
+                    "isConfiguration" : false,
+                    "offRowStorageId" : null,
+                    "sourceEventApiName" : "sn_toggle.NOW_TOGGLE#CHECKED_SET",
+                    "sourceEventCorrelationId" : null,
+                    "sourceEventDefinition" : {
+                      "apiName" : "sn_toggle.NOW_TOGGLE#CHECKED_SET",
+                      "id" : null,
+                      "type" : "UXEVENT"
+                    },
+                    "sourceEventSysId" : null,
+                    "targets" : [ {
+                      "broker" : null,
+                      "clientScript" : null,
+                      "conditional" : null,
+                      "declarativeAction" : null,
+                      "event" : {
+                        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                        "payload" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : {
+                            "propName" : "hideAll",
+                            "value" : true
+                          }
+                        },
+                        "sysId" : "32408b42ff7a10109046e490703bf176"
+                      },
+                      "operation" : null,
+                      "targetId" : "cllmiiddtaccaaddcczddohhvdfvwrlns",
+                      "type" : "EVENT"
+                    } ]
+                  } ],
+                  "slot" : null,
+                  "definition" : {
+                    "id" : "aad020b8b826fc5b585082458b66ea33",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : null
+                  },
+                  "isHero" : false,
+                  "extensionPoints" : [ ],
+                  "isNonDestructive" : false,
+                  "items" : [ ],
+                  "styles" : null
                 } ],
                 "layout" : {
                   "default" : {
                     "children" : null,
                     "isInline" : null,
-                    "items" : [{"element_id":"content_tree_1","styles":{}}],
+                    "items" : [{"element_id":"search_input_1","styles":{}},{"element_id":"toggle_1","styles":{"flex":"none"}},{"element_id":"content_tree_1","styles":{}}],
                     "root" : null,
                     "rules" : null,
                     "styles" : {"flex-direction":"column"},
@@ -1178,6 +1371,9 @@
 }, {
   "message" : "Search for app",
   "comment" : ""
+}, {
+  "message" : "Search for app artifacts",
+  "comment" : ""
 } ]</required_translations>
         <root_component/>
         <root_component_config>{ }</root_component_config>
@@ -1206,29 +1402,40 @@
     "value" : null
   }
 }, {
-  "name" : "selectedItem",
-  "label" : "selectedItem",
-  "fieldType" : "",
-  "valueType" : "",
+  "name" : "searchArtifactTerm",
+  "label" : "searchArtifactTerm",
+  "fieldType" : "string",
+  "valueType" : "string",
   "shape" : "",
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
     "value" : null
   }
+}, {
+  "name" : "hideAll",
+  "label" : "hideAll",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-29 12:05:31</sys_created_on>
         <sys_id>03eacc2007bb61102b80fe4f7c1ed036</sys_id>
-        <sys_mod_count>143</sys_mod_count>
+        <sys_mod_count>162</sys_mod_count>
         <sys_name>Default copy</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_03eacc2007bb61102b80fe4f7c1ed036</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-22 10:40:52</sys_updated_on>
+        <sys_updated_on>2023-08-22 11:29:18</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=03eacc2007bb61102b80fe4f7c1ed036"/>
 </record_update>

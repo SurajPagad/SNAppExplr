@@ -15,20 +15,21 @@
 function handler({api, event, helpers, imports}) {
     api.setState('searchAppTerm',event.payload.value[0]);
     
+    
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-29 12:05:33</sys_created_on>
         <sys_id>67ea4c6007bb61102b80fe4f7c1ed0b7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Update searchAppTerm</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_client_script_67ea4c6007bb61102b80fe4f7c1ed0b7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-22 09:54:09</sys_updated_on>
+        <sys_updated_on>2023-08-22 11:32:48</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

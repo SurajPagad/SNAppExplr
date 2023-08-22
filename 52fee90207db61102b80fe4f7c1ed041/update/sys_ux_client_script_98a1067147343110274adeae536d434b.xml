@@ -2,43 +2,33 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
         <macroponent display_value="Default copy">03eacc2007bb61102b80fe4f7c1ed036</macroponent>
-        <name>content_tree_1/expandedItems</name>
+        <name>Update searchArtifactTerm</name>
         <preset/>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
- * @param {params} params
- * @param {api} params.api
- * @param {TransformApiHelpers} params.helpers
- */
-function evaluateProperty({
-    api,
-    helpers
-}) {
-    if(api.state.hideAll){
-        return [];
-    }
-    var arr = [];
-    var artifacts = api.data.get_app_artifacts_1.output.result.artifacts;
-    return artifacts.map(function(artifact) {
-        arr = [];
-        arr.push(artifact.id);
-        return arr;
-    });
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    api.setState('searchArtifactTerm',event.payload.searchTerm);
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-08-22 07:23:19</sys_created_on>
-        <sys_id>bb201d3147703110274adeae536d4361</sys_id>
+        <sys_created_on>2023-08-22 10:59:21</sys_created_on>
+        <sys_id>98a1067147343110274adeae536d434b</sys_id>
         <sys_mod_count>5</sys_mod_count>
-        <sys_name>content_tree_1/expandedItems</sys_name>
+        <sys_name>Update searchArtifactTerm</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
-        <sys_update_name>sys_ux_client_script_bb201d3147703110274adeae536d4361</sys_update_name>
+        <sys_update_name>sys_ux_client_script_98a1067147343110274adeae536d434b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-22 11:32:48</sys_updated_on>
+        <sys_updated_on>2023-08-22 11:11:36</sys_updated_on>
         <target>macroponent</target>
-        <type>transform</type>
+        <type>default</type>
     </sys_ux_client_script>
 </record_update>
