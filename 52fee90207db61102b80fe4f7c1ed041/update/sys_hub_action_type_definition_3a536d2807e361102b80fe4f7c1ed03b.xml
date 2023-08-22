@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3a536d2807e361102b80fe4f7c1ed03b</sys_id>
-        <sys_mod_count>73</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Get Application Artifacts</sys_name>
         <sys_overrides/>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_3a536d2807e361102b80fe4f7c1ed03b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 10:50:57</sys_updated_on>
+        <sys_updated_on>2023-08-12 19:29:54</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -49,10 +49,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:14</sys_created_on>
         <sys_id>5f536d2807e361102b80fe4f7c1ed0c3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:35</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{},"complexObjectSchema":{"FlowDesigner:FD9b536d2815e361100f09d2bf12a6eaad":{},"FlowDesigner:FD9b536d2815e361100f09d2bf12a6eaad.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1538d4ed-6f30-4088-b4f0-0aed5a7f658e\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9b536d2815e361100f09d2bf12a6eaad\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-08-12 19:29:43</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD9b536d2815e361100f09d2bf12a6eaad":{},"FlowDesigner:FD9b536d2815e361100f09d2bf12a6eaad.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1538d4ed-6f30-4088-b4f0-0aed5a7f658e\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9b536d2815e361100f09d2bf12a6eaad\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">93536d2807e361102b80fe4f7c1ed0b1</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -162,10 +162,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:13</sys_created_on>
         <sys_id>8f536d2807e361102b80fe4f7c1ed04b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:13</sys_updated_on>
+        <sys_updated_on>2023-08-12 19:29:43</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8f536d2807e361102b80fe4f7c1ed04b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -302,10 +302,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:13</sys_created_on>
         <sys_id>d3536d2807e361102b80fe4f7c1ed095</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:13</sys_updated_on>
-        <value>https://dev99373.service-now.com</value>
+        <sys_updated_on>2023-08-12 19:29:43</sys_updated_on>
+        <value>https://dev141748.service-now.com/</value>
         <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -316,10 +316,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:13</sys_created_on>
         <sys_id>d7536d2807e361102b80fe4f7c1ed094</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:13</sys_updated_on>
-        <value>f7587f332fb01110916d50492799b6dc</value>
+        <sys_updated_on>2023-08-12 19:29:43</sys_updated_on>
+        <value>df1590f247a43110274adeae536d43b2</value>
         <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_8f536d2807e361102b80fe4f7c1ed04b^id=8f536d2807e361102b80fe4f7c1ed04b"/>
@@ -456,6 +456,7 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=8f536d2807e361102b80fe4f7c1ed04b"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=8f536d2807e361102b80fe4f7c1ed04b"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=8f536d2807e361102b80fe4f7c1ed04b^sys_idNOT IN07536d2807e361102b80fe4f7c1ed079"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -651,18 +652,6 @@
         <value>{{action.app_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>d7536d2807e361102b80fe4f7c1ed09a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-06-17 08:16:14</sys_created_on>
-        <sys_id>53536d2807e361102b80fe4f7c1ed0aa</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>response</field>
         <id>d7536d2807e361102b80fe4f7c1ed09a</id>
         <sys_created_by>admin</sys_created_by>
@@ -674,20 +663,9 @@
         <table>var__m_sys_hub_step_ext_input_d7536d2807e361102b80fe4f7c1ed09a</table>
         <value>{{step[e21113a2-6121-4811-97ed-501a33ed8dc7].response_body}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>d7536d2807e361102b80fe4f7c1ed09a</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-06-17 08:16:14</sys_created_on>
-        <sys_id>17536d2807e361102b80fe4f7c1ed0aa</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d7536d2807e361102b80fe4f7c1ed09a^id=d7536d2807e361102b80fe4f7c1ed09a"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=d7536d2807e361102b80fe4f7c1ed09a"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=d7536d2807e361102b80fe4f7c1ed09a"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=d7536d2807e361102b80fe4f7c1ed09a^sys_idNOT IN5f536d2807e361102b80fe4f7c1ed09d"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1418,14 +1396,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:14</sys_created_on>
         <sys_id>d7536d2807e361102b80fe4f7c1ed0b6</sys_id>
-        <sys_mod_count>57</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 10:50:52</sys_updated_on>
+        <sys_updated_on>2023-08-12 19:29:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1592,14 +1570,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-28 08:04:10</sys_created_on>
         <sys_id>f91ace4807b321102b80fe4f7c1ed0b0</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 10:50:53</sys_updated_on>
+        <sys_updated_on>2023-08-12 19:29:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1814,17 +1792,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Get Application Artifacts">3a536d2807e361102b80fe4f7c1ed03b</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"4273a16807e361102b80fe4f7c1ed0bb","name":"plan","plan_signature":null}}</plan>
-        <snapshot>c54072c0077721102b80fe4f7c1ed06e</snapshot>
+        <snapshot>e596dcb647a43110274adeae536d4308</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:42</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4273a16807e361102b80fe4f7c1ed0bb</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 10:51:02</sys_updated_on>
+        <sys_updated_on>2023-08-12 19:29:56</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1873,10 +1851,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:38</sys_created_on>
         <sys_id>8573616807e361102b80fe4f7c1ed09e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:38</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-08-12 19:29:54</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">8973616807e361102b80fe4f7c1ed08d</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1986,10 +1964,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:37</sys_created_on>
         <sys_id>3073616807e361102b80fe4f7c1ed055</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:37</sys_updated_on>
+        <sys_updated_on>2023-08-12 19:29:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3073616807e361102b80fe4f7c1ed055"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2084,10 +2062,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:37</sys_created_on>
         <sys_id>8173616807e361102b80fe4f7c1ed069</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:37</sys_updated_on>
-        <value>f7587f332fb01110916d50492799b6dc</value>
+        <sys_updated_on>2023-08-12 19:29:54</sys_updated_on>
+        <value>df1590f247a43110274adeae536d43b2</value>
         <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2098,10 +2076,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:37</sys_created_on>
         <sys_id>8d73616807e361102b80fe4f7c1ed069</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:37</sys_updated_on>
-        <value>https://dev99373.service-now.com</value>
+        <sys_updated_on>2023-08-12 19:29:54</sys_updated_on>
+        <value>https://dev141748.service-now.com/</value>
         <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2280,6 +2258,7 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=3073616807e361102b80fe4f7c1ed055"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=3073616807e361102b80fe4f7c1ed055"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=3073616807e361102b80fe4f7c1ed055^sys_idNOT INf473616807e361102b80fe4f7c1ed05c"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -2475,18 +2454,6 @@
         <value>{{action.app_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>4d73616807e361102b80fe4f7c1ed06e</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-06-17 08:16:37</sys_created_on>
-        <sys_id>c573616807e361102b80fe4f7c1ed07d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:37</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>response</field>
         <id>4d73616807e361102b80fe4f7c1ed06e</id>
         <sys_created_by>admin</sys_created_by>
@@ -2498,20 +2465,9 @@
         <table>var__m_sys_hub_step_ext_input_4d73616807e361102b80fe4f7c1ed06e</table>
         <value>{{step[e21113a2-6121-4811-97ed-501a33ed8dc7].response_body}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>4d73616807e361102b80fe4f7c1ed06e</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-06-17 08:16:37</sys_created_on>
-        <sys_id>8973616807e361102b80fe4f7c1ed07d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-17 08:16:37</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_4d73616807e361102b80fe4f7c1ed06e^id=4d73616807e361102b80fe4f7c1ed06e"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=4d73616807e361102b80fe4f7c1ed06e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=4d73616807e361102b80fe4f7c1ed06e"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=4d73616807e361102b80fe4f7c1ed06e^sys_idNOT IN8173616807e361102b80fe4f7c1ed072"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -3155,14 +3111,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:37</sys_created_on>
         <sys_id>0573616807e361102b80fe4f7c1ed092</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 10:50:57</sys_updated_on>
+        <sys_updated_on>2023-08-12 19:29:54</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3416,14 +3372,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-28 08:07:17</sys_created_on>
         <sys_id>afca4e8807b321102b80fe4f7c1ed097</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-28 10:50:57</sys_updated_on>
+        <sys_updated_on>2023-08-12 19:29:54</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3637,6 +3593,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>3a536d2807e361102b80fe4f7c1ed03b</sys_id>
         <latest_snapshot>7073616807e361102b80fe4f7c1ed04b</latest_snapshot>
-        <compiler_build>glide-utah-12-21-2022__patch1-03-01-2023_03-13-2023_1716.zip</compiler_build>
+        <compiler_build>glide-utah-12-21-2022__patch4-hotfix2-06-23-2023_06-23-2023_2224.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
