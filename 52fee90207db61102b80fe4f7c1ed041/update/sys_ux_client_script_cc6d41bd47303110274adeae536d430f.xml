@@ -19,8 +19,9 @@ function evaluateProperty({
     var artifactSubType = {};
     var artifact = {};
     var artifacts = [];
+    //var searchArtifactTerm = api.state.searchArtifactTerm;
     var artifactTypes = api.data.get_app_artifacts_1.output.result.artifacts;
-    return artifactTypes.map(function(artifactTypeEle) {
+    var result = artifactTypes.map(function(artifactTypeEle) {
         artifactType = {};
         artifactType.label = artifactTypeEle.name;
         artifactType.id = artifactTypeEle.id;
@@ -43,20 +44,48 @@ function evaluateProperty({
         artifactType.children = artifactSubTypes;
         return artifactType;
     });
+    /*if(!searchArtifactTerm){
+        return result;
+    }*/
+    return result;
+    /*    var filtered = [];
+        var obj = {};
+        result.forEach(function(art) {
+            obj = {};
+            if (art.name.indexOf(searchArtifactTerm)) {
+                obj.label = art.name;
+                obj.id = art.id;
+                art.children.forEach(function(type) {
+                    if (type.name.indexOf(searchArtifactTerm)) {
+                        obj.children = [];
+                        obj.children.label = type.name;
+                        obj.children.id = type.id;
+                        obj.children.children = type.children.filter(function(artifact) {
+
+                            return artifact.name.indexOf(searchArtifactTerm)
+                        });
+                        
+                    }
+                });
+                filtered.push(obj);
+            }
+        });
+        console.log(filtered);
+        return filtered;*/
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-22 07:11:03</sys_created_on>
         <sys_id>cc6d41bd47303110274adeae536d430f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>content_tree_1/items</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_client_script_cc6d41bd47303110274adeae536d430f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-22 10:44:56</sys_updated_on>
+        <sys_updated_on>2023-08-23 13:36:14</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>

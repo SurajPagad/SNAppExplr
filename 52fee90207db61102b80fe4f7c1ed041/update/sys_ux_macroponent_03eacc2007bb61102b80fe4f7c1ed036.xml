@@ -529,6 +529,17 @@
                       "operation" : null,
                       "targetId" : "cllngdtwaaaaddiixddobohsqsxffggt",
                       "type" : "EVENT"
+                    }, {
+                      "broker" : null,
+                      "clientScript" : {
+                        "sysId" : "a8573ace47f03110274adeae536d43a6"
+                      },
+                      "conditional" : null,
+                      "declarativeAction" : null,
+                      "event" : null,
+                      "operation" : null,
+                      "targetId" : "cllnjnlggwaaddvjddoboapaaffgbep",
+                      "type" : "CLIENT_SCRIPT"
                     } ]
                   }, {
                     "eventMappingId" : "cllmeeygkoaahhzkddohhvrpxeeteehhee",
@@ -719,8 +730,10 @@
                       "value" : "start"
                     },
                     "checked" : {
-                      "type" : "JSON_LITERAL",
-                      "value" : false
+                      "type" : "STATE_BINDING",
+                      "binding" : {
+                        "address" : [ "collapseAll" ]
+                      }
                     },
                     "disabled" : {
                       "type" : "CLIENT_TRANSFORM",
@@ -788,7 +801,27 @@
                     }, {
                       "broker" : null,
                       "clientScript" : null,
-                      "conditional" : null,
+                      "conditional" : {
+                        "type" : "CLIENT_TRANSFORM",
+                        "transform" : {
+                          "operands" : {
+                            "type" : "LIST_CONTAINER",
+                            "container" : [ {
+                              "type" : "EVENT_PAYLOAD_BINDING",
+                              "binding" : {
+                                "address" : [ "value" ]
+                              }
+                            }, {
+                              "type" : "JSON_LITERAL",
+                              "value" : true
+                            }, {
+                              "type" : "JSON_LITERAL",
+                              "value" : false
+                            } ]
+                          },
+                          "operator" : "IF"
+                        }
+                      },
                       "declarativeAction" : null,
                       "event" : {
                         "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
@@ -1425,14 +1458,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-29 12:05:31</sys_created_on>
         <sys_id>03eacc2007bb61102b80fe4f7c1ed036</sys_id>
-        <sys_mod_count>206</sys_mod_count>
+        <sys_mod_count>216</sys_mod_count>
         <sys_name>Default copy</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_03eacc2007bb61102b80fe4f7c1ed036</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-23 08:21:51</sys_updated_on>
+        <sys_updated_on>2023-08-23 13:02:53</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=03eacc2007bb61102b80fe4f7c1ed036"/>
 </record_update>
