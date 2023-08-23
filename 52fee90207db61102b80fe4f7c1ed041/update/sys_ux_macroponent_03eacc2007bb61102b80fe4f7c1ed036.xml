@@ -433,7 +433,7 @@
                         "apiVersion" : "2.0.0",
                         "controllerElementId" : null,
                         "inlineScript" : null,
-                        "scriptSysId" : "bb201d3147703110274adeae536d4361",
+                        "scriptSysId" : "1e9b12c247b03110274adeae536d43c0",
                         "target" : null
                       }
                     },
@@ -491,6 +491,46 @@
                     }
                   },
                   "eventMappings" : [ {
+                    "eventMappingId" : "cllngdtvzaaddiiwddoboiijxmgugjj",
+                    "isConfiguration" : false,
+                    "offRowStorageId" : null,
+                    "sourceEventApiName" : "sn_content_tree.NOW_CONTENT_TREE#EXPANDED_ITEMS_SET",
+                    "sourceEventCorrelationId" : null,
+                    "sourceEventDefinition" : {
+                      "apiName" : "sn_content_tree.NOW_CONTENT_TREE#EXPANDED_ITEMS_SET",
+                      "id" : null,
+                      "type" : "UXEVENT"
+                    },
+                    "sourceEventSysId" : null,
+                    "targets" : [ {
+                      "broker" : null,
+                      "clientScript" : null,
+                      "conditional" : null,
+                      "declarativeAction" : null,
+                      "event" : {
+                        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                        "payload" : {
+                          "type" : "MAP_CONTAINER",
+                          "container" : {
+                            "propName" : {
+                              "type" : "JSON_LITERAL",
+                              "value" : "expandedItems"
+                            },
+                            "value" : {
+                              "type" : "EVENT_PAYLOAD_BINDING",
+                              "binding" : {
+                                "address" : [ "value" ]
+                              }
+                            }
+                          }
+                        },
+                        "sysId" : "32408b42ff7a10109046e490703bf176"
+                      },
+                      "operation" : null,
+                      "targetId" : "cllngdtwaaaaddiixddobohsqsxffggt",
+                      "type" : "EVENT"
+                    } ]
+                  }, {
                     "eventMappingId" : "cllmeeygkoaahhzkddohhvrpxeeteehhee",
                     "isConfiguration" : false,
                     "offRowStorageId" : null,
@@ -613,15 +653,31 @@
                     "sourceEventSysId" : null,
                     "targets" : [ {
                       "broker" : null,
-                      "clientScript" : {
-                        "sysId" : "98a1067147343110274adeae536d434b"
-                      },
+                      "clientScript" : null,
                       "conditional" : null,
                       "declarativeAction" : null,
-                      "event" : null,
+                      "event" : {
+                        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                        "payload" : {
+                          "type" : "MAP_CONTAINER",
+                          "container" : {
+                            "propName" : {
+                              "type" : "JSON_LITERAL",
+                              "value" : "searchArtifactTerm"
+                            },
+                            "value" : {
+                              "type" : "EVENT_PAYLOAD_BINDING",
+                              "binding" : {
+                                "address" : [ "searchTerm" ]
+                              }
+                            }
+                          }
+                        },
+                        "sysId" : "32408b42ff7a10109046e490703bf176"
+                      },
                       "operation" : null,
-                      "targetId" : "cllmhhcciqmaaccpqddohhvhjicixsf",
-                      "type" : "CLIENT_SCRIPT"
+                      "targetId" : "cllngobmyaaddfpddoboffpbiibccxp",
+                      "type" : "EVENT"
                     } ]
                   } ],
                   "slot" : "",
@@ -652,7 +708,7 @@
                   "styles" : null
                 }, {
                   "elementId" : "toggle_1",
-                  "elementLabel" : "Toggle 1",
+                  "elementLabel" : "Collapse toggle",
                   "propertyValues" : {
                     "size" : {
                       "type" : "JSON_LITERAL",
@@ -683,7 +739,7 @@
                     },
                     "label" : {
                       "type" : "JSON_LITERAL",
-                      "value" : "Hide all"
+                      "value" : "Collapse all"
                     },
                     "configAria" : {
                       "type" : "JSON_LITERAL",
@@ -691,7 +747,7 @@
                     }
                   },
                   "eventMappings" : [ {
-                    "eventMappingId" : "cllmcripzaaccjgddohhvpuyylflff",
+                    "eventMappingId" : "cllnbhhraiiaaccksddohhvaavkyvugz",
                     "isConfiguration" : false,
                     "offRowStorageId" : null,
                     "sourceEventApiName" : "sn_toggle.NOW_TOGGLE#CHECKED_SET",
@@ -704,15 +760,50 @@
                     "sourceEventSysId" : null,
                     "targets" : [ {
                       "broker" : null,
-                      "clientScript" : {
-                        "sysId" : "77a562b147b43110274adeae536d4386"
-                      },
+                      "clientScript" : null,
                       "conditional" : null,
                       "declarativeAction" : null,
-                      "event" : null,
+                      "event" : {
+                        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                        "payload" : {
+                          "type" : "MAP_CONTAINER",
+                          "container" : {
+                            "propName" : {
+                              "type" : "JSON_LITERAL",
+                              "value" : "collapseAll"
+                            },
+                            "value" : {
+                              "type" : "EVENT_PAYLOAD_BINDING",
+                              "binding" : {
+                                "address" : [ "value" ]
+                              }
+                            }
+                          }
+                        },
+                        "sysId" : "32408b42ff7a10109046e490703bf176"
+                      },
                       "operation" : null,
-                      "targetId" : "cllmcriqaaaaccjhddohhvsoiisjdjr",
-                      "type" : "CLIENT_SCRIPT"
+                      "targetId" : "cllnglnggfaadddvddobobbaalfupiia",
+                      "type" : "EVENT"
+                    }, {
+                      "broker" : null,
+                      "clientScript" : null,
+                      "conditional" : null,
+                      "declarativeAction" : null,
+                      "event" : {
+                        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                        "payload" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : {
+                            "propName" : "expandedItems",
+                            "value" : [ ]
+                          }
+                        },
+                        "sysId" : "32408b42ff7a10109046e490703bf176"
+                      },
+                      "operation" : null,
+                      "targetId" : "cllnguloxaaddiggddobojjfbbuxaaddjj",
+                      "type" : "EVENT"
                     } ]
                   } ],
                   "slot" : null,
@@ -1308,8 +1399,8 @@
     "value" : null
   }
 }, {
-  "name" : "hideAll",
-  "label" : "hideAll",
+  "name" : "collapseAll",
+  "label" : "collapseAll",
   "fieldType" : "boolean",
   "valueType" : "boolean",
   "shape" : "",
@@ -1318,19 +1409,30 @@
     "type" : "JSON_LITERAL",
     "value" : false
   }
+}, {
+  "name" : "expandedItems",
+  "label" : "expandedItems",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : [ ]
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-29 12:05:31</sys_created_on>
         <sys_id>03eacc2007bb61102b80fe4f7c1ed036</sys_id>
-        <sys_mod_count>165</sys_mod_count>
+        <sys_mod_count>206</sys_mod_count>
         <sys_name>Default copy</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_03eacc2007bb61102b80fe4f7c1ed036</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-22 13:43:06</sys_updated_on>
+        <sys_updated_on>2023-08-23 08:21:51</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=03eacc2007bb61102b80fe4f7c1ed036"/>
 </record_update>

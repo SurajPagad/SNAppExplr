@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Default copy">03eacc2007bb61102b80fe4f7c1ed036</macroponent>
+        <name>Expanded items list</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    api.setState('expandedItems',JSON.stringify(event.payload.value));
+    console.log(event.payload.value);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-23 06:42:30</sys_created_on>
+        <sys_id>2f605e0a47703110274adeae536d4332</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Expanded items list</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_client_script_2f605e0a47703110274adeae536d4332</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-23 08:03:16</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>8c99bfd7db6ad5183050ac44d4961980</instance_id>
+        <instance_name>dev141748</instance_name>
+        <name>sys_ux_client_script_2f605e0a47703110274adeae536d4332</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Default copy"&gt;03eacc2007bb61102b80fe4f7c1ed036&lt;/macroponent&gt;&lt;name&gt;Expanded items list&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    api.setState('expandedItems',JSON.stringify(event.payload.value));
+    console.log(event.payload.value);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-23 06:42:30&lt;/sys_created_on&gt;&lt;sys_id&gt;2f605e0a47703110274adeae536d4332&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;Expanded items list&lt;/sys_name&gt;&lt;sys_package display_value="Application Explorer" source="x_13258_applicat_0"&gt;52fee90207db61102b80fe4f7c1ed041&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Application Explorer"&gt;52fee90207db61102b80fe4f7c1ed041&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_2f605e0a47703110274adeae536d4332&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-23 08:03:16&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>830368440</payload_hash>
+        <record_name>Expanded items list</record_name>
+        <reverted_from/>
+        <source>43d394f247a43110274adeae536d4334</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-23 08:03:17</sys_created_on>
+        <sys_id>3ee26e0e47b03110274adeae536d439c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a216b56780000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-23 08:03:17</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>b2e26e0e2eb031100ff32f96c1d4e49c</update_guid>
+        <update_guid_history>b2e26e0e2eb031100ff32f96c1d4e49c:830368440,33e1e6caa0b031100cc59294b6f87c74:-830724704,d3a1e2ca52b03110117168ac67d20c71:298663168,d680228aa0b0311012ea41b1aef0705a:-830724704,b0efd64a46b03110d9149df634ad9700:-682804662,3c8f9e0ae9b0311001f6922a2b03d765:-440743409,9f3e5ac6b8b031108eb82eafbb2333ae:-682804662,a8edd2c646b03110e3dd881b4dc844eb:-154751549,41bd9e868bb03110f2b1d3425a5d0dc6:-682804662,335d1a8630b03110fac5186ca3074e9f:-1258397270,1f18924257b0311054dd6954bbded299:-252493900,8e72d6cab2703110bd186ab3945a86cc:-1262236617,8c32d2ca3f70311014fc0794a8e22c4a:2089098042,74a15a8ac67031100ffb41680583b4fe:1911999063,0980560a0d7031108551da013fb04865:-163085126,67605e0a597031103aa52b74e0eadd35:-539415429</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-23 08:14:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>29754380d3324e44a1e6605e96097e90</sys_id>
+        <sys_metadata>2f605e0a47703110274adeae536d4332</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Expanded items list</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_2f605e0a47703110274adeae536d4332</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_2f605e0a47703110274adeae536d4332">3ee26e0e47b03110274adeae536d439c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-23 08:14:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
