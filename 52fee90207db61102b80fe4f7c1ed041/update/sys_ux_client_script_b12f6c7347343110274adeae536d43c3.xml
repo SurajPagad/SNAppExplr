@@ -2,31 +2,36 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
         <macroponent display_value="Default">5c9103a307d721102b80fe4f7c1ed0d7</macroponent>
-        <name>text_link_2/href</name>
+        <name>Update collapseAll</name>
         <preset/>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
-  * @param {params} params
-  * @param {api} params.api
-  * @param {TransformApiHelpers} params.helpers
-  */
-function evaluateProperty({api, helpers}) {
-	return '/sys_metadata.do?sys_id='+api.item.value.sysId;
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    if(event.payload.value.length > 0){
+        console.log(event.payload.value)
+        api.setState('collapseAll',false);
+    }
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-06-21 12:33:11</sys_created_on>
-        <sys_id>2e84c7b1072b21102b80fe4f7c1ed0a8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>text_link_2/href</sys_name>
+        <sys_created_on>2023-08-28 10:06:50</sys_created_on>
+        <sys_id>b12f6c7347343110274adeae536d43c3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Update collapseAll</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
-        <sys_update_name>sys_ux_client_script_2e84c7b1072b21102b80fe4f7c1ed0a8</sys_update_name>
+        <sys_update_name>sys_ux_client_script_b12f6c7347343110274adeae536d43c3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-21 12:33:11</sys_updated_on>
+        <sys_updated_on>2023-08-28 10:12:38</sys_updated_on>
         <target>macroponent</target>
-        <type>transform</type>
+        <type>default</type>
     </sys_ux_client_script>
 </record_update>
