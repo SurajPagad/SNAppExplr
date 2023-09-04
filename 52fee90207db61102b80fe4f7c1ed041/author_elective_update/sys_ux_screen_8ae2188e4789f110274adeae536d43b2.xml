@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Application Explorer Config">31fd362311972110eadb2af1562e5e3b</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "cljcclhklfaameoddnhhvtzdjjxcbee",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_13258_applicat_0.NAV_ITEM_SELECTED_RELAY_5c9103a307d721102b80fe4f7c1ed0d7",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "x_13258_applicat_0.NAV_ITEM_SELECTED_RELAY_5c9103a307d721102b80fe4f7c1ed0d7",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "route" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "route" ]
+            }
+          },
+          "fields" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "fields" ]
+            }
+          },
+          "params" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "params" ]
+            }
+          },
+          "redirect" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "redirect" ]
+            }
+          },
+          "passiveNavigation" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "passiveNavigation" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "multiInstField" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "multiInstField" ]
+            }
+          },
+          "targetRoute" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "targetRoute" ]
+            }
+          },
+          "external" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "external" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
+    },
+    "operation" : null,
+    "targetId" : "cljcclhkldaamenddnhhvwknfoccbb",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Default copy">7de2188e4789f110274adeae536d4395</macroponent>
+        <macroponent_config>{
+  "selectedTabIndex" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "userPrefs" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "fields" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "screen" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "extraParams" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "activityLogs" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "views" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "query" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "sysId" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "table" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "none"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>Code editor</name>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="home">089103a307d721102b80fe4f7c1ed0d5</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 07:49:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8ae2188e4789f110274adeae536d43b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Code editor</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_screen_8ae2188e4789f110274adeae536d43b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 07:49:46</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=8ae2188e4789f110274adeae536d43b2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>8c99bfd7db6ad5183050ac44d4961980</instance_id>
+        <instance_name>dev141748</instance_name>
+        <name>sys_ux_screen_8ae2188e4789f110274adeae536d43b2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Application Explorer Config">31fd362311972110eadb2af1562e5e3b</app_config><description/><event_mappings>[ {
+  "eventMappingId" : "cljcclhklfaameoddnhhvtzdjjxcbee",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_13258_applicat_0.NAV_ITEM_SELECTED_RELAY_5c9103a307d721102b80fe4f7c1ed0d7",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "x_13258_applicat_0.NAV_ITEM_SELECTED_RELAY_5c9103a307d721102b80fe4f7c1ed0d7",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "route" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "route" ]
+            }
+          },
+          "fields" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "fields" ]
+            }
+          },
+          "params" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "params" ]
+            }
+          },
+          "redirect" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "redirect" ]
+            }
+          },
+          "passiveNavigation" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "passiveNavigation" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "multiInstField" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "multiInstField" ]
+            }
+          },
+          "targetRoute" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "targetRoute" ]
+            }
+          },
+          "external" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "external" ]
+            }
+          }
+        }
+      },
+      "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
+    },
+    "operation" : null,
+    "targetId" : "cljcclhkldaamenddnhhvwknfoccbb",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings><macroponent display_value="Default copy">7de2188e4789f110274adeae536d4395</macroponent><macroponent_config>{
+  "selectedTabIndex" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "userPrefs" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "fields" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "screen" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "extraParams" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "activityLogs" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "views" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "query" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "sysId" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "table" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "none"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config><name>Code editor</name><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="home">089103a307d721102b80fe4f7c1ed0d5</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-04 07:49:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8ae2188e4789f110274adeae536d43b2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Code editor</sys_name><sys_overrides/><sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package><sys_policy/><sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope><sys_update_name>sys_ux_screen_8ae2188e4789f110274adeae536d43b2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-04 07:49:46</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=8ae2188e4789f110274adeae536d43b2"/></record_update>]]></payload>
+        <payload_hash>-1095105958</payload_hash>
+        <record_name>Code editor</record_name>
+        <reverted_from/>
+        <source>43d394f247a43110274adeae536d4334</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 07:49:46</sys_created_on>
+        <sys_id>8ee2188e4789f110274adeae536d43b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a5f2b46c30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 07:49:46</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>c2e2188e2b89f1109f88d2d524883eb5</update_guid>
+        <update_guid_history>c2e2188e2b89f1109f88d2d524883eb5:-1095105958</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 08:21:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>495da95b1a0d412081510007e3f35240</sys_id>
+        <sys_metadata>8ae2188e4789f110274adeae536d43b2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Code editor</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_8ae2188e4789f110274adeae536d43b2</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_8ae2188e4789f110274adeae536d43b2">8ee2188e4789f110274adeae536d43b5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 08:21:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

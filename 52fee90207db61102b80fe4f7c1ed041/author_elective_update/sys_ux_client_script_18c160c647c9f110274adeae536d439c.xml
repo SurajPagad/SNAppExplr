@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Default">ca7ad04647c9f110274adeae536d4396</macroponent>
+        <name>Set editor mode</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    console.log(api, event);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 08:54:38</sys_created_on>
+        <sys_id>18c160c647c9f110274adeae536d439c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Set editor mode</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_client_script_18c160c647c9f110274adeae536d439c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 10:48:18</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>8c99bfd7db6ad5183050ac44d4961980</instance_id>
+        <instance_name>dev141748</instance_name>
+        <name>sys_ux_client_script_18c160c647c9f110274adeae536d439c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Default"&gt;ca7ad04647c9f110274adeae536d4396&lt;/macroponent&gt;&lt;name&gt;Set editor mode&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    console.log(api, event);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-04 08:54:38&lt;/sys_created_on&gt;&lt;sys_id&gt;18c160c647c9f110274adeae536d439c&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set editor mode&lt;/sys_name&gt;&lt;sys_package display_value="Application Explorer" source="x_13258_applicat_0"&gt;52fee90207db61102b80fe4f7c1ed041&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Application Explorer"&gt;52fee90207db61102b80fe4f7c1ed041&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_18c160c647c9f110274adeae536d439c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-04 10:48:18&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>436201281</payload_hash>
+        <record_name>Set editor mode</record_name>
+        <reverted_from/>
+        <source>43d394f247a43110274adeae536d4334</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 10:48:18</sys_created_on>
+        <sys_id>99cbb80a474df110274adeae536d43dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a5fcebd170000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 10:48:18</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>11cbb80a004df110b6ae3ad6779151dc</update_guid>
+        <update_guid_history>11cbb80a004df110b6ae3ad6779151dc:436201281,d26ca00a420df110ce7e595405996b50:-498009362,fc0ba8c6c30df110c61cc728e4de43f6:-623049153,77aa64c6c50df11048f515ec5482f7d9:-1225131299,308aa886eb0df110c3ead8af9e0d82a8:-219289822,746ae4864b0df110bafa542cf137c473:-350916014,243a6c86ae0df1102e8d5ab8dbc2c8fd:1593025511,f0c9e486470df110eb2f7138d5345f4a:1286689474,f5d160ce74c9f1106d95f471f07ead1c:202449081,5cc1ec8ee4c9f1101565fe12043bfed7:-1840537670</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 10:49:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>1265ca2487474ef090afff6a4a296b10</sys_id>
+        <sys_metadata>18c160c647c9f110274adeae536d439c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set editor mode</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_18c160c647c9f110274adeae536d439c</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_18c160c647c9f110274adeae536d439c">99cbb80a474df110274adeae536d43dc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 10:49:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

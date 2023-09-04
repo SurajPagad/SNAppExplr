@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Default copy">7de2188e4789f110274adeae536d4395</macroponent>
+        <name>content_tree_1/items</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    var artifactType = {};
+    var artifactSubTypes = [];
+    var artifactSubType = {};
+    var artifact = {};
+    var artifacts = [];
+    var searchArtifactTerm = api.state.searchArtifactTerm;
+    var artifactTypes = api.data.get_app_artifacts_1.output.result.artifacts;
+    console.log(artifactTypes);
+    var result = artifactTypes.map(function(artifactTypeEle) {
+        artifactType = {};
+        artifactType.label = artifactTypeEle.name;
+        artifactType.id = artifactTypeEle.id;
+        artifactSubTypes = [];
+        artifactSubTypes = artifactTypeEle.types.map(function(artifactSubTypeEle) {
+            artifactSubType = {};
+            artifactSubType.id = artifactSubTypeEle.id;
+            artifactSubType.label = artifactSubTypeEle.pluralName;
+            artifacts = [];
+            artifacts = artifactSubTypeEle.artifacts.map(function(artifactEle) {
+                artifact = {};
+                artifact.id = artifactEle.id;
+                artifact.label = artifactEle.name;
+                artifact.sys_id = artifactEle.sysId;
+                return artifact;
+            });
+            artifactSubType.children = artifacts;
+            return artifactSubType;
+        });
+        artifactType.children = artifactSubTypes;
+        return artifactType;
+    });
+    console.log(searchArtifactTerm);
+    if (!searchArtifactTerm) {
+        return result;
+    }
+    //return result;
+    var filtered = [];
+    filtered = result.map((element, idx) => {
+        return {
+            ...element,
+            children: element.children.map((type) => {
+                return {
+                    ...type,
+                    children: type.children.filter((art) => art.label.toLowerCase().indexOf(searchArtifactTerm) > -1)
+                };
+            }).filter((type) => type.children.length > 0)
+        };
+    }).filter((element) => element.children.length > 0);
+    /*var obj = {};
+    result.forEach(function(art) {
+        obj = {};
+        if (art.label.toLowerCase().indexOf(searchArtifactTerm)>-1) {
+            obj.label = art.label;
+            obj.id = art.id;
+            art.children.forEach(function(type) {
+                if (type.label.toLowerCase().indexOf(searchArtifactTerm)>-1) {
+                    obj.children = [];
+                    obj.children.label = type.label;
+                    obj.children.id = type.id;
+                    obj.children.children = type.children.filter(function(artifact) {
+                        return artifact.label.toLowerCase().indexOf(searchArtifactTerm)>-1;
+                    });
+
+                }
+            });
+            filtered.push(obj);
+        }
+    });
+    console.log(result);
+    filtered = result.filter(function(art) {
+        obj = {};
+        if (art.label.toLowerCase().indexOf(searchArtifactTerm)>-1) {
+            return true;
+        }
+        return false;
+    });*/
+    console.log(filtered);
+    return filtered;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 07:49:45</sys_created_on>
+        <sys_id>bde2188e4789f110274adeae536d439d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>content_tree_1/items</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_client_script_bde2188e4789f110274adeae536d439d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 07:49:45</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>8c99bfd7db6ad5183050ac44d4961980</instance_id>
+        <instance_name>dev141748</instance_name>
+        <name>sys_ux_client_script_bde2188e4789f110274adeae536d439d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Default copy"&gt;7de2188e4789f110274adeae536d4395&lt;/macroponent&gt;&lt;name&gt;content_tree_1/items&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    var artifactType = {};
+    var artifactSubTypes = [];
+    var artifactSubType = {};
+    var artifact = {};
+    var artifacts = [];
+    var searchArtifactTerm = api.state.searchArtifactTerm;
+    var artifactTypes = api.data.get_app_artifacts_1.output.result.artifacts;
+    console.log(artifactTypes);
+    var result = artifactTypes.map(function(artifactTypeEle) {
+        artifactType = {};
+        artifactType.label = artifactTypeEle.name;
+        artifactType.id = artifactTypeEle.id;
+        artifactSubTypes = [];
+        artifactSubTypes = artifactTypeEle.types.map(function(artifactSubTypeEle) {
+            artifactSubType = {};
+            artifactSubType.id = artifactSubTypeEle.id;
+            artifactSubType.label = artifactSubTypeEle.pluralName;
+            artifacts = [];
+            artifacts = artifactSubTypeEle.artifacts.map(function(artifactEle) {
+                artifact = {};
+                artifact.id = artifactEle.id;
+                artifact.label = artifactEle.name;
+                artifact.sys_id = artifactEle.sysId;
+                return artifact;
+            });
+            artifactSubType.children = artifacts;
+            return artifactSubType;
+        });
+        artifactType.children = artifactSubTypes;
+        return artifactType;
+    });
+    console.log(searchArtifactTerm);
+    if (!searchArtifactTerm) {
+        return result;
+    }
+    //return result;
+    var filtered = [];
+    filtered = result.map((element, idx) =&gt; {
+        return {
+            ...element,
+            children: element.children.map((type) =&gt; {
+                return {
+                    ...type,
+                    children: type.children.filter((art) =&gt; art.label.toLowerCase().indexOf(searchArtifactTerm) &gt; -1)
+                };
+            }).filter((type) =&gt; type.children.length &gt; 0)
+        };
+    }).filter((element) =&gt; element.children.length &gt; 0);
+    /*var obj = {};
+    result.forEach(function(art) {
+        obj = {};
+        if (art.label.toLowerCase().indexOf(searchArtifactTerm)&gt;-1) {
+            obj.label = art.label;
+            obj.id = art.id;
+            art.children.forEach(function(type) {
+                if (type.label.toLowerCase().indexOf(searchArtifactTerm)&gt;-1) {
+                    obj.children = [];
+                    obj.children.label = type.label;
+                    obj.children.id = type.id;
+                    obj.children.children = type.children.filter(function(artifact) {
+                        return artifact.label.toLowerCase().indexOf(searchArtifactTerm)&gt;-1;
+                    });
+
+                }
+            });
+            filtered.push(obj);
+        }
+    });
+    console.log(result);
+    filtered = result.filter(function(art) {
+        obj = {};
+        if (art.label.toLowerCase().indexOf(searchArtifactTerm)&gt;-1) {
+            return true;
+        }
+        return false;
+    });*/
+    console.log(filtered);
+    return filtered;
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-04 07:49:45&lt;/sys_created_on&gt;&lt;sys_id&gt;bde2188e4789f110274adeae536d439d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;content_tree_1/items&lt;/sys_name&gt;&lt;sys_package display_value="Application Explorer" source="x_13258_applicat_0"&gt;52fee90207db61102b80fe4f7c1ed041&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Application Explorer"&gt;52fee90207db61102b80fe4f7c1ed041&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_bde2188e4789f110274adeae536d439d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-04 07:49:45&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1514008186</payload_hash>
+        <record_name>content_tree_1/items</record_name>
+        <reverted_from/>
+        <source>43d394f247a43110274adeae536d4334</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 07:49:46</sys_created_on>
+        <sys_id>0ae2188e4789f110274adeae536d43f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a5f2b48240000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 07:49:46</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>8ee2188e4b89f110708eebb35b3940f5</update_guid>
+        <update_guid_history>8ee2188e4b89f110708eebb35b3940f5:1514008186,8ae2188ed689f110efa8d29c042ab4d4:1669090662,0ee2188e6689f110a2978af59c3515ae:1514008186,fde2188e0b89f1104b78857fbb7eb99f:-2145705370</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 07:50:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>2e996c1c72ab4a748d3cebdee979e210</sys_id>
+        <sys_metadata>bde2188e4789f110274adeae536d439d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>content_tree_1/items</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_bde2188e4789f110274adeae536d439d</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_bde2188e4789f110274adeae536d439d">0ae2188e4789f110274adeae536d43f6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 07:50:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

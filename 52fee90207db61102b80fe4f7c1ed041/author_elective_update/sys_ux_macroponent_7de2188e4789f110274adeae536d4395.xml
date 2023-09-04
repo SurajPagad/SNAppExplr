@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="DELETE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "main",
+  "elementLabel" : "Main",
+  "propertyValues" : {
+    "ariaRegionHeadingLevel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1"
+    },
+    "hideEmptyStateUi" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "ariaRegionName" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "",
+        "comment" : ""
+      }
+    },
+    "includeAriaHeading" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "type" : {
+      "type" : "JSON_LITERAL",
+      "value" : "section"
+    },
+    "ariaRole" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "now_code_editor_1",
+      "elementLabel" : "Now Code Editor 1",
+      "propertyValues" : {
+        "disableFullScreen" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "scriptField" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "sysId" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "disableDebugging" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "recordType" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "customIcons" : {
+          "type" : "JSON_LITERAL",
+          "value" : [ ]
+        },
+        "hideToolbar" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "editorMode" : {
+          "type" : "JSON_LITERAL",
+          "value" : "default_editor"
+        },
+        "disableMinimap" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "language" : {
+          "type" : "JSON_LITERAL",
+          "value" : "javascript"
+        },
+        "readOnly" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "isClientScript" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "content" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "disableWordWrap" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "disableToggleDiffView" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "autocompleteSuggestions" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "disabled" : false,
+            "variant" : "append",
+            "suggestions" : [ ]
+          }
+        },
+        "scope" : {
+          "type" : "JSON_LITERAL",
+          "value" : "global"
+        },
+        "hideGutter" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "originalContent" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "9de82e1bcae8e921e27c300ec1cf86a6",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : null
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "isInline" : null,
+        "items" : [{"element_id":"now_code_editor_1","styles":{"flex":"1 0 auto","height":"100vh"}}],
+        "root" : null,
+        "rules" : null,
+        "styles" : {"flex-direction":"row"},
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      },
+      "version" : "3.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : null
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "4ffc6418076321102b80fe4f7c1ed023",
+    "type" : "REST"
+  },
+  "dependencies" : { },
+  "elementId" : "get_app_artifacts_1",
+  "elementLabel" : "Get app artifacts 1",
+  "eventMappings" : [ {
+    "eventMappingId" : "cljbbfmrjjffaaccccjddnhhvaeeeuccbbol",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "loading" : false,
+            "label" : null,
+            "action" : null,
+            "nonBlocking" : false
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "cljbbfmrjjffaacccckddnhhvneeddeeaabbov",
+      "type" : "EVENT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "propName" : "artifactSysID",
+            "value" : null
+          }
+        },
+        "sysId" : "32408b42ff7a10109046e490703bf176"
+      },
+      "operation" : null,
+      "targetId" : "cljffqxjtyaajnkddnhhviienjjytuw",
+      "type" : "EVENT"
+    } ]
+  }, {
+    "eventMappingId" : "cljbbfmggrpaaccccaddnhhvvpulfitn",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_INITIATED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_INITIATED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "loading" : true,
+            "label" : "Loading",
+            "action" : null,
+            "nonBlocking" : false
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "cljbbfmggrpaaccccbddnhhvhhuyqfyjjh",
+      "type" : "EVENT"
+    } ]
+  } ],
+  "inputValues" : {
+    "search_app_id" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "searchAppTerm" ]
+      }
+    }
+  },
+  "readEvaluationMode" : "EXPLICIT"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "27f5dda807a361102b80fe4f7c1ed067",
+    "type" : "REST"
+  },
+  "dependencies" : { },
+  "elementId" : "get_all_apps_1",
+  "elementLabel" : "Get all apps 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EXPLICIT"
+} ]</data>
+        <description/>
+        <dispatched_events>8c793b89072321102b80fe4f7c1ed08e</dispatched_events>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{
+  "MACROPONENT_READY" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : {
+      "dataBrokerId" : "27f5dda807a361102b80fe4f7c1ed067",
+      "operationName" : "REFRESH",
+      "parentResourceId" : "get_all_apps_1",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      }
+    },
+    "targetId" : "clizymlxmaaahbbddnhhvurhfveffee",
+    "type" : "DATABROKER_OP"
+  } ]
+}</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "isInline" : null,
+    "items" : [{"element_id":"main","styles":{"position":"absolute","height":"100%","width":"100%","overflow":"scroll"}},{"element_id":"stylized_text_1","styles":{}}],
+    "root" : null,
+    "rules" : null,
+    "styles" : {"flex-direction":"column","gap":"","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","flex-wrap":"nowrap","align-items":"stretch"},
+    "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+    "type" : "flex"
+  },
+  "version" : "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Default copy</name>
+        <output_prop_mapping/>
+        <props>[ {
+  "name" : "selectedTabIndex",
+  "label" : "selectedTabIndex",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "userPrefs",
+  "label" : "userPrefs",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "fields",
+  "label" : "fields",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "screen",
+  "label" : "screen",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "extraParams",
+  "label" : "extraParams",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "activityLogs",
+  "label" : "activityLogs",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "views",
+  "label" : "views",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "query",
+  "label" : "query",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "sysId",
+  "label" : "sysId",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "table",
+  "label" : "Table",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+} ]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ {
+  "name" : "searchAppTerm",
+  "label" : "searchAppTerm",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  }
+}, {
+  "name" : "artifactSysID",
+  "label" : "artifactSysID",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "searchArtifactTerm",
+  "label" : "searchArtifactTerm",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "collapseAll",
+  "label" : "collapseAll",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}, {
+  "name" : "expandedItems",
+  "label" : "expandedItems",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : [ ]
+  }
+} ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 07:49:45</sys_created_on>
+        <sys_id>7de2188e4789f110274adeae536d4395</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Default copy</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_macroponent_7de2188e4789f110274adeae536d4395</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 08:19:42</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="DELETE" query="documentkey=7de2188e4789f110274adeae536d4395"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>8c99bfd7db6ad5183050ac44d4961980</instance_id>
+        <instance_name>dev141748</instance_name>
+        <name>sys_ux_macroponent_7de2188e4789f110274adeae536d4395</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent"><sys_ux_macroponent action="INSERT_OR_UPDATE"><associated_types/><category>page</category><component_dependencies/><composition>[ {
+  "elementId" : "main",
+  "elementLabel" : "Main",
+  "propertyValues" : {
+    "ariaRegionHeadingLevel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1"
+    },
+    "hideEmptyStateUi" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "ariaRegionName" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "",
+        "comment" : ""
+      }
+    },
+    "includeAriaHeading" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "type" : {
+      "type" : "JSON_LITERAL",
+      "value" : "section"
+    },
+    "ariaRole" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "now_code_editor_1",
+      "elementLabel" : "Now Code Editor 1",
+      "propertyValues" : {
+        "disableFullScreen" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "scriptField" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "sysId" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "disableDebugging" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "recordType" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "customIcons" : {
+          "type" : "JSON_LITERAL",
+          "value" : [ ]
+        },
+        "hideToolbar" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "editorMode" : {
+          "type" : "JSON_LITERAL",
+          "value" : "default_editor"
+        },
+        "disableMinimap" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "language" : {
+          "type" : "JSON_LITERAL",
+          "value" : "javascript"
+        },
+        "readOnly" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "isClientScript" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "content" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "disableWordWrap" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "disableToggleDiffView" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "autocompleteSuggestions" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "disabled" : false,
+            "variant" : "append",
+            "suggestions" : [ ]
+          }
+        },
+        "scope" : {
+          "type" : "JSON_LITERAL",
+          "value" : "global"
+        },
+        "hideGutter" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "originalContent" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "9de82e1bcae8e921e27c300ec1cf86a6",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : null
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "isInline" : null,
+        "items" : [{"element_id":"now_code_editor_1","styles":{"flex":"1 0 auto","height":"100vh"}}],
+        "root" : null,
+        "rules" : null,
+        "styles" : {"flex-direction":"row"},
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      },
+      "version" : "3.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : null
+} ]</composition><da_relay_models/><data>[ {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "4ffc6418076321102b80fe4f7c1ed023",
+    "type" : "REST"
+  },
+  "dependencies" : { },
+  "elementId" : "get_app_artifacts_1",
+  "elementLabel" : "Get app artifacts 1",
+  "eventMappings" : [ {
+    "eventMappingId" : "cljbbfmrjjffaaccccjddnhhvaeeeuccbbol",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "loading" : false,
+            "label" : null,
+            "action" : null,
+            "nonBlocking" : false
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "cljbbfmrjjffaacccckddnhhvneeddeeaabbov",
+      "type" : "EVENT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "propName" : "artifactSysID",
+            "value" : null
+          }
+        },
+        "sysId" : "32408b42ff7a10109046e490703bf176"
+      },
+      "operation" : null,
+      "targetId" : "cljffqxjtyaajnkddnhhviienjjytuw",
+      "type" : "EVENT"
+    } ]
+  }, {
+    "eventMappingId" : "cljbbfmggrpaaccccaddnhhvvpulfitn",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_INITIATED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_INITIATED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "loading" : true,
+            "label" : "Loading",
+            "action" : null,
+            "nonBlocking" : false
+          }
+        },
+        "sysId" : "0404f68486f1baab1dc7ef2a27a3de50"
+      },
+      "operation" : null,
+      "targetId" : "cljbbfmggrpaaccccbddnhhvhhuyqfyjjh",
+      "type" : "EVENT"
+    } ]
+  } ],
+  "inputValues" : {
+    "search_app_id" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "searchAppTerm" ]
+      }
+    }
+  },
+  "readEvaluationMode" : "EXPLICIT"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "27f5dda807a361102b80fe4f7c1ed067",
+    "type" : "REST"
+  },
+  "dependencies" : { },
+  "elementId" : "get_all_apps_1",
+  "elementLabel" : "Get all apps 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EXPLICIT"
+} ]</data><description/><dispatched_events>8c793b89072321102b80fe4f7c1ed08e</dispatched_events><ext_controller_dep/><extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends><extension_point/><handled_events/><interactions/><interfaces/><internal_event_mappings>{
+  "MACROPONENT_READY" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : {
+      "dataBrokerId" : "27f5dda807a361102b80fe4f7c1ed067",
+      "operationName" : "REFRESH",
+      "parentResourceId" : "get_all_apps_1",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      }
+    },
+    "targetId" : "clizymlxmaaahbbddnhhvurhfveffee",
+    "type" : "DATABROKER_OP"
+  } ]
+}</internal_event_mappings><layout>{
+  "default" : {
+    "children" : null,
+    "isInline" : null,
+    "items" : [{"element_id":"main","styles":{"position":"absolute","height":"100%","width":"100%","overflow":"scroll"}},{"element_id":"stylized_text_1","styles":{}}],
+    "root" : null,
+    "rules" : null,
+    "styles" : {"flex-direction":"column","gap":"","display":"flex","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","flex-wrap":"nowrap","align-items":"stretch"},
+    "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+    "type" : "flex"
+  },
+  "version" : "3.0.0"
+}</layout><macroponent_dependencies/><name>Default copy</name><output_prop_mapping/><props>[ {
+  "name" : "selectedTabIndex",
+  "label" : "selectedTabIndex",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "userPrefs",
+  "label" : "userPrefs",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "fields",
+  "label" : "fields",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "screen",
+  "label" : "screen",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "extraParams",
+  "label" : "extraParams",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "activityLogs",
+  "label" : "activityLogs",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "views",
+  "label" : "views",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "query",
+  "label" : "query",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "sysId",
+  "label" : "sysId",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "table",
+  "label" : "Table",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+} ]</props><required_translations>[ ]</required_translations><root_component/><root_component_config>{ }</root_component_config><root_component_definition/><schema_version>1.0.0</schema_version><state_properties>[ {
+  "name" : "searchAppTerm",
+  "label" : "searchAppTerm",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  }
+}, {
+  "name" : "artifactSysID",
+  "label" : "artifactSysID",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "searchArtifactTerm",
+  "label" : "searchArtifactTerm",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "collapseAll",
+  "label" : "collapseAll",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}, {
+  "name" : "expandedItems",
+  "label" : "expandedItems",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : [ ]
+  }
+} ]</state_properties><sys_class_name>sys_ux_macroponent</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-04 07:49:45</sys_created_on><sys_id>7de2188e4789f110274adeae536d4395</sys_id><sys_mod_count>10</sys_mod_count><sys_name>Default copy</sys_name><sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package><sys_policy/><sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope><sys_update_name>sys_ux_macroponent_7de2188e4789f110274adeae536d4395</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-04 08:19:42</sys_updated_on></sys_ux_macroponent><sys_translated_text action="delete_multiple" query="documentkey=7de2188e4789f110274adeae536d4395"/></record_update>]]></payload>
+        <payload_hash>-1100853980</payload_hash>
+        <record_name>Default copy</record_name>
+        <reverted_from/>
+        <source>43d394f247a43110274adeae536d4334</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 08:19:43</sys_created_on>
+        <sys_id>f4c91c4647c9f110274adeae536d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a5f46b2400000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 08:19:43</sys_updated_on>
+        <type>UX Macroponent Definition</type>
+        <update_guid>7cc91c46bbc9f110f6392c6981e0d13c</update_guid>
+        <update_guid_history>7cc91c46bbc9f110f6392c6981e0d13c:-1100853980,fda9148675c9f11067d3e2a0285d1f69:-177137484,a0a9d04697c9f110ef0104e331166287:1400481810,3278d80657c9f1100805a30ab8afa09e:114387918,cc685cc290c9f110fa3f0efc66ddcdde:408765357,b5175cc213c9f1103969104ef5d23466:1965026870,7303d88eef89f1106c7050a98101f0ea:1820706542,56e2588eb189f110ff611c3bf3a74c04:2135731199,4ee2188ed689f1101fd07cca60850fd1:-969214902,0ee2188e6289f1100b3e0d2cbe5693ab:522069272,39e2188ea289f1103fbe58a70f28ff97:1333582254</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 08:21:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_macroponent">sys_ux_macroponent</sys_db_object>
+        <sys_id>11ff7d5a52a8466499976170db4a2dc1</sys_id>
+        <sys_metadata>7de2188e4789f110274adeae536d4395</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default copy</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_macroponent_7de2188e4789f110274adeae536d4395</sys_update_name>
+        <sys_update_version display_value="sys_ux_macroponent_7de2188e4789f110274adeae536d4395">f4c91c4647c9f110274adeae536d433d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 08:21:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
