@@ -271,7 +271,7 @@
                 "type" : "TRANSLATION_LITERAL",
                 "value" : {
                   "code" : null,
-                  "message" : "Default editor",
+                  "message" : "Default",
                   "comment" : ""
                 }
               }
@@ -287,7 +287,7 @@
                 "type" : "TRANSLATION_LITERAL",
                 "value" : {
                   "code" : null,
-                  "message" : "Compare scripts - Diff view",
+                  "message" : "Compare - Diff view",
                   "comment" : ""
                 }
               }
@@ -296,7 +296,7 @@
         },
         "selectedItems" : {
           "type" : "JSON_LITERAL",
-          "value" : [ ]
+          "value" : [ "default_editor" ]
         },
         "hideLabel" : {
           "type" : "JSON_LITERAL",
@@ -351,35 +351,8 @@
       },
       "overrides" : null,
       "isHidden" : {
-        "type" : "CLIENT_TRANSFORM",
-        "transform" : {
-          "operands" : {
-            "type" : "LIST_CONTAINER",
-            "container" : [ {
-              "type" : "BINARY",
-              "operation" : {
-                "left" : {
-                  "type" : "STATE_BINDING",
-                  "binding" : {
-                    "address" : [ "Language" ]
-                  }
-                },
-                "operator" : "EQUAL",
-                "right" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : "javascript"
-                }
-              }
-            }, {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            }, {
-              "type" : "JSON_LITERAL",
-              "value" : true
-            } ]
-          },
-          "operator" : "IF"
-        }
+        "type" : "JSON_LITERAL",
+        "value" : null
       },
       "isHero" : false,
       "extensionPoints" : [ ],
@@ -492,7 +465,7 @@
         },
         "selectedItems" : {
           "type" : "JSON_LITERAL",
-          "value" : [ ]
+          "value" : [ false ]
         },
         "hideLabel" : {
           "type" : "JSON_LITERAL",
@@ -868,7 +841,81 @@
       "value" : null
     }
   },
-  "eventMappings" : [ ],
+  "eventMappings" : [ {
+    "eventMappingId" : "clmhhfkdffffaaccrqddffiieeffaaffhjuccn",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_button.NOW_BUTTON_BARE#CLICKED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_button.NOW_BUTTON_BARE#CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "x_13258_applicat_0.NAV_ITEM_SELECTED_RELAY_ca7ad04647c9f110274adeae536d4396",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "route" : {
+              "type" : "JSON_LITERAL",
+              "value" : "run-script"
+            },
+            "fields" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "script" : {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "scriptContent" ]
+                  }
+                },
+                "sys_scope" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "52fee90207db61102b80fe4f7c1ed041"
+                }
+              }
+            },
+            "params" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "redirect" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "passiveNavigation" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "multiInstField" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "targetRoute" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "external" : null
+          }
+        },
+        "sysId" : "159a0f2647c13110274adeae536d432e"
+      },
+      "operation" : null,
+      "targetId" : "clmhhlhyjzaaccjggddffiieedllkpjjbg",
+      "type" : "EVENT"
+    } ]
+  } ],
   "slot" : null,
   "definition" : {
     "id" : "67d8bc45906c355a3100c0782f45487b",
@@ -888,7 +935,7 @@
         <da_relay_models/>
         <data>[ ]</data>
         <description/>
-        <dispatched_events/>
+        <dispatched_events>159a0f2647c13110274adeae536d432e</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
@@ -923,10 +970,10 @@
   "message" : "Client",
   "comment" : ""
 }, {
-  "message" : "Compare scripts - Diff view",
+  "message" : "Compare - Diff view",
   "comment" : ""
 }, {
-  "message" : "Default editor",
+  "message" : "Default",
   "comment" : ""
 }, {
   "message" : "Dropdown",
@@ -1012,14 +1059,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-04 08:22:48</sys_created_on>
         <sys_id>ca7ad04647c9f110274adeae536d4396</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_ca7ad04647c9f110274adeae536d4396</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-04 10:51:19</sys_updated_on>
+        <sys_updated_on>2023-09-06 10:29:15</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=ca7ad04647c9f110274adeae536d4396"/>
 </record_update>
