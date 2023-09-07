@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "iframe_1",
+  "elementLabel" : "iFrame 1",
+  "propertyValues" : {
+    "src" : {
+      "type" : "CLIENT_TRANSFORM_SCRIPT",
+      "script" : {
+        "apiVersion" : "2.0.0",
+        "controllerElementId" : null,
+        "inlineScript" : null,
+        "scriptSysId" : "120f23aa47453110274adeae536d4351",
+        "target" : null
+      }
+    },
+    "width" : {
+      "type" : "JSON_LITERAL",
+      "value" : "100vh"
+    },
+    "title" : {
+      "type" : "JSON_LITERAL",
+      "value" : "Run script"
+    },
+    "height" : {
+      "type" : "JSON_LITERAL",
+      "value" : "100vh"
+    },
+    "disableSandbox" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "2eda8d95aae6d05a26d94fbf692ac6f9",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : null
+}, {
+  "elementId" : "button_bare_1",
+  "elementLabel" : "Button bare 1",
+  "propertyValues" : {
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "hideBlockPadding" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "highContrast" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "variant" : {
+      "type" : "JSON_LITERAL",
+      "value" : "primary"
+    },
+    "disabled" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "label" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Back to code editor",
+        "comment" : ""
+      }
+    },
+    "showInlinePadding" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "configAria" : {
+      "type" : "MAP_CONTAINER",
+      "container" : { }
+    },
+    "iconStart" : {
+      "type" : "JSON_LITERAL",
+      "value" : "arrow-left-outline"
+    },
+    "iconEnd" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "clmiioooftaaeevsddffiieeokjjjjyks",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_button.NOW_BUTTON_BARE#CLICKED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_button.NOW_BUTTON_BARE#CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "x_13258_applicat_0.NAV_ITEM_SELECTED_RELAY_0cce2f6a47453110274adeae536d43e4",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "route" : {
+              "type" : "JSON_LITERAL",
+              "value" : "code-editor"
+            },
+            "fields" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "params" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "redirect" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "passiveNavigation" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "title" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "multiInstField" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "targetRoute" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "external" : null
+          }
+        },
+        "sysId" : "096403fe47417110274adeae536d4300"
+      },
+      "operation" : null,
+      "targetId" : "clmiiooofuaaeevtddffiieeugxhheeycci",
+      "type" : "EVENT"
+    } ]
+  } ],
+  "slot" : null,
+  "definition" : {
+    "id" : "67d8bc45906c355a3100c0782f45487b",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : { }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "0e0ff6aa47813110274adeae536d43f9",
+    "type" : "REST"
+  },
+  "dependencies" : { },
+  "elementId" : "get_session_token_1",
+  "elementLabel" : "Get session token 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <description/>
+        <dispatched_events>096403fe47417110274adeae536d4300</dispatched_events>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "isInline" : null,
+    "items" : [{"element_id":"button_bare_1","styles":{}},{"element_id":"iframe_1","styles":{}}],
+    "root" : null,
+    "rules" : null,
+    "styles" : {"flex-direction":"column","gap":"var(--now-static-space--sm)"},
+    "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+    "type" : "flex"
+  },
+  "version" : "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Default</name>
+        <output_prop_mapping/>
+        <props>[ {
+  "name" : "script",
+  "label" : "script",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : null,
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "scope",
+  "label" : "scope",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : null,
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+} ]</props>
+        <required_translations>[ {
+  "message" : "Back to code editor",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-06 13:07:15</sys_created_on>
+        <sys_id>0cce2f6a47453110274adeae536d43e4</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Default</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_macroponent_0cce2f6a47453110274adeae536d43e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-07 04:44:23</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=0cce2f6a47453110274adeae536d43e4"/>
+</record_update>

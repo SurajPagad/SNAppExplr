@@ -4,8 +4,8 @@
         <category>page</category>
         <component_dependencies/>
         <composition>[ {
-  "elementId" : "now_code_editor_1",
-  "elementLabel" : "Now Code Editor 1",
+  "elementId" : "now_code_editor",
+  "elementLabel" : "Now Code Editor",
   "propertyValues" : {
     "disableFullScreen" : {
       "type" : "JSON_LITERAL",
@@ -21,7 +21,7 @@
     },
     "disableDebugging" : {
       "type" : "JSON_LITERAL",
-      "value" : false
+      "value" : true
     },
     "recordType" : {
       "type" : "JSON_LITERAL",
@@ -77,8 +77,7 @@
       "type" : "JSON_LITERAL",
       "value" : {
         "disabled" : false,
-        "variant" : "append",
-        "suggestions" : [ ]
+        "variant" : "append"
       }
     },
     "scope" : {
@@ -191,8 +190,8 @@
   },
   "overrides" : {
     "composition" : [ {
-      "elementId" : "dropdown_1",
-      "elementLabel" : "Dropdown 1",
+      "elementId" : "editor_type",
+      "elementLabel" : "Editor type",
       "propertyValues" : {
         "select" : {
           "type" : "JSON_LITERAL",
@@ -360,8 +359,8 @@
       "items" : [ ],
       "styles" : null
     }, {
-      "elementId" : "dropdown_2",
-      "elementLabel" : "Dropdown 2",
+      "elementId" : "script_type",
+      "elementLabel" : "Script type",
       "propertyValues" : {
         "select" : {
           "type" : "JSON_LITERAL",
@@ -556,8 +555,8 @@
       "items" : [ ],
       "styles" : null
     }, {
-      "elementId" : "dropdown_3",
-      "elementLabel" : "Dropdown 3",
+      "elementId" : "language",
+      "elementLabel" : "Language",
       "propertyValues" : {
         "select" : {
           "type" : "JSON_LITERAL",
@@ -782,7 +781,7 @@
         },
         "variant" : {
           "type" : "JSON_LITERAL",
-          "value" : "secondary"
+          "value" : "primary"
         },
         "icon" : {
           "type" : "JSON_LITERAL",
@@ -814,7 +813,7 @@
         }
       },
       "eventMappings" : [ {
-        "eventMappingId" : "clmhhphhlxiaaccgsddffiieeubqfmiiki",
+        "eventMappingId" : "clmhhrappffaajjmsddffiieeygaanddjpm",
         "isConfiguration" : false,
         "offRowStorageId" : null,
         "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
@@ -848,7 +847,7 @@
                         "address" : [ "scriptContent" ]
                       }
                     },
-                    "sys_scope" : {
+                    "scope" : {
                       "type" : "STATE_BINDING",
                       "binding" : {
                         "address" : [ "scope" ]
@@ -880,16 +879,13 @@
                   "type" : "JSON_LITERAL",
                   "value" : null
                 },
-                "external" : {
-                  "type" : "JSON_LITERAL",
-                  "value" : null
-                }
+                "external" : null
               }
             },
             "sysId" : "159a0f2647c13110274adeae536d432e"
           },
           "operation" : null,
-          "targetId" : "clmhhphhlxjaaccgtddffiieegyybaataan",
+          "targetId" : "clmhhrappffaajjmtddffiieejjpccxtlps",
           "type" : "EVENT"
         } ]
       } ],
@@ -936,8 +932,8 @@
       "items" : [ ],
       "styles" : null
     }, {
-      "elementId" : "dropdown_4",
-      "elementLabel" : "Dropdown 4",
+      "elementId" : "scope",
+      "elementLabel" : "Scope",
       "propertyValues" : {
         "select" : {
           "type" : "JSON_LITERAL",
@@ -1066,8 +1062,35 @@
       },
       "overrides" : null,
       "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
+        "type" : "CLIENT_TRANSFORM",
+        "transform" : {
+          "operands" : {
+            "type" : "LIST_CONTAINER",
+            "container" : [ {
+              "type" : "BINARY",
+              "operation" : {
+                "left" : {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "Language" ]
+                  }
+                },
+                "operator" : "EQUAL",
+                "right" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "javascript"
+                }
+              }
+            }, {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            }, {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            } ]
+          },
+          "operator" : "IF"
+        }
       },
       "isHero" : false,
       "extensionPoints" : [ ],
@@ -1079,7 +1102,7 @@
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"run_script_btn","styles":{}},{"element_id":"dropdown_3","styles":{}},{"element_id":"dropdown_2","styles":{"width":""}},{"element_id":"dropdown_1","styles":{"width":""}},{"element_id":"dropdown_4","styles":{}}],
+        "items" : [{"element_id":"run_script_btn","styles":{}},{"element_id":"language","styles":{}},{"element_id":"script_type","styles":{"width":""}},{"element_id":"editor_type","styles":{"width":""}},{"element_id":"scope","styles":{}}],
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"row","gap":"var(--now-static-space--sm)"},
@@ -1126,10 +1149,10 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"now_code_editor_1","styles":{"height":"100%"}},{"element_id":"container_1","styles":{"width":"100%"}}],
+    "items" : [{"element_id":"now_code_editor","styles":{"height":"100%"}},{"element_id":"container_1","styles":{"width":"100%"}}],
     "root" : null,
     "rules" : null,
-    "styles" : {"flex-direction":"column","align-items":"stretch","height":"100%"},
+    "styles" : {"flex-direction":"column","align-items":"stretch","height":"100%","display":"flex","overflow":"hidden"},
     "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
     "type" : "flex"
   },
@@ -1254,21 +1277,21 @@
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : null
+    "value" : "global"
   }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-04 08:22:48</sys_created_on>
         <sys_id>ca7ad04647c9f110274adeae536d4396</sys_id>
-        <sys_mod_count>65</sys_mod_count>
+        <sys_mod_count>78</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_ca7ad04647c9f110274adeae536d4396</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-06 12:37:37</sys_updated_on>
+        <sys_updated_on>2023-09-07 05:36:17</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=ca7ad04647c9f110274adeae536d4396"/>
 </record_update>
