@@ -84,7 +84,31 @@
           "container" : { }
         }
       },
-      "eventMappings" : [ ],
+      "eventMappings" : [ {
+        "eventMappingId" : "cloabbaahjjnaaccpkddbiicczyffddytccee",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "c0eb831b47063110274adeae536d4364"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "cloabbaahjjnaaccplddbiiccwpfggfdiw",
+          "type" : "CLIENT_SCRIPT"
+        } ]
+      } ],
       "slot" : "",
       "definition" : {
         "id" : "d37ce8abca89d02905fed903c8e34d8e",
@@ -99,7 +123,7 @@
       "extensionPoints" : [ ],
       "isNonDestructive" : false,
       "items" : [ ],
-      "styles" : { }
+      "styles" : null
     } ],
     "layout" : {
       "default" : {
@@ -123,9 +147,7 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : {
-    "width" : "100%"
-  }
+  "styles" : null
 }, {
   "elementId" : "container_1",
   "elementLabel" : "Container 1",
@@ -241,7 +263,47 @@
           "value" : false
         }
       },
-      "eventMappings" : [ ],
+      "eventMappings" : [ {
+        "eventMappingId" : "clojjyaaawnaacchxddbiicckaajjadhhjjq",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_select.NOW_SELECT#SELECTED_ITEM_SET",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_select.NOW_SELECT#SELECTED_ITEM_SET",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+            "payload" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "propName" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "Search group"
+                },
+                "value" : {
+                  "type" : "EVENT_PAYLOAD_BINDING",
+                  "binding" : {
+                    "address" : [ "item", "value" ]
+                  }
+                }
+              }
+            },
+            "sysId" : "32408b42ff7a10109046e490703bf176"
+          },
+          "operation" : null,
+          "targetId" : "clojjyaaawnaacchyddbiiccsieeaampiiv",
+          "type" : "EVENT"
+        } ]
+      } ],
       "slot" : "",
       "definition" : {
         "id" : "8592cf18d86865b5e96975a1294ed7a4",
@@ -363,7 +425,47 @@
           "value" : false
         }
       },
-      "eventMappings" : [ ],
+      "eventMappings" : [ {
+        "eventMappingId" : "cloaaazsagaaccosddbiiccxggbbhhddqe",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_input.NOW_INPUT#INPUT",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_input.NOW_INPUT#INPUT",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+            "payload" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "propName" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "SearchTermTemp"
+                },
+                "value" : {
+                  "type" : "EVENT_PAYLOAD_BINDING",
+                  "binding" : {
+                    "address" : [ "fieldValue" ]
+                  }
+                }
+              }
+            },
+            "sysId" : "32408b42ff7a10109046e490703bf176"
+          },
+          "operation" : null,
+          "targetId" : "cloaaazsagaaccotddbiiccqfkqkfbm",
+          "type" : "EVENT"
+        } ]
+      } ],
       "slot" : "",
       "definition" : {
         "id" : "bb0f92e8d7eff1590624bfe69d316f23",
@@ -402,7 +504,86 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : { }
+  "styles" : null
+}, {
+  "elementId" : "content_tree_1",
+  "elementLabel" : "Content tree 1",
+  "propertyValues" : {
+    "select" : {
+      "type" : "JSON_LITERAL",
+      "value" : "single"
+    },
+    "expandedItems" : {
+      "type" : "JSON_LITERAL",
+      "value" : [ [ "p1" ] ]
+    },
+    "configAria" : {
+      "type" : "MAP_CONTAINER",
+      "container" : { }
+    },
+    "searchTerm" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "overflow" : {
+      "type" : "JSON_LITERAL",
+      "value" : "scroll"
+    },
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "highlightSelectedParent" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "triggerIcon" : {
+      "type" : "JSON_LITERAL",
+      "value" : "chevron"
+    },
+    "loadingItems" : {
+      "type" : "LIST_CONTAINER",
+      "container" : [ ]
+    },
+    "showDividers" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "items" : {
+      "type" : "CLIENT_TRANSFORM_SCRIPT",
+      "script" : {
+        "apiVersion" : "2.0.0",
+        "controllerElementId" : null,
+        "inlineScript" : null,
+        "scriptSysId" : "5e532f5b47863110274adeae536d43fa",
+        "target" : null
+      }
+    },
+    "showActionsOnHover" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "selectedItems" : {
+      "type" : "JSON_LITERAL",
+      "value" : [ ]
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "71baad1870878aa2e853a2d9a3373f84",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : null
 } ]</composition>
         <da_relay_models/>
         <data>[ {
@@ -462,6 +643,75 @@
     }
   },
   "readEvaluationMode" : "EAGER"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "cba3075347063110274adeae536d43cb",
+    "type" : "REST"
+  },
+  "dependencies" : { },
+  "elementId" : "code_search_1",
+  "elementLabel" : "Code Search 1",
+  "eventMappings" : [ {
+    "eventMappingId" : "cloabbslpxaaddaahddbiicclilpaanty",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "1a9c135347863110274adeae536d4342"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "cloabbslpxaaddaaiddbiiccyobjrueec",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : {
+    "search_group" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "SearchGroup" ]
+      }
+    },
+    "term" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "SearchTerm" ]
+      }
+    },
+    "current_app" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "search_all_scopes" : {
+      "type" : "JSON_LITERAL",
+      "value" : "true"
+    },
+    "extended_matching" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "limit" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    }
+  },
+  "readEvaluationMode" : "EAGER"
 } ]</data>
         <description/>
         <dispatched_events/>
@@ -476,7 +726,7 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"container_1","styles":{"flex":"1 0 auto","width":"100%"}},{"element_id":"container_2","styles":{}}],
+    "items" : [{"element_id":"container_1","styles":{"flex":"1 0 auto","width":"100%"}},{"element_id":"container_2","styles":{"width":"100%"}},{"element_id":"content_tree_1","styles":{}}],
     "root" : null,
     "rules" : null,
     "styles" : {"flex-direction":"column"},
@@ -506,19 +756,63 @@
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
-        <state_properties>[ ]</state_properties>
+        <state_properties>[ {
+  "name" : "SearchGroup",
+  "label" : "SearchGroup",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "SearchTerm",
+  "label" : "SearchTerm",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "Result",
+  "label" : "Result",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "SearchTermTemp",
+  "label" : "SearchTermTemp",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+} ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-14 07:01:25</sys_created_on>
         <sys_id>3f67c27647717110274adeae536d434c</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_3f67c27647717110274adeae536d434c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-14 18:08:45</sys_updated_on>
+        <sys_updated_on>2023-10-28 13:16:15</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=3f67c27647717110274adeae536d434c"/>
 </record_update>
