@@ -45,7 +45,6 @@ function evaluateProperty({
         artifactType.children = artifactSubTypes;
         return artifactType;
     });
-    console.log(searchArtifactTerm);
     if (!searchArtifactTerm) {
         return result;
     }
@@ -62,35 +61,6 @@ function evaluateProperty({
             }).filter((type) => type.children.length > 0)
         };
     }).filter((element) => element.children.length > 0);
-    /*var obj = {};
-    result.forEach(function(art) {
-        obj = {};
-        if (art.label.toLowerCase().indexOf(searchArtifactTerm)>-1) {
-            obj.label = art.label;
-            obj.id = art.id;
-            art.children.forEach(function(type) {
-                if (type.label.toLowerCase().indexOf(searchArtifactTerm)>-1) {
-                    obj.children = [];
-                    obj.children.label = type.label;
-                    obj.children.id = type.id;
-                    obj.children.children = type.children.filter(function(artifact) {
-                        return artifact.label.toLowerCase().indexOf(searchArtifactTerm)>-1;
-                    });
-
-                }
-            });
-            filtered.push(obj);
-        }
-    });
-    console.log(result);
-    filtered = result.filter(function(art) {
-        obj = {};
-        if (art.label.toLowerCase().indexOf(searchArtifactTerm)>-1) {
-            return true;
-        }
-        return false;
-    });*/
-    console.log(filtered);
     return filtered;
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
@@ -98,14 +68,14 @@ function evaluateProperty({
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-24 05:58:44</sys_created_on>
         <sys_id>54005b1647347110274adeae536d4341</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>content_tree_1/items</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_client_script_54005b1647347110274adeae536d4341</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-25 04:51:16</sys_updated_on>
+        <sys_updated_on>2023-10-29 14:16:05</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>
