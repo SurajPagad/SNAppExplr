@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Default">3f67c27647717110274adeae536d434c</macroponent>
+        <name>select_2/items</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    var codeSearchTables = api.data.gliderecord_collection_query_2.output.data.GlideRecord_Query.sn_codesearch_table._results;
+    return [{
+        "id": "",
+        "label": "--None--"
+    }].concat(codeSearchTables.map((table) => {
+        return {
+            "id": table.table.value,
+            "label": table.table.displayValue
+        };
+    }));
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-29 15:46:33</sys_created_on>
+        <sys_id>1e7f057347c2b110274adeae536d4337</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>select_2/items</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_client_script_1e7f057347c2b110274adeae536d4337</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-29 16:11:51</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

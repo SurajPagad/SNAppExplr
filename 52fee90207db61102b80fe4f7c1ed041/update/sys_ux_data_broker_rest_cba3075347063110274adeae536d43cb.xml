@@ -8,32 +8,34 @@
         <name>Code Search</name>
         <output_schema/>
         <parameters>[&#13;
-{&#13;
-"name": "search_group",&#13;
-"value": "{{search_group}}"&#13;
-},&#13;
-{&#13;
-"name": "term",&#13;
-"value": "{{term}}"&#13;
-},&#13;
-{&#13;
-"name": "current_app",&#13;
-"value": "{{current_app}}"&#13;
-},{&#13;
-"name": "search_all_scopes",&#13;
-"value": "{{search_all_scopes}}"&#13;
-},&#13;
-{&#13;
-"name": "extended_matching",&#13;
-"value": "{{extended_matching}}"&#13;
-},&#13;
-{&#13;
-"name": "limit",&#13;
-"value": "{{limit}}"&#13;
-},{&#13;
-"name": "table",&#13;
-"value": "{{table}}"&#13;
-}&#13;
+    {&#13;
+        "name": "search_group",&#13;
+        "value": "{{search_group}}"&#13;
+    },&#13;
+    {&#13;
+        "name": "term",&#13;
+        "value": "{{term}}"&#13;
+    },&#13;
+    {&#13;
+        "name": "current_app",&#13;
+        "value": "{{current_app}}"&#13;
+    },&#13;
+    {&#13;
+        "name": "search_all_scopes",&#13;
+        "value": "{{search_all_scopes}}"&#13;
+    },&#13;
+    {&#13;
+        "name": "extended_matching",&#13;
+        "value": "{{extended_matching}}"&#13;
+    },&#13;
+    {&#13;
+        "name": "limit",&#13;
+        "value": "{{limit}}"&#13;
+    },&#13;
+    {&#13;
+        "name": "table",&#13;
+        "value": "{{table}}"&#13;
+    }&#13;
 ]</parameters>
         <private>false</private>
         <props>[&#13;
@@ -43,7 +45,7 @@
 	  "description": "Search group",&#13;
 	  "readOnly": false,&#13;
 	  "fieldType": "string",&#13;
-	  "mandatory": true,&#13;
+	  "mandatory": false,&#13;
 	  "defaultValue": ""&#13;
 	},{&#13;
 	  "name": "term",&#13;
@@ -94,9 +96,6 @@
 	  "mandatory": false,&#13;
 	  "defaultValue": ""&#13;
 	}&#13;
-&#13;
-&#13;
-&#13;
 ]</props>
         <request_body/>
         <required_translations>[ {
@@ -126,14 +125,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-28 11:03:36</sys_created_on>
         <sys_id>cba3075347063110274adeae536d43cb</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Code Search</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_data_broker_rest_cba3075347063110274adeae536d43cb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-28 11:09:47</sys_updated_on>
+        <sys_updated_on>2023-10-29 17:59:06</sys_updated_on>
     </sys_ux_data_broker_rest>
     <sys_translated_text action="delete_multiple" query="documentkey=cba3075347063110274adeae536d43cb"/>
 </record_update>
