@@ -159,7 +159,7 @@
             }
           },
           "eventMappings" : [ {
-            "eventMappingId" : "clojjyaaawnaacchxddbiicckaajjadhhjjq",
+            "eventMappingId" : "clofiduqwaaccoiiddbbxeezqccdsffgg",
             "isConfiguration" : false,
             "offRowStorageId" : null,
             "sourceEventApiName" : "sn_select.NOW_SELECT#SELECTED_ITEM_SET",
@@ -181,15 +181,13 @@
                   "type" : "MAP_CONTAINER",
                   "container" : {
                     "propName" : {
-                      "type" : "STATE_BINDING",
-                      "binding" : {
-                        "address" : [ "SearchParams", "searchGroup" ]
-                      }
+                      "type" : "JSON_LITERAL",
+                      "value" : "SearchGroupTemp"
                     },
                     "value" : {
                       "type" : "EVENT_PAYLOAD_BINDING",
                       "binding" : {
-                        "address" : [ "item", "value" ]
+                        "address" : [ "item", "label" ]
                       }
                     }
                   }
@@ -197,8 +195,25 @@
                 "sysId" : "32408b42ff7a10109046e490703bf176"
               },
               "operation" : null,
-              "targetId" : "clojjyaaawnaacchyddbiiccsieeaampiiv",
+              "targetId" : "clofiduqwaaccojjddbbxiiavgcckcd",
               "type" : "EVENT"
+            }, {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : {
+                "dataBrokerId" : "21f155c65310101024e5ddeeff7b1210",
+                "operationName" : "REFRESH",
+                "parentResourceId" : "gliderecord_collection_query_2",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                }
+              },
+              "targetId" : "clofleeffyddaaddahhddbbxdujutbbjjgg",
+              "type" : "DATABROKER_OP"
             } ]
           } ],
           "slot" : "",
@@ -454,7 +469,7 @@
             }
           },
           "eventMappings" : [ {
-            "eventMappingId" : "cloboaiuubbpjvddbiicceeddrtfiigx",
+            "eventMappingId" : "clofifddtpaaccpcddbbxyugwffaup",
             "isConfiguration" : false,
             "offRowStorageId" : null,
             "sourceEventApiName" : "sn_select.NOW_SELECT#SELECTED_ITEM_SET",
@@ -476,15 +491,13 @@
                   "type" : "MAP_CONTAINER",
                   "container" : {
                     "propName" : {
-                      "type" : "STATE_BINDING",
-                      "binding" : {
-                        "address" : [ "SearchParams", "searchTable" ]
-                      }
+                      "type" : "JSON_LITERAL",
+                      "value" : "SearchTableTemp"
                     },
                     "value" : {
                       "type" : "EVENT_PAYLOAD_BINDING",
                       "binding" : {
-                        "address" : [ "item", "value" ]
+                        "address" : [ "item", "id" ]
                       }
                     }
                   }
@@ -492,7 +505,7 @@
                 "sysId" : "32408b42ff7a10109046e490703bf176"
               },
               "operation" : null,
-              "targetId" : "cloboaiuubbpjwddbiiccjjnqulogf",
+              "targetId" : "clofifddtpaaccpdddbbxkiiffkaatmy",
               "type" : "EVENT"
             } ]
           } ],
@@ -935,6 +948,52 @@
   "isNonDestructive" : false,
   "items" : [ ],
   "styles" : null
+}, {
+  "elementId" : "stylized_text_1",
+  "elementLabel" : "Stylized text 1",
+  "propertyValues" : {
+    "css" : {
+      "type" : "JSON_LITERAL",
+      "value" : "* { }"
+    },
+    "text" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "ErrorMessage" ]
+      }
+    },
+    "tag" : {
+      "type" : "JSON_LITERAL",
+      "value" : "h3"
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "CLIENT_TRANSFORM",
+    "transform" : {
+      "operands" : {
+        "type" : "LIST_CONTAINER",
+        "container" : [ {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "ErrorMessage" ]
+          }
+        } ]
+      },
+      "operator" : "EMPTY"
+    }
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : null
 } ]</composition>
         <da_relay_models/>
         <data>[ {
@@ -1142,7 +1201,7 @@
           "type" : "LIST_CONTAINER",
           "container" : [ {
             "type" : "JSON_LITERAL",
-            "value" : "search_group.sys_id="
+            "value" : "search_group.name="
           }, {
             "type" : "CLIENT_TRANSFORM",
             "transform" : {
@@ -1156,7 +1215,7 @@
                       "container" : [ {
                         "type" : "STATE_BINDING",
                         "binding" : {
-                          "address" : [ "SearchParams", "searchGroup" ]
+                          "address" : [ "SearchGroupTemp" ]
                         }
                       } ]
                     },
@@ -1164,11 +1223,11 @@
                   }
                 }, {
                   "type" : "JSON_LITERAL",
-                  "value" : "9a44f352d7120200b6bddb0c82520376"
+                  "value" : "sn_codesearch.Default Search Group"
                 }, {
                   "type" : "STATE_BINDING",
                   "binding" : {
-                    "address" : [ "SearchParams", "searchGroup" ]
+                    "address" : [ "SearchGroupTemp" ]
                   }
                 } ]
               },
@@ -1231,7 +1290,7 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"container_3","styles":{"width":"100%","flex":"1 0 auto"}}],
+    "items" : [{"element_id":"container_3","styles":{"width":"100%","flex":"1 0 auto"}},{"element_id":"stylized_text_1","styles":{}}],
     "root" : null,
     "rules" : null,
     "styles" : {"flex-direction":"column"},
@@ -1331,32 +1390,51 @@
     "value" : null
   }
 }, {
-  "name" : "SearchParams",
-  "label" : "SearchParams",
-  "fieldType" : "json",
-  "valueType" : "json",
+  "name" : "SearchGroupTemp",
+  "label" : "SearchGroupTemp",
+  "fieldType" : "",
+  "valueType" : "",
   "shape" : "",
   "description" : "",
   "initialValue" : {
     "type" : "JSON_LITERAL",
-    "value" : {
-      "searchGroup" : null,
-      "searchTable" : null
-    }
+    "value" : null
+  }
+}, {
+  "name" : "SearchTableTemp",
+  "label" : "SearchTableTemp",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "ErrorMessage",
+  "label" : "ErrorMessage",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
   }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-14 07:01:25</sys_created_on>
         <sys_id>3f67c27647717110274adeae536d434c</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>130</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_3f67c27647717110274adeae536d434c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-29 18:19:35</sys_updated_on>
+        <sys_updated_on>2023-11-01 10:11:08</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=3f67c27647717110274adeae536d434c"/>
 </record_update>

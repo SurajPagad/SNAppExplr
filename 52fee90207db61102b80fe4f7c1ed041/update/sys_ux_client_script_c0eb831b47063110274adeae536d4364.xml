@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <includes/>
         <macroponent display_value="Default">3f67c27647717110274adeae536d434c</macroponent>
-        <name>Update client state - term</name>
+        <name>Update client state - term,table,group (on search)</name>
         <preset/>
         <required_translations>[ ]</required_translations>
         <script><![CDATA[/**
@@ -13,24 +13,23 @@
 * @param {ApiHelpers} params.helpers
 */
 function handler({api, event, helpers, imports}) {
-    api.setState('SearchGroup',api.state.SearchParams.searchGroup);
-    api.setState('SearchTable',api.state.SearchParams.searchTable);
+    api.setState('SearchGroup',api.state.SearchGroupTemp);
+    api.setState('SearchTable',api.state.SearchTableTemp);
     api.setState("SearchTerm",api.state.SearchTermTemp);
-    //api.data.code_search_1.refresh();
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-28 11:33:05</sys_created_on>
         <sys_id>c0eb831b47063110274adeae536d4364</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>Update client state - term</sys_name>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Update client state - term,table,group (on search)</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_client_script_c0eb831b47063110274adeae536d4364</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-29 18:24:05</sys_updated_on>
+        <sys_updated_on>2023-11-01 09:49:17</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>
