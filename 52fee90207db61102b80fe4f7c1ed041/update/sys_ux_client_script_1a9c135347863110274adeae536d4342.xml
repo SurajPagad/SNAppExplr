@@ -25,6 +25,7 @@ function handler({
         result = api.data.code_search_1.output.result;
     result = result.filter(item => item.hits.length > 0 ? true : false);
     api.setState('Result', result);
+    console.log(result);
     api.setState('ErrorMessage', '');
     if (result.length == 0) {
         api.setState('ErrorMessage', 'No result found for given inputs');
@@ -35,14 +36,14 @@ function handler({
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-28 12:46:10</sys_created_on>
         <sys_id>1a9c135347863110274adeae536d4342</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Update client state - result</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_client_script_1a9c135347863110274adeae536d4342</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-01 12:42:44</sys_updated_on>
+        <sys_updated_on>2023-11-05 13:54:08</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

@@ -19,6 +19,7 @@ function evaluateProperty({
         return {
             'id': item.recordType,
             'label': item.tableLabel + '(' + item.hits.length + ')',
+            'recordsLink': item.recordType + '_list.do?sysparm_query=sys_idIN' + item.hits.map(hit => hit.sysId).join(','),
             'children': item.hits.map((hit) => {
                 return {
                     'id': hit.sysId,
@@ -27,7 +28,7 @@ function evaluateProperty({
                     'children': hit.matches.map(match => {
                         return {
                             'id': match.field,
-                            'label': match.fieldLabel + '(' + match.count + ')',
+                            'label': match.fieldLabel + '(Matches: ' + match.count + ')',
                             'children': match.lineMatches.flatMap((lineMatch, idx, lineMatchesArr) => {
                                 if (idx > 0 && parseInt(lineMatch.line) != parseInt(lineMatchesArr[idx - 1].line) + 1) {
                                     return [{
@@ -56,14 +57,14 @@ function evaluateProperty({
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-28 13:15:39</sys_created_on>
         <sys_id>5e532f5b47863110274adeae536d43fa</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>content_tree_1/items</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_client_script_5e532f5b47863110274adeae536d43fa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-01 12:40:43</sys_updated_on>
+        <sys_updated_on>2023-11-05 14:12:18</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>

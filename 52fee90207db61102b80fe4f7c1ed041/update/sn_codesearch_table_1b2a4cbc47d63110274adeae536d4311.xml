@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_codesearch_table">
+    <sn_codesearch_table action="INSERT_OR_UPDATE">
+        <additional_filter/>
+        <search_fields>contact_attempt,rota_id,escalation_id,level</search_fields>
+        <search_group display_value="x_13258_applicat_0.Search Group">bfc904bc47d63110274adeae536d43c1</search_group>
+        <sys_class_name>sn_codesearch_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-01 13:17:42</sys_created_on>
+        <sys_id>1b2a4cbc47d63110274adeae536d4311</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>var__m_wf_activity_variable_f2df4693c77200100c54885827c260c5</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sn_codesearch_table_1b2a4cbc47d63110274adeae536d4311</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-01 13:18:04</sys_updated_on>
+        <table>var__m_wf_activity_variable_f2df4693c77200100c54885827c260c5</table>
+    </sn_codesearch_table>
+</record_update>
