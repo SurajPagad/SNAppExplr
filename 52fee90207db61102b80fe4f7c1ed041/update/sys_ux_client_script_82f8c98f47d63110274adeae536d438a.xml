@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Default">fd98732e479e3110274adeae536d43d3</macroponent>
+        <name>calendar_1/events</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    try {
+        var changeTasks = api.data.get_all_change_tasks.output.data.GlideRecord_Query.change_task._results;
+        if (changeTasks.length > 0) {
+            var changeTasksMap = changeTasks.map((changeTask, idx) => {
+                return {
+                    "id": changeTask.number.displayValue,
+                    "start": changeTask.planned_start_date.displayValue,
+                    "end": changeTask.planned_end_date.displayValue,
+                    "title": changeTask.short_description.displayValue,
+                    "description": changeTask.description.displayValue,
+                    "bgColor": "nds-orange",
+                    "group": "Hardware"
+                };
+            });
+        }
+        console.log(changeTasksMap);
+        return changeTasksMap;
+    } catch (ex) {
+        console.log(ex.message)
+    }
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-08 17:38:23</sys_created_on>
+        <sys_id>82f8c98f47d63110274adeae536d438a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>calendar_1/events</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_client_script_82f8c98f47d63110274adeae536d438a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-08 17:59:20</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>
