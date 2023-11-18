@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter">
+    <sys_ws_query_parameter action="INSERT_OR_UPDATE">
+        <example_value/>
+        <name>script_field</name>
+        <required>false</required>
+        <short_description/>
+        <sys_class_name>sys_ws_query_parameter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-18 12:16:37</sys_created_on>
+        <sys_id>5d3fdfce47a2b110274adeae536d4372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>script_field</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ws_query_parameter_5d3fdfce47a2b110274adeae536d4372</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-18 12:16:37</sys_updated_on>
+        <web_service_definition display_value="App Explorer">1b3df67f071321102b80fe4f7c1ed00e</web_service_definition>
+    </sys_ws_query_parameter>
+</record_update>
