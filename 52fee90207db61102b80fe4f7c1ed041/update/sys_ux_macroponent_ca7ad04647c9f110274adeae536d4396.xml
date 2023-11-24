@@ -2574,61 +2574,6 @@
 }, {
   "cachePolicy" : null,
   "definition" : {
-    "id" : "9be753f247c17110274adeae536d431f",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "get_all_script_includes_1",
-  "elementLabel" : "Get all script includes 1",
-  "eventMappings" : [ ],
-  "inputValues" : { },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
-    "id" : "abfa9b3647c17110274adeae536d4327",
-    "type" : "REST"
-  },
-  "dependencies" : { },
-  "elementId" : "get_script_include_1",
-  "elementLabel" : "Get script include 1",
-  "eventMappings" : [ {
-    "eventMappingId" : "clmjjaadddlaaaaccsrddffiieerjxccdddccr",
-    "isConfiguration" : false,
-    "offRowStorageId" : null,
-    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-    "sourceEventCorrelationId" : null,
-    "sourceEventDefinition" : {
-      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
-      "id" : null,
-      "type" : "UXEVENT"
-    },
-    "sourceEventSysId" : null,
-    "targets" : [ {
-      "broker" : null,
-      "clientScript" : {
-        "sysId" : "bbcfc40b47857110274adeae536d43b5"
-      },
-      "conditional" : null,
-      "declarativeAction" : null,
-      "event" : null,
-      "operation" : null,
-      "targetId" : "clmjjaadddlbbaaccssddffiieeggbbplcedbb",
-      "type" : "CLIENT_SCRIPT"
-    } ]
-  } ],
-  "inputValues" : {
-    "script_inc_id" : {
-      "type" : "STATE_BINDING",
-      "binding" : {
-        "address" : [ "scriptIncludeID" ]
-      }
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-}, {
-  "cachePolicy" : null,
-  "definition" : {
     "id" : "0e0ff6aa47813110274adeae536d43f9",
     "type" : "REST"
   },
@@ -3225,14 +3170,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-04 08:22:48</sys_created_on>
         <sys_id>ca7ad04647c9f110274adeae536d4396</sys_id>
-        <sys_mod_count>248</sys_mod_count>
+        <sys_mod_count>249</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_ca7ad04647c9f110274adeae536d4396</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-18 13:36:23</sys_updated_on>
+        <sys_updated_on>2023-11-18 16:45:58</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=ca7ad04647c9f110274adeae536d4396"/>
 </record_update>
