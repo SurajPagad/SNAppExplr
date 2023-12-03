@@ -1955,8 +1955,12 @@
           "value" : false
         },
         "tooltipContent" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "Choose a script record",
+            "comment" : ""
+          }
         },
         "panelFitProps" : {
           "type" : "JSON_LITERAL",
@@ -2140,8 +2144,12 @@
           "value" : false
         },
         "tooltipContent" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "Choose a script field",
+            "comment" : ""
+          }
         },
         "panelFitProps" : {
           "type" : "JSON_LITERAL",
@@ -2191,7 +2199,7 @@
         },
         "selectedItems" : {
           "type" : "JSON_LITERAL",
-          "value" : [ ]
+          "value" : [ "script" ]
         },
         "hideLabel" : {
           "type" : "JSON_LITERAL",
@@ -2302,7 +2310,7 @@
         },
         "label" : {
           "type" : "JSON_LITERAL",
-          "value" : "Client side"
+          "value" : "Client side :"
         },
         "configAria" : {
           "type" : "JSON_LITERAL",
@@ -2794,6 +2802,12 @@
   "message" : "Change editor mode",
   "comment" : ""
 }, {
+  "message" : "Choose a script field",
+  "comment" : ""
+}, {
+  "message" : "Choose a script record",
+  "comment" : ""
+}, {
   "message" : "Compare - Diff view",
   "comment" : ""
 }, {
@@ -2990,14 +3004,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-04 08:22:48</sys_created_on>
         <sys_id>ca7ad04647c9f110274adeae536d4396</sys_id>
-        <sys_mod_count>279</sys_mod_count>
+        <sys_mod_count>282</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_ca7ad04647c9f110274adeae536d4396</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-03 15:40:33</sys_updated_on>
+        <sys_updated_on>2023-12-03 16:26:13</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=ca7ad04647c9f110274adeae536d4396"/>
 </record_update>
