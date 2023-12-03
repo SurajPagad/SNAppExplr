@@ -487,7 +487,7 @@
                 },
                 "disableSandbox" : {
                   "type" : "JSON_LITERAL",
-                  "value" : false
+                  "value" : true
                 }
               },
               "eventMappings" : [ ],
@@ -2007,7 +2007,7 @@
           "type" : "TRANSLATION_LITERAL",
           "value" : {
             "code" : null,
-            "message" : "Script :",
+            "message" : "Script type :",
             "comment" : ""
           }
         },
@@ -3010,9 +3010,6 @@
   "message" : "Scope :",
   "comment" : ""
 }, {
-  "message" : "Script :",
-  "comment" : ""
-}, {
   "message" : "Script field",
   "comment" : ""
 }, {
@@ -3170,14 +3167,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-04 08:22:48</sys_created_on>
         <sys_id>ca7ad04647c9f110274adeae536d4396</sys_id>
-        <sys_mod_count>249</sys_mod_count>
+        <sys_mod_count>251</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_ca7ad04647c9f110274adeae536d4396</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-18 16:45:58</sys_updated_on>
+        <sys_updated_on>2023-12-03 14:15:13</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=ca7ad04647c9f110274adeae536d4396"/>
 </record_update>
