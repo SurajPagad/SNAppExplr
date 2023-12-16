@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
     <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
-        <api_name>x_13258_applicat_0.Get customer updates</api_name>
+        <api_name>x_13258_applicat_0.Get update versions</api_name>
         <description/>
         <mutates_server_data>false</mutates_server_data>
-        <name>Get customer updates</name>
+        <name>Get update versions</name>
         <output_schema/>
         <private>false</private>
         <props>[&#13;
@@ -14,7 +14,7 @@
   "readOnly": false,&#13;
   "fieldType": "table_name",&#13;
   "mandatory": true,&#13;
-  "defaultValue": "sys_update_xml"&#13;
+  "defaultValue": "sys_update_version"&#13;
 },&#13;
 {&#13;
   "name": "encodedQuery",&#13;
@@ -173,24 +173,24 @@
   "comment" : ""
 } ]</required_translations>
         <schema_version>1.0.0</schema_version>
-        <script><![CDATA[(function buildQuery(query, inputs) {	
-	// build appropriate query here
-	query.appendRecordsQuery(inputs);
+        <script><![CDATA[(function buildQuery(query, inputs) {
+    // build appropriate query here
+    query.appendRecordsQuery(inputs);
 })(query, inputs);]]></script>
         <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-12-03 17:34:57</sys_created_on>
-        <sys_id>a3c7f18347363110274adeae536d43c6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Get customer updates</sys_name>
+        <sys_created_on>2023-12-16 15:06:11</sys_created_on>
+        <sys_id>0112181b47033110274adeae536d43f2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Get update versions</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
-        <sys_update_name>sys_ux_data_broker_graphql_a3c7f18347363110274adeae536d43c6</sys_update_name>
+        <sys_update_name>sys_ux_data_broker_graphql_0112181b47033110274adeae536d43f2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-03 17:34:57</sys_updated_on>
+        <sys_updated_on>2023-12-16 15:09:33</sys_updated_on>
         <type>script</type>
         <use_record_domain>false</use_record_domain>
     </sys_ux_data_broker_graphql>
-    <sys_translated_text action="delete_multiple" query="documentkey=a3c7f18347363110274adeae536d43c6"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=0112181b47033110274adeae536d43f2"/>
 </record_update>

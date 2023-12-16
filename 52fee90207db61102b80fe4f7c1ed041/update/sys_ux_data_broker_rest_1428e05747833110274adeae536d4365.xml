@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
+    <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
+        <api_name>x_13258_applicat_0.Get customer updates</api_name>
+        <api_url>/api/x_13258_applicat_0/app_explorer/get_customer_updates?update_set={{update_set}}</api_url>
+        <description/>
+        <http_method>GET</http_method>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get customer updates</name>
+        <output_schema/>
+        <parameters/>
+        <private>false</private>
+        <props>[&#13;
+	{&#13;
+	  "name": "update_set",&#13;
+	  "label": "Update set",&#13;
+	  "description": "",&#13;
+	  "readOnly": false,&#13;
+	  "fieldType": "string",&#13;
+	  "mandatory": true,&#13;
+	  "defaultValue": ""&#13;
+	}&#13;
+]</props>
+        <request_body/>
+        <required_translations>[ {
+  "message" : "Update set",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-16 16:40:44</sys_created_on>
+        <sys_id>1428e05747833110274adeae536d4365</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Get customer updates</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_data_broker_rest_1428e05747833110274adeae536d4365</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-16 16:42:12</sys_updated_on>
+    </sys_ux_data_broker_rest>
+    <sys_translated_text action="delete_multiple" query="documentkey=1428e05747833110274adeae536d4365"/>
+</record_update>

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="DELETE">
+        <api_name>x_13258_applicat_0.Get customer updates</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get customer updates</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+  "name": "table",&#13;
+  "label": "Table",&#13;
+  "description": "Table to look up",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "table_name",&#13;
+  "mandatory": true,&#13;
+  "defaultValue": "sys_update_xml"&#13;
+},&#13;
+{&#13;
+  "name": "encodedQuery",&#13;
+  "label": "Conditions",&#13;
+  "description": "Look up search conditions",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "condition_string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": "",&#13;
+  "typeMetadata": {&#13;
+        "table": "@table"&#13;
+  }&#13;
+},&#13;
+{&#13;
+  "name": "returnFields",&#13;
+  "label": "Return fields",&#13;
+  "description": "Returned field values",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "field_list",&#13;
+  "mandatory": false,&#13;
+  "typeMetadata": {&#13;
+        "table": "@table"&#13;
+  }&#13;
+},&#13;
+{&#13;
+  "name": "orderBy",&#13;
+  "label": "Order by",&#13;
+  "description": "Field to sort rows by",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "field",&#13;
+  "mandatory": false,&#13;
+  "typeMetadata": {&#13;
+        "table": "@table"&#13;
+}&#13;
+},&#13;
+{&#13;
+  "name": "sortType",&#13;
+  "label": "Sort type (asc/desc)",&#13;
+  "description": "Sort type",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": "asc",&#13;
+  "typeMetadata": {&#13;
+        "choices": [{"label": "a to z", "value": "asc" },{"label": "z to a", "value": "desc" }]&#13;
+  }&#13;
+},&#13;
+{&#13;
+  "name": "limit",&#13;
+  "label": "Max results",&#13;
+  "description": "Maximum results returned",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+ "defaultValue": "1000"&#13;
+},&#13;
+{&#13;
+  "name": "offset",&#13;
+  "label": "Pagination offset",&#13;
+  "description": "Pagination offset",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false&#13;
+},&#13;
+  {&#13;
+  "name": "queryCategory",&#13;
+  "label": "Query category",&#13;
+  "description": "Read replica query category",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": ""&#13;
+},&#13;
+{&#13;
+  "name": "returnRowCount",&#13;
+  "label": "Return rowcount",&#13;
+  "description": "Return rowcount",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "boolean",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": true&#13;
+},&#13;
+{&#13;
+  "name": "returnTableMetadata",&#13;
+  "label": "Return table metadata",&#13;
+  "description": "Return table metadata",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "boolean",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": false&#13;
+},&#13;
+{&#13;
+  "name": "returnFieldMetadata",&#13;
+  "label": "Return field metadata",&#13;
+  "description": "Return field metadata",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "boolean",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": false&#13;
+}&#13;
+]</props>
+        <query/>
+        <required_translations>[ {
+  "message" : "Conditions",
+  "comment" : ""
+}, {
+  "message" : "Field to sort rows by",
+  "comment" : ""
+}, {
+  "message" : "Look up search conditions",
+  "comment" : ""
+}, {
+  "message" : "Max results",
+  "comment" : ""
+}, {
+  "message" : "Maximum results returned",
+  "comment" : ""
+}, {
+  "message" : "Order by",
+  "comment" : ""
+}, {
+  "message" : "Pagination offset",
+  "comment" : ""
+}, {
+  "message" : "Query category",
+  "comment" : ""
+}, {
+  "message" : "Read replica query category",
+  "comment" : ""
+}, {
+  "message" : "Return field metadata",
+  "comment" : ""
+}, {
+  "message" : "Return fields",
+  "comment" : ""
+}, {
+  "message" : "Return rowcount",
+  "comment" : ""
+}, {
+  "message" : "Return table metadata",
+  "comment" : ""
+}, {
+  "message" : "Returned field values",
+  "comment" : ""
+}, {
+  "message" : "Sort type",
+  "comment" : ""
+}, {
+  "message" : "Sort type (asc/desc)",
+  "comment" : ""
+}, {
+  "message" : "Table",
+  "comment" : ""
+}, {
+  "message" : "Table to look up",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) {	
+	// build appropriate query here
+	query.appendRecordsQuery(inputs);
+})(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-03 17:34:57</sys_created_on>
+        <sys_id>a3c7f18347363110274adeae536d43c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get customer updates</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_a3c7f18347363110274adeae536d43c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-03 17:34:57</sys_updated_on>
+        <type>script</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="DELETE" query="documentkey=a3c7f18347363110274adeae536d43c6"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>8c99bfd7db6ad5183050ac44d4961980</instance_id>
+        <instance_name>dev141748</instance_name>
+        <name>sys_ux_data_broker_graphql_a3c7f18347363110274adeae536d43c6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_graphql"&gt;&lt;sys_ux_data_broker_graphql action="INSERT_OR_UPDATE"&gt;&lt;api_name&gt;x_13258_applicat_0.Get customer updates&lt;/api_name&gt;&lt;description/&gt;&lt;mutates_server_data&gt;false&lt;/mutates_server_data&gt;&lt;name&gt;Get customer updates&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props&gt;[&amp;#13;
+  {&amp;#13;
+  "name": "table",&amp;#13;
+  "label": "Table",&amp;#13;
+  "description": "Table to look up",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "table_name",&amp;#13;
+  "mandatory": true,&amp;#13;
+  "defaultValue": "sys_update_xml"&amp;#13;
+},&amp;#13;
+{&amp;#13;
+  "name": "encodedQuery",&amp;#13;
+  "label": "Conditions",&amp;#13;
+  "description": "Look up search conditions",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "condition_string",&amp;#13;
+  "mandatory": false,&amp;#13;
+  "defaultValue": "",&amp;#13;
+  "typeMetadata": {&amp;#13;
+        "table": "@table"&amp;#13;
+  }&amp;#13;
+},&amp;#13;
+{&amp;#13;
+  "name": "returnFields",&amp;#13;
+  "label": "Return fields",&amp;#13;
+  "description": "Returned field values",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "field_list",&amp;#13;
+  "mandatory": false,&amp;#13;
+  "typeMetadata": {&amp;#13;
+        "table": "@table"&amp;#13;
+  }&amp;#13;
+},&amp;#13;
+{&amp;#13;
+  "name": "orderBy",&amp;#13;
+  "label": "Order by",&amp;#13;
+  "description": "Field to sort rows by",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "field",&amp;#13;
+  "mandatory": false,&amp;#13;
+  "typeMetadata": {&amp;#13;
+        "table": "@table"&amp;#13;
+}&amp;#13;
+},&amp;#13;
+{&amp;#13;
+  "name": "sortType",&amp;#13;
+  "label": "Sort type (asc/desc)",&amp;#13;
+  "description": "Sort type",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "string",&amp;#13;
+  "mandatory": false,&amp;#13;
+  "defaultValue": "asc",&amp;#13;
+  "typeMetadata": {&amp;#13;
+        "choices": [{"label": "a to z", "value": "asc" },{"label": "z to a", "value": "desc" }]&amp;#13;
+  }&amp;#13;
+},&amp;#13;
+{&amp;#13;
+  "name": "limit",&amp;#13;
+  "label": "Max results",&amp;#13;
+  "description": "Maximum results returned",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "string",&amp;#13;
+  "mandatory": false,&amp;#13;
+ "defaultValue": "1000"&amp;#13;
+},&amp;#13;
+{&amp;#13;
+  "name": "offset",&amp;#13;
+  "label": "Pagination offset",&amp;#13;
+  "description": "Pagination offset",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "string",&amp;#13;
+  "mandatory": false&amp;#13;
+},&amp;#13;
+  {&amp;#13;
+  "name": "queryCategory",&amp;#13;
+  "label": "Query category",&amp;#13;
+  "description": "Read replica query category",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "string",&amp;#13;
+  "mandatory": false,&amp;#13;
+  "defaultValue": ""&amp;#13;
+},&amp;#13;
+{&amp;#13;
+  "name": "returnRowCount",&amp;#13;
+  "label": "Return rowcount",&amp;#13;
+  "description": "Return rowcount",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "boolean",&amp;#13;
+  "mandatory": false,&amp;#13;
+  "defaultValue": true&amp;#13;
+},&amp;#13;
+{&amp;#13;
+  "name": "returnTableMetadata",&amp;#13;
+  "label": "Return table metadata",&amp;#13;
+  "description": "Return table metadata",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "boolean",&amp;#13;
+  "mandatory": false,&amp;#13;
+  "defaultValue": false&amp;#13;
+},&amp;#13;
+{&amp;#13;
+  "name": "returnFieldMetadata",&amp;#13;
+  "label": "Return field metadata",&amp;#13;
+  "description": "Return field metadata",&amp;#13;
+  "readOnly": false,&amp;#13;
+  "fieldType": "boolean",&amp;#13;
+  "mandatory": false,&amp;#13;
+  "defaultValue": false&amp;#13;
+}&amp;#13;
+]&lt;/props&gt;&lt;query/&gt;&lt;required_translations&gt;[ {
+  "message" : "Conditions",
+  "comment" : ""
+}, {
+  "message" : "Field to sort rows by",
+  "comment" : ""
+}, {
+  "message" : "Look up search conditions",
+  "comment" : ""
+}, {
+  "message" : "Max results",
+  "comment" : ""
+}, {
+  "message" : "Maximum results returned",
+  "comment" : ""
+}, {
+  "message" : "Order by",
+  "comment" : ""
+}, {
+  "message" : "Pagination offset",
+  "comment" : ""
+}, {
+  "message" : "Query category",
+  "comment" : ""
+}, {
+  "message" : "Read replica query category",
+  "comment" : ""
+}, {
+  "message" : "Return field metadata",
+  "comment" : ""
+}, {
+  "message" : "Return fields",
+  "comment" : ""
+}, {
+  "message" : "Return rowcount",
+  "comment" : ""
+}, {
+  "message" : "Return table metadata",
+  "comment" : ""
+}, {
+  "message" : "Returned field values",
+  "comment" : ""
+}, {
+  "message" : "Sort type",
+  "comment" : ""
+}, {
+  "message" : "Sort type (asc/desc)",
+  "comment" : ""
+}, {
+  "message" : "Table",
+  "comment" : ""
+}, {
+  "message" : "Table to look up",
+  "comment" : ""
+} ]&lt;/required_translations&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[(function buildQuery(query, inputs) {	
+	// build appropriate query here
+	query.appendRecordsQuery(inputs);
+})(query, inputs);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_graphql&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-03 17:34:57&lt;/sys_created_on&gt;&lt;sys_id&gt;a3c7f18347363110274adeae536d43c6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get customer updates&lt;/sys_name&gt;&lt;sys_package display_value="Application Explorer" source="x_13258_applicat_0"&gt;52fee90207db61102b80fe4f7c1ed041&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Application Explorer"&gt;52fee90207db61102b80fe4f7c1ed041&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_graphql_a3c7f18347363110274adeae536d43c6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-03 17:34:57&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;use_record_domain&gt;false&lt;/use_record_domain&gt;&lt;/sys_ux_data_broker_graphql&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a3c7f18347363110274adeae536d43c6"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1868611334</payload_hash>
+        <record_name>Get customer updates</record_name>
+        <reverted_from/>
+        <source>43d394f247a43110274adeae536d4334</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-03 17:34:57</sys_created_on>
+        <sys_id>23e7f98347363110274adeae536d43d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c30bf613d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-03 17:34:57</sys_updated_on>
+        <type>GraphQL Data Broker</type>
+        <update_guid>67e7f983bb3631109b84f4e104541dd7</update_guid>
+        <update_guid_history>67e7f983bb3631109b84f4e104541dd7:1868611334</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-16 16:39:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_graphql">sys_ux_data_broker_graphql</sys_db_object>
+        <sys_id>0ec581bec58248518149461b47eeb401</sys_id>
+        <sys_metadata>a3c7f18347363110274adeae536d43c6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get customer updates</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_graphql_a3c7f18347363110274adeae536d43c6</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_graphql_a3c7f18347363110274adeae536d43c6">23e7f98347363110274adeae536d43d8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-16 16:39:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
