@@ -8,23 +8,25 @@
         <http_method>GET</http_method>
         <name>Get update versions</name>
         <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-
     var result = [];
-	var xmlDoc = new XMLDocument2();
+    var order = 0;
+    var xmlUtils = new XMLUtils();
     var gr = new GlideRecord('sys_update_version');
     gr.orderByDesc('sys_created_on');
     gr.addQuery('name', request.queryParams.update_name.toString());
     gr.query();
     if (gr.hasNext()) {
         while (gr.next()) {
-			xmlDoc.parseXML(gr.getValue('payload'));
+            order += 1;
             result.push({
                 'id': gr.getValue('sys_id'),
-                'label': gr.getValue('name') + ' - ' + gr.getDisplayValue('state'),
-                'payload': xmlDoc.toString(),
+                'label': gr.getValue('record_name') + ' || ' + gr.getDisplayValue('source') + ' || ' + gr.getDisplayValue('state'),
+                'payload': xmlUtils.xml(gr.getValue('payload')),
                 'state': gr.getValue('state'),
+                'order': order,
                 'sys_recorded_at': gr.getValue('sys_recorded_at'),
-                'source': gr.getDisplayName('source')
+                'source': gr.getDisplayValue('source'),
+                'sourceSysID': gr.getValue('source')
             });
         }
     }
@@ -44,14 +46,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-16 17:20:59</sys_created_on>
         <sys_id>0651701b47833110274adeae536d43fc</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Get update versions</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ws_operation_0651701b47833110274adeae536d43fc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-17 10:35:03</sys_updated_on>
+        <sys_updated_on>2023-12-17 19:02:22</sys_updated_on>
         <web_service_definition display_value="App Explorer">1b3df67f071321102b80fe4f7c1ed00e</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

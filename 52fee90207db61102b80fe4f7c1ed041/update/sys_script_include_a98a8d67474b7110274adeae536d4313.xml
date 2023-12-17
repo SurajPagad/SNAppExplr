@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_13258_applicat_0.XMLUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>XMLUtils</name>
+        <script>var XMLUtils = Class.create();&#13;
+XMLUtils.prototype = {&#13;
+    initialize: function() {&#13;
+        this.step = '    '; // 4 spaces&#13;
+        this.shift = this.createShiftArr(this.step);&#13;
+    },&#13;
+&#13;
+    xml: function(text, step) {&#13;
+        var ar = text.replace(/&gt;\s{0,}&lt;/g, "&gt;&lt;")&#13;
+            .replace(/&lt;/g, "~::~&lt;")&#13;
+            .replace(/xmlns\:/g, "~::~xmlns:")&#13;
+            .replace(/xmlns\=/g, "~::~xmlns=")&#13;
+            .split('~::~'),&#13;
+            len = ar.length,&#13;
+            inComment = false,&#13;
+            deep = 0,&#13;
+            str = '',&#13;
+            ix = 0,&#13;
+            shift = step ? createShiftArr(step) : this.shift;&#13;
+&#13;
+        for (ix = 0; ix &lt; len; ix++) {&#13;
+            // start comment or &lt;![CDATA[...]]&gt; or &lt;!DOCTYPE //&#13;
+            if (ar[ix].search(/&lt;!/) &gt; -1) {&#13;
+                str += shift[deep] + ar[ix];&#13;
+                inComment = true;&#13;
+                // end comment  or &lt;![CDATA[...]]&gt; //&#13;
+                if (ar[ix].search(/--&gt;/) &gt; -1 || ar[ix].search(/\]&gt;/) &gt; -1 || ar[ix].search(/!DOCTYPE/) &gt; -1) {&#13;
+                    inComment = false;&#13;
+                }&#13;
+            } else&#13;
+                // end comment  or &lt;![CDATA[...]]&gt; //&#13;
+                if (ar[ix].search(/--&gt;/) &gt; -1 || ar[ix].search(/\]&gt;/) &gt; -1) {&#13;
+                    str += ar[ix];&#13;
+                    inComment = false;&#13;
+                } else&#13;
+                    // &lt;elm&gt;&lt;/elm&gt; //&#13;
+                    if (/^&lt;\w/.exec(ar[ix - 1]) &amp;&amp; /^&lt;\/\w/.exec(ar[ix]) &amp;&amp;&#13;
+                        /^&lt;[\w:\-\.\,]+/.exec(ar[ix - 1]) == /^&lt;\/[\w:\-\.\,]+/.exec(ar[ix])[0].replace('/', '')) {&#13;
+                        str += ar[ix];&#13;
+                        if (!inComment) deep--;&#13;
+                    } else&#13;
+                        // &lt;elm&gt; //&#13;
+                        if (ar[ix].search(/&lt;\w/) &gt; -1 &amp;&amp; ar[ix].search(/&lt;\//) == -1 &amp;&amp; ar[ix].search(/\/&gt;/) == -1) {&#13;
+                            str = !inComment ? str += shift[deep++] + ar[ix] : str += ar[ix];&#13;
+                        } else&#13;
+                            // &lt;elm&gt;...&lt;/elm&gt; //&#13;
+                            if (ar[ix].search(/&lt;\w/) &gt; -1 &amp;&amp; ar[ix].search(/&lt;\//) &gt; -1) {&#13;
+                                str = !inComment ? str += shift[deep] + ar[ix] : str += ar[ix];&#13;
+                            } else&#13;
+                                // &lt;/elm&gt; //&#13;
+                                if (ar[ix].search(/&lt;\//) &gt; -1) {&#13;
+                                    str = !inComment ? str += shift[--deep] + ar[ix] : str += ar[ix];&#13;
+                                } else&#13;
+                                    // &lt;elm/&gt; //&#13;
+                                    if (ar[ix].search(/\/&gt;/) &gt; -1) {&#13;
+                                        str = !inComment ? str += shift[deep] + ar[ix] : str += ar[ix];&#13;
+                                    } else&#13;
+                                        // &lt;? xml ... ?&gt; //&#13;
+                                        if (ar[ix].search(/&lt;\?/) &gt; -1) {&#13;
+                                            str += shift[deep] + ar[ix];&#13;
+                                        } else&#13;
+                                            // xmlns //&#13;
+                                            if (ar[ix].search(/xmlns\:/) &gt; -1 || ar[ix].search(/xmlns\=/) &gt; -1) {&#13;
+                                                str += shift[deep] + ar[ix];&#13;
+                                            }&#13;
+&#13;
+            else {&#13;
+                str += ar[ix];&#13;
+            }&#13;
+        }&#13;
+&#13;
+        return (str[0] == '\n') ? str.slice(1) : str;&#13;
+    },&#13;
+&#13;
+    createShiftArr: function(step) {&#13;
+&#13;
+        var space = '    ';&#13;
+&#13;
+        if (isNaN(parseInt(step))) { // argument is string&#13;
+            space = step;&#13;
+        } else { // argument is integer&#13;
+            switch (step) {&#13;
+                case 1:&#13;
+                    space = ' ';&#13;
+                    break;&#13;
+                case 2:&#13;
+                    space = '  ';&#13;
+                    break;&#13;
+                case 3:&#13;
+                    space = '   ';&#13;
+                    break;&#13;
+                case 4:&#13;
+                    space = '    ';&#13;
+                    break;&#13;
+                case 5:&#13;
+                    space = '     ';&#13;
+                    break;&#13;
+                case 6:&#13;
+                    space = '      ';&#13;
+                    break;&#13;
+                case 7:&#13;
+                    space = '       ';&#13;
+                    break;&#13;
+                case 8:&#13;
+                    space = '        ';&#13;
+                    break;&#13;
+                case 9:&#13;
+                    space = '         ';&#13;
+                    break;&#13;
+                case 10:&#13;
+                    space = '          ';&#13;
+                    break;&#13;
+                case 11:&#13;
+                    space = '           ';&#13;
+                    break;&#13;
+                case 12:&#13;
+                    space = '            ';&#13;
+                    break;&#13;
+            }&#13;
+        }&#13;
+&#13;
+        var shift = ['\n']; // array of shifts&#13;
+        for (ix = 0; ix &lt; 100; ix++) {&#13;
+            shift.push(shift[ix] + space);&#13;
+        }&#13;
+        return shift;&#13;
+    },&#13;
+&#13;
+&#13;
+    type: 'XMLUtils'&#13;
+};</script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-17 13:50:10</sys_created_on>
+        <sys_id>a98a8d67474b7110274adeae536d4313</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>XMLUtils</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_script_include_a98a8d67474b7110274adeae536d4313</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-17 13:55:17</sys_updated_on>
+    </sys_script_include>
+</record_update>
