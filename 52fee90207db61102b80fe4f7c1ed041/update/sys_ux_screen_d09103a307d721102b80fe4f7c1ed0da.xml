@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
     <sys_ux_screen action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <app_config display_value="Application Explorer Config">31fd362311972110eadb2af1562e5e3b</app_config>
         <description/>
         <event_mappings>[ {
@@ -162,27 +162,11 @@
 } ]</event_mappings>
         <macroponent display_value="Default">5c9103a307d721102b80fe4f7c1ed0d7</macroponent>
         <macroponent_config>{
-  "table" : {
+  "selectedTabIndex" : {
     "type" : "JSON_LITERAL",
     "value" : ""
   },
-  "sysId" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  },
-  "query" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  },
-  "views" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  },
-  "activityLogs" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  },
-  "extraParams" : {
+  "userPrefs" : {
     "type" : "JSON_LITERAL",
     "value" : ""
   },
@@ -194,11 +178,27 @@
     "type" : "JSON_LITERAL",
     "value" : ""
   },
-  "selectedTabIndex" : {
+  "extraParams" : {
     "type" : "JSON_LITERAL",
     "value" : ""
   },
-  "userPrefs" : {
+  "activityLogs" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "views" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "query" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "sysId" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "table" : {
     "type" : "JSON_LITERAL",
     "value" : ""
   },
@@ -248,7 +248,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d09103a307d721102b80fe4f7c1ed0da</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
@@ -256,7 +256,7 @@
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_screen_d09103a307d721102b80fe4f7c1ed0da</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-04 07:50:54</sys_updated_on>
+        <sys_updated_on>2023-12-29 17:47:53</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=d09103a307d721102b80fe4f7c1ed0da"/>
 </record_update>
