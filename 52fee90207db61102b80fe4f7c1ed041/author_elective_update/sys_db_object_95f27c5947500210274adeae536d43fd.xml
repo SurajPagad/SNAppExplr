@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access/>
+        <actions_access>true</actions_access>
+        <alter_access>true</alter_access>
+        <caller_access/>
+        <client_scripts_access>true</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>true</create_access>
+        <create_access_controls>false</create_access_controls>
+        <delete_access>false</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>Query Results</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_13258_applicat_0_u_cmdb_qb_result_ac6e788302f9259b047dd2273aac5923cd46af36</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="Query Builder Results" name="cmdb_qb_result_base">897b97c7b4632110320f8dc279c80489</super_class>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-10 15:38:25</sys_created_on>
+        <sys_id>95f27c5947500210274adeae536d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Applicat 0 U CMDB Qb Result Ac6e788302f9259b047dd2273aac5923cd46af36</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_db_object_95f27c5947500210274adeae536d43fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-10 15:38:25</sys_updated_on>
+        <update_access>true</update_access>
+        <user_role/>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>8c99bfd7db6ad5183050ac44d4961980</instance_id>
+        <instance_name>dev141748</instance_name>
+        <name>sys_db_object_95f27c5947500210274adeae536d43fd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>true</actions_access><alter_access>true</alter_access><caller_access/><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><is_extendable>false</is_extendable><label>Query Results</label><live_feed_enabled>false</live_feed_enabled><name>x_13258_applicat_0_u_cmdb_qb_result_ac6e788302f9259b047dd2273aac5923cd46af36</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="Query Builder Results" name="cmdb_qb_result_base">897b97c7b4632110320f8dc279c80489</super_class><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-10 15:38:25</sys_created_on><sys_id>95f27c5947500210274adeae536d43fd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Applicat 0 U CMDB Qb Result Ac6e788302f9259b047dd2273aac5923cd46af36</sys_name><sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package><sys_policy/><sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope><sys_update_name>sys_db_object_95f27c5947500210274adeae536d43fd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-10 15:38:25</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>-857900329</payload_hash>
+        <record_name>Query Results</record_name>
+        <reverted_from/>
+        <source>43d394f247a43110274adeae536d4334</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-10 15:38:26</sys_created_on>
+        <sys_id>11f2bc5947500210274adeae536d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d93ab7ef50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-10 15:38:26</sys_updated_on>
+        <type>Table</type>
+        <update_guid>95f2bc598c500210188364dea94cc953</update_guid>
+        <update_guid_history>95f2bc598c500210188364dea94cc953:-857900329</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-10 16:42:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>6fd0e170f4c040a9a1eb8e292cfa4c79</sys_id>
+        <sys_metadata>95f27c5947500210274adeae536d43fd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Applicat 0 U CMDB Qb Result Ac6e788302f9259b047dd2273aac5923cd46af36</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_db_object_95f27c5947500210274adeae536d43fd</sys_update_name>
+        <sys_update_version display_value="sys_db_object_95f27c5947500210274adeae536d43fd">11f2bc5947500210274adeae536d4354</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-10 16:42:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

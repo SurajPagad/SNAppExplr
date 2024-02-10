@@ -90,6 +90,46 @@
 } ]</event_mappings>
         <macroponent display_value="Default">3f67c27647717110274adeae536d434c</macroponent>
         <macroponent_config>{
+  "table" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "sysId" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "query" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "views" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "activityLogs" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "extraParams" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "fields" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "screen" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "selectedTabIndex" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "userPrefs" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
   "label" : {
     "type" : "TRANSLATION_LITERAL",
     "value" : {
@@ -121,17 +161,7 @@
   "propagateNotifications" : {
     "type" : "JSON_LITERAL",
     "value" : false
-  },
-  "table" : "",
-  "sysId" : "",
-  "query" : "",
-  "views" : "",
-  "activityLogs" : "",
-  "extraParams" : "",
-  "fields" : "",
-  "screen" : "",
-  "selectedTabIndex" : "",
-  "userPrefs" : ""
+  }
 }</macroponent_config>
         <name>Default</name>
         <order>0</order>
@@ -146,7 +176,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ff67c27647717110274adeae536d434f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
@@ -154,7 +184,7 @@
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_screen_ff67c27647717110274adeae536d434f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-29 17:07:23</sys_updated_on>
+        <sys_updated_on>2024-02-10 16:33:18</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=ff67c27647717110274adeae536d434f"/>
 </record_update>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config/>
+        <description/>
+        <event_mappings/>
+        <macroponent display_value="Default">5c9103a307d721102b80fe4f7c1ed0d7</macroponent>
+        <macroponent_config/>
+        <name>App explorer</name>
+        <order>0</order>
+        <parent_macroponent/>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="3. On-Call Recommended">c6e9d6a3532230100999ddeeff7b1296</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-10 15:18:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e3cdac9147500210274adeae536d43ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>App explorer</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_update_name>sys_ux_screen_e3cdac9147500210274adeae536d43ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-10 15:18:34</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=e3cdac9147500210274adeae536d43ca"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</application>
+        <file_path/>
+        <instance_id>8c99bfd7db6ad5183050ac44d4961980</instance_id>
+        <instance_name>dev141748</instance_name>
+        <name>sys_ux_screen_e3cdac9147500210274adeae536d43ca</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config/><description/><event_mappings/><macroponent display_value="Default">5c9103a307d721102b80fe4f7c1ed0d7</macroponent><macroponent_config/><name>App explorer</name><order>0</order><parent_macroponent/><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="3. On-Call Recommended">c6e9d6a3532230100999ddeeff7b1296</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-10 15:18:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e3cdac9147500210274adeae536d43ca</sys_id><sys_mod_count>0</sys_mod_count><sys_name>App explorer</sys_name><sys_overrides/><sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package><sys_policy/><sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope><sys_update_name>sys_ux_screen_e3cdac9147500210274adeae536d43ca</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-10 15:18:34</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=e3cdac9147500210274adeae536d43ca"/></record_update>]]></payload>
+        <payload_hash>172874180</payload_hash>
+        <record_name>App explorer</record_name>
+        <reverted_from/>
+        <source>43d394f247a43110274adeae536d4334</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-10 15:18:35</sys_created_on>
+        <sys_id>ae6e2cd147500210274adeae536d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d939951380000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-10 15:18:35</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>e26e2cd16050021023a3522d1d3f8171</update_guid>
+        <update_guid_history>e26e2cd16050021023a3522d1d3f8171:172874180</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-10 15:18:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>90d54a8ea4ba4334afd895f8df750f91</sys_id>
+        <sys_metadata>e3cdac9147500210274adeae536d43ca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>App explorer</sys_name>
+        <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
+        <sys_scope_delete display_value="">69fb9d94c1ad4ddf82d1a3005d304e49</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_e3cdac9147500210274adeae536d43ca</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_e3cdac9147500210274adeae536d43ca">ae6e2cd147500210274adeae536d4371</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-10 15:18:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
