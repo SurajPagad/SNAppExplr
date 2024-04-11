@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-04-11 14:53:52">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Application explorer global wrapper function</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>6ce71ab0936d0210c3147ee32bba10fa</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-04-11 14:53:51</sys_created_on>
+<sys_id>8bb1b2fc93ad0210c3147ee32bba100e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-04-11 14:53:51</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_501d7ecb978502102969fbafe153afec</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.AppExprGlobalWrapper&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;AppExprGlobalWrapper&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var AppExprGlobalWrapper = Class.create();
+AppExprGlobalWrapper.prototype = {
+    initialize: function() {},
+
+    getUpdateVersions: function(update_name) {
+        var result = [];
+        var order = 0;
+        var gr = new GlideRecord('sys_update_version');
+        gr.orderByDesc('sys_created_on');
+        gr.addQuery('name', update_name);
+        gr.query();
+        if (gr.hasNext()) {
+            while (gr.next()) {
+                order += 1;
+                result.push({
+                    'id': gr.getValue('sys_id'),
+                    'label': gr.getDisplayValue('source') + ' || ' + gr.getDisplayValue('state'),
+                    'payload': gr.getValue('payload'),
+                    'state': gr.getValue('state'),
+                    'order': order, 
+                    'sys_recorded_at': gr.getValue('sys_recorded_at'),
+                    'source': gr.getDisplayValue('source'),
+                    'sourceSysID': gr.getValue('source')
+                });
+            }
+        }
+        return result;
+    },
+    type: 'AppExprGlobalWrapper'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-03-24 18:59:44&lt;/sys_created_on&gt;&lt;sys_id&gt;501d7ecb978502102969fbafe153afec&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;AppExprGlobalWrapper&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_501d7ecb978502102969fbafe153afec&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-11 14:51:56&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1484301316</payload_hash>
+<remote_update_set display_value="Application explorer global wrapper function">8bb1b2fc93ad0210c3147ee32bba100e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-04-11 14:53:51</sys_created_on>
+<sys_id>8fb1b2fc93ad0210c3147ee32bba100e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18ecda4d75c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-04-11 14:53:51</sys_updated_on>
+<table/>
+<target_name>AppExprGlobalWrapper</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>834172fcf0ad021016521793c5d688e5</update_guid>
+<update_guid_history>834172fcf0ad021016521793c5d688e5:1484301316,15cf2a3ca1ad02104a22bd9b732b8b4a:106023001,3fbf2a3cacad02109af0ed86a892ba6d:1778872821,c20a9274d46d0210ce3a5ca30a1b2ccc:968309599,ba250f070fc5021061709aaced272b1d:1547816387,2ee24b83aec502109d895529fc4a0a22:354758177,bb724f4369c50210edcbe0d313b2506d:-1749347599,f1008f8ff68502102b46608e37484fdc:169912182,11cfb2cfc285021088e17f485237557b:-1749347599,b02f3e8f108502104906f6d1b7a6dd61:220661269,47fdfa4f188502102af4d82066be7801:1490176452,296df20f7e850210247a00ccc3fc6b9f:591676805</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
