@@ -5,7 +5,62 @@
         <explicit_api_name/>
         <interfaces/>
         <label>Link to destination Relay (Default)</label>
-        <props>[{"name":"route","fieldType":"string","interfaceApiName":"global.route","label":"Route type"},{"name":"fields","fieldType":"json","interfaceApiName":"global.route","label":"Route fields"},{"name":"params","fieldType":"json","interfaceApiName":"global.route","label":"Optionals parameters"},{"name":"redirect","fieldType":"boolean","interfaceApiName":null,"label":"Remove previous URL from browser history"},{"name":"passiveNavigation","fieldType":"boolean","interfaceApiName":null,"label":"Load in background (advanced)"},{"name":"title","fieldType":"string","interfaceApiName":null,"label":"Title (advanced)"},{"name":"multiInstField","fieldType":"string","interfaceApiName":null,"label":"Multi-instance field (advanced)"},{"name":"targetRoute","fieldType":"string","interfaceApiName":null,"label":"Sub-navigation route (advanced)"},{"name":"external","fieldType":"json","interfaceApiName":"global.route","label":"External URL object"}]</props>
+        <props>[
+    {
+        "fieldType": "string",
+        "interfaceApiName": "global.route",
+        "label": "Route type",
+        "name": "route"
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": "global.route",
+        "label": "Route fields",
+        "name": "fields"
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": "global.route",
+        "label": "Optionals parameters",
+        "name": "params"
+    },
+    {
+        "fieldType": "boolean",
+        "interfaceApiName": null,
+        "label": "Remove previous URL from browser history",
+        "name": "redirect"
+    },
+    {
+        "fieldType": "boolean",
+        "interfaceApiName": null,
+        "label": "Load in background (advanced)",
+        "name": "passiveNavigation"
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": null,
+        "label": "Title (advanced)",
+        "name": "title"
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": null,
+        "label": "Multi-instance field (advanced)",
+        "name": "multiInstField"
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": null,
+        "label": "Sub-navigation route (advanced)",
+        "name": "targetRoute"
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": "global.route",
+        "label": "External URL object",
+        "name": "external"
+    }
+]</props>
         <required_translations>[ {
   "message" : "External URL object",
   "comment" : ""
@@ -39,14 +94,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-02-10 16:33:53</sys_created_on>
         <sys_id>7dafb81947900210274adeae536d436c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Link to destination Relay (Default)</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_event_7dafb81947900210274adeae536d436c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-02-10 16:33:53</sys_updated_on>
+        <sys_updated_on>2024-05-18 17:10:55</sys_updated_on>
     </sys_ux_event>
     <sys_translated_text action="delete_multiple" query="documentkey=7dafb81947900210274adeae536d436c"/>
 </record_update>
