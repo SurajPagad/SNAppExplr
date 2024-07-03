@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="Application Explorer Config">4a9fa54207db61102b80fe4f7c1ed084</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="Additional details">6e9fa54202db6110e9700868411e5bb8</macroponent>
         <macroponent_config>{

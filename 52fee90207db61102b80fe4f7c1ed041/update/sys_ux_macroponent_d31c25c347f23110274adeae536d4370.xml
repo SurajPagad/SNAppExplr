@@ -476,6 +476,37 @@
                                     "operation": null,
                                     "targetId": "clwciiccceeaaaeeleddbhhszzxtfedii",
                                     "type": "EVENT"
+                                },
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": {
+                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                        "payload": {
+                                            "container": {
+                                                "propName": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "updateRecordURL"
+                                                },
+                                                "value": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "item",
+                                                            "relatedRecordURL"
+                                                        ]
+                                                    },
+                                                    "type": "EVENT_PAYLOAD_BINDING"
+                                                }
+                                            },
+                                            "type": "MAP_CONTAINER"
+                                        },
+                                        "sysId": "32408b42ff7a10109046e490703bf176"
+                                    },
+                                    "operation": null,
+                                    "targetId": "clyggccccownaaccajjddbhhtkggpchaatb",
+                                    "type": "EVENT"
                                 }
                             ]
                         }
@@ -590,52 +621,6 @@
                     "elementId": "update_versions",
                     "elementLabel": "Update version",
                     "eventMappings": [
-                        {
-                            "eventMappingId": "clqjjuvddbbbaaccgdddbbylyyyvgyl",
-                            "isConfiguration": false,
-                            "offRowStorageId": null,
-                            "sourceEventApiName": "sn_dropdown.NOW_DROPDOWN#ITEM_CLICKED",
-                            "sourceEventCorrelationId": null,
-                            "sourceEventDefinition": {
-                                "apiName": "sn_dropdown.NOW_DROPDOWN#ITEM_CLICKED",
-                                "id": null,
-                                "type": "UXEVENT"
-                            },
-                            "sourceEventSysId": null,
-                            "targets": [
-                                {
-                                    "broker": null,
-                                    "clientScript": null,
-                                    "conditional": null,
-                                    "declarativeAction": null,
-                                    "event": {
-                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                                        "payload": {
-                                            "container": {
-                                                "propName": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": "updateRecordSysID"
-                                                },
-                                                "value": {
-                                                    "binding": {
-                                                        "address": [
-                                                            "item",
-                                                            "sourceSysID"
-                                                        ]
-                                                    },
-                                                    "type": "EVENT_PAYLOAD_BINDING"
-                                                }
-                                            },
-                                            "type": "MAP_CONTAINER"
-                                        },
-                                        "sysId": "32408b42ff7a10109046e490703bf176"
-                                    },
-                                    "operation": null,
-                                    "targetId": "clqjjuvddbbbaaccgeddbbymqtccccffpp",
-                                    "type": "EVENT"
-                                }
-                            ]
-                        },
                         {
                             "eventMappingId": "clqjjorrzggaaeeggdddbiieezxiioiibip",
                             "isConfiguration": false,
@@ -816,7 +801,7 @@
                     "isHero": false,
                     "isHidden": {
                         "type": "JSON_LITERAL",
-                        "value": true
+                        "value": false
                     },
                     "isNonDestructive": false,
                     "items": [
@@ -845,7 +830,7 @@
                             "script": {
                                 "apiVersion": "2.0.0",
                                 "controllerElementId": null,
-                                "inlineScript": null,
+                                "inlineScript": "/**\n * @param {params} params\n * @param {api} params.api\n * @param {TransformApiHelpers} params.helpers\n */\nfunction evaluateProperty({\n    api,\n    helpers\n}) {\n    return api.state.updateRecordURL;\n}",
                                 "scriptSysId": "198bcae7478f7110274adeae536d435b",
                                 "target": null
                             },
@@ -1785,15 +1770,12 @@
     },
     {
         "description": "",
-        "fieldType": "",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
+        "fieldType": "string",
+        "initialValue": null,
         "label": "updateRecordSysID",
-        "name": "updateRecordSysID",
+        "name": "updateRecordURL",
         "shape": "",
-        "valueType": ""
+        "valueType": "string"
     },
     {
         "fieldType": "boolean",
@@ -1822,14 +1804,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-03 16:43:20</sys_created_on>
         <sys_id>d31c25c347f23110274adeae536d4370</sys_id>
-        <sys_mod_count>261</sys_mod_count>
+        <sys_mod_count>272</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_d31c25c347f23110274adeae536d4370</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-18 19:09:02</sys_updated_on>
+        <sys_updated_on>2024-07-03 16:44:58</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=d31c25c347f23110274adeae536d4370"/>
 </record_update>

@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="Application Explorer Config">31fd362311972110eadb2af1562e5e3b</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="Task Record Page">37fdfa23079721102b80fe4f7c1ed0bf</macroponent>
         <macroponent_config>{

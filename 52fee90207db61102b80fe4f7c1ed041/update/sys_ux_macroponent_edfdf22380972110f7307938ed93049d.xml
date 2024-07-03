@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
     <sys_ux_macroponent action="INSERT_OR_UPDATE">
         <associated_types/>
+        <bundles/>
         <category>page</category>
         <component_dependencies/>
         <composition>[ {
@@ -3670,4 +3671,5 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-06-14 12:18:11</sys_updated_on>
     </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=edfdf22380972110f7307938ed93049d"/>
 </record_update>

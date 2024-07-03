@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config/>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings/>
         <macroponent display_value="Default">5c9103a307d721102b80fe4f7c1ed0d7</macroponent>
         <macroponent_config/>

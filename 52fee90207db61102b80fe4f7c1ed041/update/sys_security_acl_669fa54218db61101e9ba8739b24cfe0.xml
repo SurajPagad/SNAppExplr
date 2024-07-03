@@ -5,9 +5,11 @@
         <advanced>false</advanced>
         <condition/>
         <description>ACL for Data broker: Content set - Related items list</description>
+        <local_or_existing/>
         <name>ee9fa5427bdb6110cf8d5f645f9e3cdf</name>
         <operation display_value="execute">execute</operation>
         <script/>
+        <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2023-06-09 14:44:56</sys_created_on>

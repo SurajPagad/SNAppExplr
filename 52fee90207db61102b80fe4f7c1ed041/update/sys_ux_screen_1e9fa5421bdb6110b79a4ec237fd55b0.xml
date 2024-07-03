@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="Application Explorer Config">4a9fa54207db61102b80fe4f7c1ed084</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ {
   "eventMappingId" : "ckfmaaairddaaaaffjddhhhdiwqbkiwr",
   "isConfiguration" : false,
