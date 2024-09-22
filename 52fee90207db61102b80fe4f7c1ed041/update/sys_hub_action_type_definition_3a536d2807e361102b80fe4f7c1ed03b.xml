@@ -38,7 +38,7 @@
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_3a536d2807e361102b80fe4f7c1ed03b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-16 14:09:36</sys_updated_on>
+        <sys_updated_on>2024-09-22 07:58:34</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1771,28 +1771,8 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_3a536d2807e361102b80fe4f7c1ed03b^sys_idNOT INbd1ace4807b321102b80fe4f7c1ed0b3,f51ace4807b321102b80fe4f7c1ed0b3"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_3a536d2807e361102b80fe4f7c1ed03b^sys_idNOT IN7497f52583b456105d7991d6feaad3d0,f497f52583b456105d7991d6feaad3d1"/>
     <sys_choice field="status" table="var__m_sys_hub_action_output_3a536d2807e361102b80fe4f7c1ed03b">
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Success</label>
-            <language>en</language>
-            <name>var__m_sys_hub_action_output_3a536d2807e361102b80fe4f7c1ed03b</name>
-            <sequence>1</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-06-28 08:04:10</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>bd1ace4807b321102b80fe4f7c1ed0b3</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-06-28 08:06:58</sys_updated_on>
-            <value>Success</value>
-        </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>status</element>
@@ -1807,18 +1787,38 @@
             <sys_created_on>2023-06-28 08:04:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>f51ace4807b321102b80fe4f7c1ed0b3</sys_id>
+            <sys_id>7497f52583b456105d7991d6feaad3d0</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-06-28 08:06:58</sys_updated_on>
             <value>Error</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Success</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_3a536d2807e361102b80fe4f7c1ed03b</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-28 08:04:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f497f52583b456105d7991d6feaad3d1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-28 08:06:58</sys_updated_on>
+            <value>Success</value>
         </sys_choice>
     </sys_choice>
     <sys_hub_action_plan action="delete_multiple" query="action_id=3a536d2807e361102b80fe4f7c1ed03b^sys_idNOT IN4273a16807e361102b80fe4f7c1ed0bb"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Get Application Artifacts">3a536d2807e361102b80fe4f7c1ed03b</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"4273a16807e361102b80fe4f7c1ed0bb","name":"plan","plan_signature":null}}</plan>
-        <snapshot>47e50138c3d28a1033c21c5ce00131b4</snapshot>
+        <snapshot>c885ba6183b496105d7991d6feaad344</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-17 08:16:42</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -3576,28 +3576,8 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_7073616807e361102b80fe4f7c1ed04b^sys_idNOT IN2bca4e8807b321102b80fe4f7c1ed09a,63ca4e8807b321102b80fe4f7c1ed09a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_7073616807e361102b80fe4f7c1ed04b^sys_idNOT IN3897392583b456105d7991d6feaad36d,b497392583b456105d7991d6feaad36e"/>
     <sys_choice field="status" table="var__m_sys_hub_action_output_7073616807e361102b80fe4f7c1ed04b">
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Success</label>
-            <language>en</language>
-            <name>var__m_sys_hub_action_output_7073616807e361102b80fe4f7c1ed04b</name>
-            <sequence>1</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-06-28 08:07:17</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>2bca4e8807b321102b80fe4f7c1ed09a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-06-28 08:07:17</sys_updated_on>
-            <value>Success</value>
-        </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>status</element>
@@ -3612,16 +3592,36 @@
             <sys_created_on>2023-06-28 08:07:17</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>63ca4e8807b321102b80fe4f7c1ed09a</sys_id>
+            <sys_id>3897392583b456105d7991d6feaad36d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-06-28 08:07:17</sys_updated_on>
             <value>Error</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Success</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_7073616807e361102b80fe4f7c1ed04b</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-06-28 08:07:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b497392583b456105d7991d6feaad36e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-06-28 08:07:17</sys_updated_on>
+            <value>Success</value>
+        </sys_choice>
     </sys_choice>
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>3a536d2807e361102b80fe4f7c1ed03b</sys_id>
         <latest_snapshot>7073616807e361102b80fe4f7c1ed04b</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch1-02-28-2024_03-09-2024_0815.zip</compiler_build>
+        <compiler_build>glide-washingtondc-12-20-2023__patch7-08-21-2024_08-31-2024_1809.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

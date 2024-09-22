@@ -9,31 +9,34 @@
     
 ]</required_translations>
         <script><![CDATA[/**
-  * @param {params} params
-  * @param {api} params.api
-  * @param {TransformApiHelpers} params.helpers
-  */
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
 
 
-function evaluateProperty({api, helpers}) {
-	if(!api.state.updateName || api.state.selectedVersions.length == 2 || !api.state.twoUpdateVersionsAvailable){
-    return true;
-  }
-  return false;
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    if (!api.state.updateName || (api.state.currentVersion && api.state.previousVersion) || !api.state.twoUpdateVersionsAvailable) {
+        return true;
+    }
+    return false;
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-17 17:58:31</sys_created_on>
         <sys_id>a1934e2f474f7110274adeae536d432e</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>alert_1/NODE__isHidden</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_client_script_a1934e2f474f7110274adeae536d432e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-18 17:26:40</sys_updated_on>
+        <sys_updated_on>2024-09-22 10:21:11</sys_updated_on>
         <target>macroponent</target>
         <type>transform</type>
     </sys_ux_client_script>
