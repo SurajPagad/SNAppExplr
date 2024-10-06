@@ -479,28 +479,6 @@
                                                     "payload": {
                                                         "type": "JSON_LITERAL",
                                                         "value": {
-                                                            "propName": "selectedVersions",
-                                                            "value": [
-                                                                
-                                                            ]
-                                                        }
-                                                    },
-                                                    "sysId": "32408b42ff7a10109046e490703bf176"
-                                                },
-                                                "operation": null,
-                                                "targetId": "clqjjsazijaacklddbbynaceeccirp",
-                                                "type": "EVENT"
-                                            },
-                                            {
-                                                "broker": null,
-                                                "clientScript": null,
-                                                "conditional": null,
-                                                "declarativeAction": null,
-                                                "event": {
-                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                                                    "payload": {
-                                                        "type": "JSON_LITERAL",
-                                                        "value": {
                                                             "propName": "twoUpdateVersionsAvailable",
                                                             "value": "true"
                                                         }
@@ -1167,36 +1145,6 @@
                                                     "targets": [
                                                         {
                                                             "broker": null,
-                                                            "clientScript": null,
-                                                            "conditional": null,
-                                                            "declarativeAction": null,
-                                                            "event": {
-                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                                                                "payload": {
-                                                                    "container": {
-                                                                        "propName": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "selectedVersions"
-                                                                        },
-                                                                        "value": {
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "value"
-                                                                                ]
-                                                                            },
-                                                                            "type": "EVENT_PAYLOAD_BINDING"
-                                                                        }
-                                                                    },
-                                                                    "type": "MAP_CONTAINER"
-                                                                },
-                                                                "sysId": "32408b42ff7a10109046e490703bf176"
-                                                            },
-                                                            "operation": null,
-                                                            "targetId": "clqjjrxaaneaaccvcddbbyntddcrccxgg",
-                                                            "type": "EVENT"
-                                                        },
-                                                        {
-                                                            "broker": null,
                                                             "clientScript": {
                                                                 "payload": {
                                                                     "type": "JSON_LITERAL",
@@ -1430,36 +1378,6 @@
                                                     },
                                                     "sourceEventSysId": null,
                                                     "targets": [
-                                                        {
-                                                            "broker": null,
-                                                            "clientScript": null,
-                                                            "conditional": null,
-                                                            "declarativeAction": null,
-                                                            "event": {
-                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
-                                                                "payload": {
-                                                                    "container": {
-                                                                        "propName": {
-                                                                            "type": "JSON_LITERAL",
-                                                                            "value": "selectedVersions"
-                                                                        },
-                                                                        "value": {
-                                                                            "binding": {
-                                                                                "address": [
-                                                                                    "value"
-                                                                                ]
-                                                                            },
-                                                                            "type": "EVENT_PAYLOAD_BINDING"
-                                                                        }
-                                                                    },
-                                                                    "type": "MAP_CONTAINER"
-                                                                },
-                                                                "sysId": "32408b42ff7a10109046e490703bf176"
-                                                            },
-                                                            "operation": null,
-                                                            "targetId": "clqjjrxaaneaaccvcddbbyntddcrccxgg",
-                                                            "type": "EVENT"
-                                                        },
                                                         {
                                                             "broker": null,
                                                             "clientScript": {
@@ -1895,7 +1813,7 @@
                                         "value": ""
                                     }
                                 },
-                                "styles": {}
+                                "styles": null
                             }
                         ],
                         "layout": {
@@ -2228,171 +2146,6 @@
             }
         },
         "readEvaluationMode": "EAGER"
-    },
-    {
-        "definition": {
-            "id": "5865e308432021105571609dc7b8f23b",
-            "type": "CONTROLLER"
-        },
-        "dependencies": {},
-        "elementId": "list_controller_1",
-        "elementLabel": "List Controller 1",
-        "eventMappings": [
-            
-        ],
-        "inputValues": {
-            "actionConfigId": {
-                "binding": {
-                    "address": [
-                        "actionConfigId"
-                    ],
-                    "category": "app"
-                },
-                "type": "CONTEXT_BINDING"
-            },
-            "allRecordsSelected": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "columnFilteringPopoverDisplay": {
-                "type": "JSON_LITERAL",
-                "value": "allowBoth"
-            },
-            "columnLimit": {
-                "type": "JSON_LITERAL",
-                "value": 0
-            },
-            "columnPreferenceKey": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "columns": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "currentPage": {
-                "type": "JSON_LITERAL",
-                "value": 0
-            },
-            "enableCellFiltering": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "enableColumnSorting": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "enableDeclarativeActions": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "enableDotWalk": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "enableLiveList": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "enableQuickEdit": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "enableReferenceLinks": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "exceptedRecords": {
-                "type": "JSON_LITERAL",
-                "value": [
-                    
-                ]
-            },
-            "fetchHighlightedValues": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "filter": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "fixedFilter": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "groupBy": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "highlightedValueConfigId": {
-                "binding": {
-                    "address": [
-                        "highlightedValueConfigId"
-                    ],
-                    "category": "app"
-                },
-                "type": "CONTEXT_BINDING"
-            },
-            "listId": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "listMenuConfigurationId": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "listTitle": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "onlyEnableSelectionWhenRequiredByActions": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "parentRecordSysId": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "parentTable": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "recordCountLimit": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "relatedListName": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "rowLimit": {
-                "type": "JSON_LITERAL",
-                "value": 10
-            },
-            "selectedRecords": {
-                "type": "JSON_LITERAL",
-                "value": [
-                    
-                ]
-            },
-            "table": {
-                "type": "JSON_LITERAL",
-                "value": "task"
-            },
-            "tinyId": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "transformScriptSysId": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "view": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            }
-        },
-        "readEvaluationMode": "EAGER"
     }
 ]</data>
         <description/>
@@ -2538,18 +2291,6 @@
     },
     {
         "description": "",
-        "fieldType": "json",
-        "initialValue": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "label": "selectedVersions",
-        "name": "selectedVersions",
-        "shape": "",
-        "valueType": "json"
-    },
-    {
-        "description": "",
         "fieldType": "string",
         "initialValue": null,
         "label": "updateRecordSysID",
@@ -2584,14 +2325,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-03 16:43:20</sys_created_on>
         <sys_id>d31c25c347f23110274adeae536d4370</sys_id>
-        <sys_mod_count>345</sys_mod_count>
+        <sys_mod_count>346</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_macroponent_d31c25c347f23110274adeae536d4370</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-22 12:32:09</sys_updated_on>
+        <sys_updated_on>2024-10-06 07:45:43</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=d31c25c347f23110274adeae536d4370"/>
 </record_update>

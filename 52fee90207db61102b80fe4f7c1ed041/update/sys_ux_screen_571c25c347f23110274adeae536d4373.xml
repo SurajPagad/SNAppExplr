@@ -159,7 +159,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>571c25c347f23110274adeae536d4373</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
@@ -167,7 +167,7 @@
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_ux_screen_571c25c347f23110274adeae536d4373</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-18 19:09:02</sys_updated_on>
+        <sys_updated_on>2024-10-06 07:45:42</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=571c25c347f23110274adeae536d4373"/>
 </record_update>

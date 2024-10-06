@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
     <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
-        <macroponent_config>{}</macroponent_config>
+        <macroponent_config>{
+    "5865e308432021105571609dc7b8f23b": {
+        "actionConfigId": "df28e3db0f1210107d20409dc4767ee0",
+        "allRecordsSelected": false,
+        "columnFilteringPopoverDisplay": "allowBoth",
+        "columnLimit": 0,
+        "columnPreferenceKey": "",
+        "columns": "",
+        "currentPage": 0,
+        "enableCellFiltering": true,
+        "enableColumnSorting": true,
+        "enableDeclarativeActions": true,
+        "enableDotWalk": true,
+        "enableLiveList": false,
+        "enableQuickEdit": true,
+        "enableReferenceLinks": true,
+        "exceptedRecords": [
+            
+        ],
+        "fetchHighlightedValues": false,
+        "filter": "",
+        "fixedFilter": "",
+        "groupBy": "",
+        "listId": "",
+        "listMenuConfigurationId": "",
+        "listTitle": "",
+        "onlyEnableSelectionWhenRequiredByActions": true,
+        "parentRecordSysId": "",
+        "parentTable": "",
+        "recordCountLimit": null,
+        "relatedListName": "",
+        "rowLimit": 10,
+        "selectedRecords": [
+            
+        ],
+        "table": "task",
+        "tinyId": "",
+        "transformScriptSysId": null,
+        "view": ""
+    }
+}</macroponent_config>
         <screen display_value="Default">571c25c347f23110274adeae536d4373</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-03 16:43:20</sys_created_on>
         <sys_id>ef1c25c347f23110274adeae536d4376</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Application Explorer" source="x_13258_applicat_0">52fee90207db61102b80fe4f7c1ed041</sys_package>
         <sys_policy/>
         <sys_scope display_value="Application Explorer">52fee90207db61102b80fe4f7c1ed041</sys_scope>
         <sys_update_name>sys_uib_screen_test_values_ef1c25c347f23110274adeae536d4376</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-18 14:18:44</sys_updated_on>
+        <sys_updated_on>2024-10-06 07:45:43</sys_updated_on>
     </sys_uib_screen_test_values>
 </record_update>
